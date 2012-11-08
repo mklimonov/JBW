@@ -1,12 +1,28 @@
 <?php
 
-/**
- * @file
- * This file is empty by default because the base theme chain (Alpha & Omega) provides
- * all the basic functionality. However, in case you wish to customize the output that Drupal
- * generates through Alpha & Omega this file is a good place to do so.
- * 
- * Alpha comes with a neat solution for keeping this file as clean as possible while the code
- * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
- * for more information on this topic.
+function JBW_form_alter(&$form, &$form_state, $form_id) {
+/*
+  $form_ids = array(
+    'node_form',
+    'system_site_information_settings',
+    'user_profile_form',
+  );
+
+  if (isset($form['#form_id']) && !in_array($form['#form_id'], $form_ids) && !isset($form['#node_edit_form'])) {
+    $form['actions']['#theme_wrappers'] = array();
+  }
  */
+  if($form_id == 'search_block_form') {
+    $form['search_block_form']['#title'] = t('Search');
+    $form['search_block_form']['#title_display'] = 'invisible';
+    $form['search_block_form']['#size'] = 30; 
+    $form['actions']['submit']['#value'] = t('GO!');
+    $form['search_block_form']['#class'] = 'search-form';
+    $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/searchbutton.png');
+    $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
+    $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+    $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
+  }   
+}
+
+?>
