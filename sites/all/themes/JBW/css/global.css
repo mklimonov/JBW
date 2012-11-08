@@ -1,0 +1,91 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+body {
+	background-color: pink;
+}
+
+.festival_homepage_social .social_icon{
+	width: 100px;
+}
+
+.region-sidebar .block {
+	margin-top: 20px;
+
+	background-color: white;
+}
+
+.slider-left-part {
+	background-color: red;
+	float: left;
+	width: 190px;
+	height: 200px;
+}
+
+.block-search {
+	float: right;
+}
+
+.region-branding {
+	background-color: white;
+	margin-top: 20px;
+}
+
+.branding-data {
+	width: 700px;
+	float: left;
+}
+
+.region-menu {
+	background-color: white;
+	margin: 10px 0px 10px 0px;
+}
+
+.block-slider {
+	background-color: white;
+	padding: 10px;
+}
+
+.views-field-field-slider-image {
+	float: right;
+}
+
+//something like that I don't remember
+
+.social_block .social_icon {
+	display: inline;
+}
+
+.festival-color1 .festival-left-part {
+	background-color: green;
+}
+
+.festival-color2 .festival-left-part {
+	background-color: orange;
+}
+
+.festival-color3 .festival-left-part {
+	background-color: red;
+}
+
+.festival-left-part {
+	float: left;
+	width: 150px;
+	height: 300px;
+}
+
+.fest_row_homepage {
+	background-color: white;
+	margin-bottom: 20px;
+	width: 550px;
+	padding: 10px;
+}
+
+#scrollbarY { width: 470px; margin: 20px 0 10px;}
+#scrollbarY .viewport { width: 450px; height: 300px; overflow: hidden; position: relative; background-color: blue;}
+#scrollbarY .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbarY .scrollbar{ background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbarY .track { background: transparent url(images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbarY .thumb { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollbarY .thumb .end { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbarY .disable { display: none; }

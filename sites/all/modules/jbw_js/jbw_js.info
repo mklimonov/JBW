@@ -1,0 +1,7 @@
+name = Javascript for site
+description = "js for site"
+package = JBW
+core = 7.x
+files[] = jwb_js.module
+scripts[] = scrollbar.js
+scripts[] = sidebar_scroll.js

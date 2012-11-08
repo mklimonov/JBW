@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw2_panel_fresh_news feature.
+ */
+
+include_once 'jbw2_panel_fresh_news.features.inc';
