@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw_view_news feature.
+ */
+
+include_once 'jbw_view_news.features.inc';

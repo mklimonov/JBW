@@ -1,0 +1,7 @@
+name = jbw2_permissions
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = simplenews
+features[features_api][] = api:1
+features[user_permission][] = subscribe to newsletters
