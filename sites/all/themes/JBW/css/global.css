@@ -1,17 +1,106 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+#page{
+    margin: 0 auto;
+    padding: 0;
+    width: 1020px;
+    height: 1820px;
+    background: url(../images/bg.png) no-repeat;
+    position: relative;
+}
+/*header*/
+#zone-branding-wrapper{
+    width: 960px;
+    height: 113px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    background: url(../images/header/header.png) no-repeat center 0;  
+}
 
+#zone-branding{
+    width: 960px;
+    height: 113px;
+}
+
+#region-branding{
+    width: 960px;
+    height: 113px;
+}
+.branding-data{
+    width: 960px;
+    height: 113px;
+}
+/*Search block*/
+#block-search-form{
+    margin: 0;
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    z-index: 10;
+}
+/*input text field*/
+#search-block-form .form-text{
+    width: 138px;
+    height: 13px;
+    border: none;
+    background: url(../images/header/searchbox.png) no-repeat bottom;
+    text-indent: 5px;
+    font-size: 12px;
+}
+
+/*input button(submits)*/
+#search-block-form .form-submit{
+    background: url(../images/header/searchbutton.png) no-repeat 0 0;
+    overflow: hidden;
+    width: 17px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    top: 5px;
+    border-radius: 0;
+}
+
+/*pattern in the right corner*/
+#pattern img{
+    float: right;
+    /*padding-top: 5px;*/
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/*site slogan*/
+.site-slogan{
+    display: block;
+    width: 300px;
+    height: 40px;
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 65px;
+    z-index: 10;
+}
+
+/*
 body {
 	background-color: pink;
 }
-
+*/
+#section-content{
+            margin-top: 700px;
+}
 .festival_homepage_social .social_icon{
 	width: 100px;
 }
 
 .region-sidebar .block {
 	margin-top: 20px;
-
 	background-color: white;
 }
 
@@ -22,35 +111,35 @@ body {
 	height: 200px;
 }
 
-.block-search {
-	float: right;
-}
-
-.region-branding {
-	background-color: white;
-	margin-top: 20px;
-}
-
-.branding-data {
-	width: 700px;
-	float: left;
-}
-
 .region-menu {
-	background-color: white;
-	margin: 10px 0px 10px 0px;
+    width: 960px;
+    height: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;  
+    top: 118px;
+    background: url(../images/header/menu_bg.png) no-repeat center 0;
+	/*background-color: white;
+	margin: 10px 0px 10px 0px;*/
 }
 
 .block-slider {
-	background-color: white;
-	padding: 10px;
+    width: 960px;
+    height: 262px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;  
+    top: 165px;
+    background: url(../images/slider/slider_bg.png) no-repeat center 0;
+	/*background-color: white;
+	padding: 10px;*/
 }
 
 .views-field-field-slider-image {
 	float: right;
 }
 
-//something like that I don't remember
+/*something like that I don't remember*/
 
 .social_block .social_icon {
 	display: inline;
