@@ -346,7 +346,7 @@ function jbw2_view_ct_field_default_fields() {
         ),
         'repeat' => '0',
         'timezone_db' => '',
-        'todate' => 'optional',
+        'todate' => 'required',
         'tz_handling' => 'none',
       ),
       'translatable' => '0',
@@ -355,7 +355,7 @@ function jbw2_view_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'event',
       'deleted' => '0',
-      'description' => 'When it starts (required) and when it is ends (not required (yet))',
+      'description' => 'When it starts (required) and when it is ends (equired)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -380,7 +380,7 @@ function jbw2_view_ct_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_event_date',
-      'label' => 'Date',
+      'label' => 'event date',
       'required' => 1,
       'settings' => array(
         'default_value' => 'now',
@@ -441,7 +441,7 @@ function jbw2_view_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'event',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Teaser image how it shown on search, on events list.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -574,6 +574,86 @@ function jbw2_view_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-event-field_gallery_images'.
+  $fields['node-event-field_gallery_images'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_gallery_images',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'deleted' => '0',
+      'description' => 'Images for gallery of this event',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 4,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_gallery_images',
+      'label' => 'gallery images',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => 0,
+      ),
+    ),
+  );
+
   // Exported field: 'node-festival-body'.
   $fields['node-festival-body'] = array(
     'field_config' => array(
@@ -678,7 +758,7 @@ function jbw2_view_ct_field_default_fields() {
       'bundle' => 'festival',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Description that you will see on homepage of festival.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -741,7 +821,7 @@ function jbw2_view_ct_field_default_fields() {
         ),
         'repeat' => '0',
         'timezone_db' => '',
-        'todate' => 'optional',
+        'todate' => 'required',
         'tz_handling' => 'none',
       ),
       'translatable' => '0',
@@ -750,7 +830,7 @@ function jbw2_view_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'festival',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Date when festival starts (required) and date when festival ends (required)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -836,7 +916,7 @@ function jbw2_view_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'festival',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Image that shows in festival list, in search, in homepage.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -879,6 +959,423 @@ function jbw2_view_ct_field_default_fields() {
         ),
         'type' => 'image_image',
         'weight' => '-3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-page-body'.
+  $fields['node-page-body'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_with_summary',
+    ),
+    'field_instance' => array(
+      'bundle' => 'page',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'trim_length' => 600,
+          ),
+          'type' => 'text_summary_or_trimmed',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'label' => 'Body',
+      'required' => FALSE,
+      'settings' => array(
+        'display_summary' => TRUE,
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 20,
+          'summary_rows' => 5,
+        ),
+        'type' => 'text_textarea_with_summary',
+        'weight' => '-4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-page-field_page_image'.
+  $fields['node-page-field_page_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_page_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'page',
+      'deleted' => '0',
+      'description' => 'Teaser decorate image of your page',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 1,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_page_image',
+      'label' => 'page image',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => 'page_image',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '-3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-paypal_donate-body'.
+  $fields['node-paypal_donate-body'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_with_summary',
+    ),
+    'field_instance' => array(
+      'bundle' => 'paypal_donate',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'trim_length' => 600,
+          ),
+          'type' => 'text_summary_or_trimmed',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'label' => 'Body',
+      'required' => FALSE,
+      'settings' => array(
+        'display_summary' => TRUE,
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'type' => 'text_summary_or_trimmed',
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 20,
+          'summary_rows' => 5,
+        ),
+        'type' => 'text_textarea_with_summary',
+        'weight' => -4,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-paypal_donate-paypal_donate_currency'.
+  $fields['node-paypal_donate-paypal_donate_currency'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'display_settings' => array(
+        'default' => FALSE,
+      ),
+      'entity_types' => array(),
+      'field_name' => 'paypal_donate_currency',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'label' => 'Currency Code',
+      'locked' => '0',
+      'module' => 'list',
+      'required' => TRUE,
+      'settings' => array(
+        'allowed_values' => array(
+          'GBP' => 'Great British Pounds',
+          'USD' => 'United States Doller',
+          'AUD' => 'Australian Dollar',
+          'CAD' => 'Canadian Dollar',
+          'EUR' => 'Euro',
+          'JPY' => 'Japanese Yen',
+          'NZD' => 'New Zealand Dollar',
+          'CHF' => 'Swiss Franc',
+          'HKD' => 'Hong Kong Dollar',
+          'SGD' => 'Singapore Dollar',
+          'SEK' => 'Swedish Krona',
+          'DKK' => 'Danish Krone',
+          'PLN' => 'Polish Zloty',
+          'NOK' => 'Norwegian Krone',
+          'HUF' => 'Hungarian Forint',
+          'CZK' => 'Czech Koruna',
+          'ILS' => 'Israeli New Shekel',
+          'MXN' => 'Mexican Peso',
+          'BRL' => 'Brazilian Real',
+          'MYR' => 'Malaysian Ringgit',
+          'PHP' => 'Philippine Peso',
+          'TWD' => 'New Taiwan Dollar',
+          'THB' => 'Thai Baht',
+          'TRY' => 'Turkish Lira',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'paypal_donate',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'display_settings' => array(
+        'default' => FALSE,
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'paypal_donate_currency',
+      'label' => 'Currency Code',
+      'required' => TRUE,
+      'settings' => array(
+        'allowed_values' => array(
+          'GBP' => 'Great British Pounds',
+          'USD' => 'United States Doller',
+          'AUD' => 'Australian Dollar',
+          'CAD' => 'Canadian Dollar',
+          'EUR' => 'Euro',
+          'JPY' => 'Japanese Yen',
+          'NZD' => 'New Zealand Dollar',
+          'CHF' => 'Swiss Franc',
+          'HKD' => 'Hong Kong Dollar',
+          'SGD' => 'Singapore Dollar',
+          'SEK' => 'Swedish Krona',
+          'DKK' => 'Danish Krone',
+          'PLN' => 'Polish Zloty',
+          'NOK' => 'Norwegian Krone',
+          'HUF' => 'Hungarian Forint',
+          'CZK' => 'Czech Koruna',
+          'ILS' => 'Israeli New Shekel',
+          'MXN' => 'Mexican Peso',
+          'BRL' => 'Brazilian Real',
+          'MYR' => 'Malaysian Ringgit',
+          'PHP' => 'Philippine Peso',
+          'TWD' => 'New Taiwan Dollar',
+          'THB' => 'Thai Baht',
+          'TRY' => 'Turkish Lira',
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'type' => 'list_text',
+      'widget' => array(
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => -2,
+      ),
+    ),
+  );
+
+  // Exported field: 'node-paypal_donate-paypal_donate_email'.
+  $fields['node-paypal_donate-paypal_donate_email'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'paypal_donate_email',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'label' => 'Email Address of the paypal account',
+      'locked' => '0',
+      'module' => 'text',
+      'required' => TRUE,
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'paypal_donate',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 1,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'paypal_donate_email',
+      'label' => 'Email Address of the paypal account',
+      'required' => TRUE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'type' => 'text',
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'size' => 60,
+        ),
+        'type' => 'text_textfield',
+        'weight' => -3,
       ),
     ),
   );
@@ -1003,7 +1500,7 @@ function jbw2_view_ct_field_default_fields() {
       'bundle' => 'simplenews',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Choose event referenced to this news; if it is non-event news leave this field empty.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1075,7 +1572,7 @@ function jbw2_view_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'simplenews',
       'deleted' => '0',
-      'description' => 'Image for front page',
+      'description' => 'Teaser image for search and news list.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -1126,7 +1623,7 @@ function jbw2_view_ct_field_default_fields() {
   $fields['node-simplenews-field_simplenews_term'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_simplenews_term',
@@ -1148,8 +1645,8 @@ function jbw2_view_ct_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'parent' => 0,
             'vocabulary' => 'newsletter',
+            'parent' => 0,
           ),
         ),
       ),
@@ -1160,7 +1657,7 @@ function jbw2_view_ct_field_default_fields() {
       'bundle' => 'simplenews',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => 'You can choose news categories. It helps user recieve only news on which he was subscribed.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -1197,11 +1694,12 @@ function jbw2_view_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_simplenews_term',
       'label' => 'Newsletter category',
-      'required' => TRUE,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
@@ -1366,20 +1864,32 @@ function jbw2_view_ct_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Date');
+  t('Choose event referenced to this news; if it is non-event news leave this field empty.');
+  t('Currency Code');
+  t('Date when festival starts (required) and date when festival ends (required)');
+  t('Description that you will see on homepage of festival.');
+  t('Email Address of the paypal account');
   t('Event');
-  t('Image for front page');
+  t('Image that shows in festival list, in search, in homepage.');
+  t('Images for gallery of this event');
   t('Newsletter category');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
-  t('When it starts (required) and when it is ends (not required (yet))');
+  t('Teaser decorate image of your page');
+  t('Teaser image for search and news list.');
+  t('Teaser image how it shown on search, on events list.');
+  t('When it starts (required) and when it is ends (equired)');
+  t('You can choose news categories. It helps user recieve only news on which he was subscribed.');
   t('blog event');
   t('blog image');
   t('description');
+  t('event date');
   t('event image');
   t('festival');
   t('festival date');
   t('festival image');
+  t('gallery images');
   t('new image');
+  t('page image');
   t('slider image');
 
   return $fields;

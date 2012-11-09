@@ -1,7 +1,10 @@
 name = jbw2_permissions
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = features
+dependencies[] = search
 dependencies[] = simplenews
 features[features_api][] = api:1
+features[user_permission][] = search content
 features[user_permission][] = subscribe to newsletters

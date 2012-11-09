@@ -126,7 +126,8 @@ ul.nice-menu li{
     float: left;
     list-style: none;
     position: relative;
-    background-color: inherit;
+    /*background-color: inherit;*/
+	background-color: white;
     border: none;
 }
 ul.nice-menu li a{
