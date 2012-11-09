@@ -649,7 +649,94 @@ function jbw2_view_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => 0,
+        'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-event-field_gallery_video'.
+  $fields['node-event-field_gallery_video'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_gallery_video',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'video',
+      'settings' => array(
+        'autoconversion' => 1,
+        'autothumbnail' => 'auto',
+        'default_video_thumbnail' => array(
+          'fid' => 0,
+          'remove_button' => 'Remove',
+          'upload' => '',
+          'upload_button' => 'Upload',
+        ),
+        'presets' => array(),
+        'preview_video_thumb_style' => 'thumbnail',
+        'thumbnail_format' => 'jpg',
+        'uri_scheme' => 'public',
+        'uri_scheme_converted' => 'public',
+        'uri_scheme_thumbnails' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'video',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'video',
+          'settings' => array(
+            'poster_image_style' => '',
+            'widthxheight' => '640x360',
+          ),
+          'type' => 'video_formatter_player',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_gallery_video',
+      'label' => 'gallery video',
+      'required' => 0,
+      'settings' => array(
+        'default_dimensions' => '640x360',
+        'file_directory' => 'videos/original',
+        'file_extensions' => 'mp4 ogg avi mov wmv flv ogv webm',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'video',
+        'settings' => array(
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'video_upload',
+        'weight' => '1',
       ),
     ),
   );
@@ -1888,6 +1975,7 @@ function jbw2_view_ct_field_default_fields() {
   t('festival date');
   t('festival image');
   t('gallery images');
+  t('gallery video');
   t('new image');
   t('page image');
   t('slider image');
