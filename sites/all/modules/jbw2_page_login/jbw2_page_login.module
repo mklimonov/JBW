@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw2_page_login feature.
+ */
+
+include_once 'jbw2_page_login.features.inc';
