@@ -35,50 +35,6 @@
     height: 113px;
 }
 
-/*Search block*/
-#block-search-form{
-    margin: 0;
-    width: 150px;
-    height: 13px;
-    float: right;
-    position: absolute;
-    right: 55px; /*15*/
-    top: 12px;
-    z-index: 10;
-}
-#search-block-form input{
-    margin: 0;
-}
-
-/*input text field*/
-#search-block-form .form-text{
-    width: 138px;
-    height: 13px;
-    border: none;
-    background: url(../images/header/searchbox.png) no-repeat bottom;
-    text-indent: 5px;
-    font-size: 10px;
-}
-
-/*input button(submits)*/
-#search-block-form .form-submit{
-    background: url(../images/header/searchbutton.png) no-repeat 0 0;
-    overflow: hidden;
-    width: 12px;
-    height: 13px;
-    cursor: pointer;
-    position: relative;
-    float: right;
-    border: 0;
-    padding: 0;
-    top: 5px;
-    border-radius: 0;
-}
-
-.form-item-search-block-form{
-    margin: 0;
-}
-
 /*pattern in the right corner*/
 #pattern img{
     float: right;
@@ -126,7 +82,7 @@
     width: 960px;
     height: 32px;
 }
-
+/*
 .block-nice-menus{
     width: 800px;
 }
@@ -142,33 +98,33 @@ ul.nice-menu li{
     float: left;
     list-style: none;
     position: relative;
-    background-color: inherit;/*white*/
+    background-color: inherit;/*white/
     border: none;
 }
 
 ul.nice-menu li a{
     display: block;
-    /*height: 21px;*/
+    /*height: 21px;/
     margin: 3px 10px;
     /*padding-left: 10px;
-    padding-right: 10px;*/
-    /*margin: 5px 10px;*/
+    padding-right: 10px;/
+    /*margin: 5px 10px;/
     text-decoration: none;
     text-align: center;
     color: black;
 }
 
 ul.nice-menu ul li{
-    background-color: white;/*white*/
-    /*height: 21px;*/
-    /*padding: 5px 10px;*/
+    background-color: white;/*white/
+    /*height: 21px;/
+    /*padding: 5px 10px;/
 }
 
 ul.nice-menu ul a{
     display: block;
     height: auto;
-    /*height: 21px;*/
-    /*margin: 5px 10px;*/
+    /*height: 21px;/
+    /*margin: 5px 10px;/
     text-decoration: none;
     text-align: center;
     color: black;
@@ -180,156 +136,22 @@ ul.nice-menu ul li:hover{
 ul.nice-menu ul a:hover{
     text-decoration:underline;
 }
+*/
 
 /*Share component*/
 #block-sharethis-sharethis-block{
-    display: block;
+    /*display: block;
     width: 110px;
     position: relative;
     top: -25px;
     float: right;
-    z-index: 20;
-}
-
-/*Slider zone*/
-#zone-header-wrapper{
-    width: 960px;
-    height: 262px;
-    padding-left: 30px;
-    padding-right: 30px;
-    /*position: absolute;  */
-    position: relative;
-    top: 15px;
-    background: url(../images/slider/slider_bg.png) no-repeat center 0;
-}
-
-#zone-header{
-    width: 960px;
-    height: 262px;
-}
-
-#region-header{
-    margin: 0;
-    width: 960px;
-    height: 262px;
-}
-
-/* image slider*/
-.slider-left-part{
-    float: left;
-}
-
-.views-field-field-slider-image{
+    z-index: 20;*/
     float: right;
-    margin: 10px 5px 5px 5px;
-}
-
-/*text slider*/
-.views-field-body  .field-content p{
-    /*display: block;*/
-    width: 296px;
-    height: 210px;
     position: absolute;
-    text-align: center;
-    font-size: 14px;
-    margin: 15px 3px 15px 15px; 
-    /*z-index: 10;*/
-}
-/*title slider*/
-.views-field-title{
-    display: none;
-}
-
-/*section-content*/
-#zone-content-wrapper{
-    margin: 0;
-    width: 960px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;  
-    top: 10px;
-}
-
-#zone-content{
-    width: 960px;
-}
-
-#region-content{
-    width: 565px;
-}
-
-#region-sidebar{
-    margin: 0;
-    float: right;
-    width: 370px;
-    /*height: 310px;*/
-    position: relative;
-    /*background: url(../images/content/region-sidebar.png) no-repeat 0 0;*/
-}
-
-.fest_row_homepage{
-    margin: 0;
-    float: left;
-    width: 550px;
-    /*height: 310px;*/
-    position: relative;
-    background: url(../images/content/region-content.png) no-repeat 0 0;
-    margin-top: 20px;
-}
-
-.festival-left-part{
-    float: left;
-    width: 155px;
-    height: 265px;
-}
-
-.views-field-field-festival-image{
-    float: right;
-    margin-top: 10px;
-    margin-right: 5px;
-    /*margin: 10px 5px 5px 5px;*/
-}
-
-.views-field-field-festival-image img{
-    z-index: 10;
-}
-
-.views-field-field-description{
-    /*float: left;*/
-    width: 155px;
-    height: 265px;
-    position: absolute;
-    text-align: center;
-    font-size: 14px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-/*share in content*/
-.views-field-sharethis{
-    
-    float: right;
-    position: relative;
-    right: 0;
+    right: 5px;
+    top: 5px;
+    width: 110px;
     z-index: 20;
-}
-
-/*sidebar*/
-.overview .block{
-    width: 370px;
-    margin-bottom: 5px;
-    background: url(../images/content/region-sidebar.png) no-repeat 0 0;
-}
-
-.festival-color1 .views-field-field-description{
-    background-color: greenyellow;
-}
-
-.festival-color2 .views-field-field-description{
-    background-color: orange;
-}
-
-.festival-color3 .views-field-field-description{
-    background-color: purple;
 }
 
 /*section-footer*/
@@ -338,9 +160,10 @@ ul.nice-menu ul a:hover{
     height: 42px;
     padding-left: 30px;
     padding-right: 30px;
-    position: absolute;  
-    top: 1807px;
+    /*position: relative;  */
+    position: absolute;
     /*top: 1780px;*/
+    top: 1807px;
     /*top: 458px;*/
     background: url(../images/footer/footer_bg.png) no-repeat center 0;
 }
@@ -359,12 +182,3 @@ ul.nice-menu ul a:hover{
     float: left;
     margin: 10px 10px;
 }
-
-#scrollbarY { width: 390px; margin: 20px 0 10px;}
-#scrollbarY .viewport { width: 370px; height: 1200px; overflow: hidden; position: relative;}
-#scrollbarY .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
-#scrollbarY .scrollbar{ background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
-#scrollbarY .track { background: transparent url(images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
-#scrollbarY .thumb { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
-#scrollbarY .thumb .end { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
-#scrollbarY .disable { display: none; }

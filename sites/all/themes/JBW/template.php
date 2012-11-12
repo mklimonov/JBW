@@ -1,5 +1,10 @@
 <?php
 
+drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/searchbox.css');
+drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/slider.css');
+drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/content.css');
+drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/sidebar.css');
+
 function JBW_form_alter(&$form, &$form_state, $form_id) {
 /*
   $form_ids = array(
