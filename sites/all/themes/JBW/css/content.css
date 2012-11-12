@@ -32,7 +32,7 @@
 }
 
 /*left part of content*/
-.fest_row_homepage{
+.page-home #block-system-main .pane-festivals .fest_row_homepage{
     margin-top: 10px;
     /*float: left;*/
     width: 550px;

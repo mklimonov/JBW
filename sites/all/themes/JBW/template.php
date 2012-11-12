@@ -1,9 +1,10 @@
 <?php
 
-drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/searchbox.css');
-drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/slider.css');
-drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/content.css');
-drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/sidebar.css');
+//drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/searchbox.css');
+//drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/slider.css');
+//drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/content.css');
+//drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/sidebar.css');
+//drupal_add_css(drupal_get_path('theme', 'JBW') . '/css/festival.css');
 
 function JBW_form_alter(&$form, &$form_state, $form_id) {
 /*
@@ -24,9 +25,10 @@ function JBW_form_alter(&$form, &$form_state, $form_id) {
     $form['actions']['submit']['#value'] = t('GO!');
     $form['search_block_form']['#class'] = 'search-form';
     //$form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/searchbutton.png');
-	$form['actions']['submit'] = array('#type' => 'submit');
+    $form['actions']['submit'] = array('#type' => 'submit');
     $form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Search';}";
     $form['search_block_form']['#attributes']['onfocus'] = "if (this.value == 'Search') {this.value = '';}";
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search');
     $form['#attributes']['onsubmit'] = "if(this.search_block_form.value=='Search'){ alert('Please enter a search'); return false; }";
   }   
 }

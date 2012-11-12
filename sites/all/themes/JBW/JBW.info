@@ -5,6 +5,13 @@ engine = phptemplate
 screenshot = screenshot.png
 base theme = omega
 
+ ; stylesheets
+stylesheets[all][] = css/searchbox.css
+stylesheets[all][] = css/slider.css
+stylesheets[all][] = css/content.css
+stylesheets[all][] = css/sidebar.css
+stylesheets[all][] = css/festival.css
+
 ; REQUIRED CORE REGIONS
 
 regions[page_top] = Page Top

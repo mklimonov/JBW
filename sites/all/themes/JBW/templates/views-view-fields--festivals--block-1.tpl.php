@@ -24,28 +24,30 @@
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($fields as $id => $field): ?>
+<div id="festival-content">
+    <?php foreach ($fields as $id => $field): ?>
 
-<?php if($field->class == 'field-festival-image'): ?>
-  <div class = "festival_node_left_part">
-<?php endif; ?>
-<?php if($field->class == 'title'): ?>
-  <div class = "festival_node_right_part">
-<?php endif; ?>
+    <?php if($field->class == 'field-festival-image'): ?>
+      <div class = "festival_node_left_part">
+    <?php endif; ?>
+    <?php if($field->class == 'title'): ?>
+      <div class = "festival_node_right_part">
+    <?php endif; ?>
 
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
- 
-  <?php if($field->class == 'field-festival-image'): ?>
-	<a href="festival/<?php print arg(1); ?>/programme">Festival programme</a>
-	</div>
-  <?php endif; ?>
-  <?php if($field->class == 'body'): ?>
-	</div>
-  <?php endif; ?>
-<?php endforeach; ?>
+      <?php if (!empty($field->separator)): ?>
+        <?php print $field->separator; ?>
+      <?php endif; ?>
+      <?php print $field->wrapper_prefix; ?>
+        <?php print $field->label_html; ?>
+        <?php print $field->content; ?>
+      <?php print $field->wrapper_suffix; ?>
+
+      <?php if($field->class == 'field-festival-image'): ?>
+            <a href="festival/<?php print arg(1); ?>/programme">Festival programme</a>
+            </div>
+      <?php endif; ?>
+      <?php if($field->class == 'body'): ?>
+            </div>
+      <?php endif; ?>
+    <?php endforeach; ?>
+</div>
