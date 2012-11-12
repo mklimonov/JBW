@@ -1,6 +1,7 @@
-name = jbw_view_news
+name = jbw2_view_news
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = views
 features[ctools][] = views:views_default:3.0

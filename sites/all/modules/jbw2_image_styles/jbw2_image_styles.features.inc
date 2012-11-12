@@ -46,8 +46,8 @@ function jbw2_image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '950',
-          'height' => '200',
+          'width' => '930',
+          'height' => '235',
         ),
         'weight' => '1',
       ),
