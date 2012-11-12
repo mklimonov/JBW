@@ -157,6 +157,8 @@ print theme(\'facebookshare\', array(\'url\' => $url));
 
   /* Display: Festivals all */
   $handler = $view->new_display('page', 'Festivals all', 'page_1');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -186,7 +188,99 @@ print theme(\'facebookshare\', array(\'url\' => $url));
     'image_style' => 'festival_homepage',
     'image_link' => 'content',
   );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'festival' => 'festival',
+  );
+  /* Filter criterion: Content: festival date - end date (field_festival_date:value2) */
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['id'] = 'field_festival_date_value2_1';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['table'] = 'field_data_field_festival_date';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['field'] = 'field_festival_date_value2';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['operator_id'] = 'field_festival_date_value2_1_op';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['label'] = 'month';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['operator'] = 'field_festival_date_value2_1_op';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['identifier'] = 'field_festival_date_value2_1';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['required'] = TRUE;
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_festival_date_value2_1']['year_range'] = '-0:+3';
   $handler->display->display_options['path'] = 'festivals';
+
+  /* Display: Festival node page */
+  $handler = $view->new_display('block', 'Festival node page', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Festival';
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: festival image */
+  $handler->display->display_options['fields']['field_festival_image']['id'] = 'field_festival_image';
+  $handler->display->display_options['fields']['field_festival_image']['table'] = 'field_data_field_festival_image';
+  $handler->display->display_options['fields']['field_festival_image']['field'] = 'field_festival_image';
+  $handler->display->display_options['fields']['field_festival_image']['label'] = '';
+  $handler->display->display_options['fields']['field_festival_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_festival_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_festival_image']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: festival date */
+  $handler->display->display_options['fields']['field_festival_date']['id'] = 'field_festival_date';
+  $handler->display->display_options['fields']['field_festival_date']['table'] = 'field_data_field_festival_date';
+  $handler->display->display_options['fields']['field_festival_date']['field'] = 'field_festival_date';
+  $handler->display->display_options['fields']['field_festival_date']['label'] = '';
+  $handler->display->display_options['fields']['field_festival_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_festival_date']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['nid']['breadcrumb_enable'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['breadcrumb'] = '%1';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $export['festivals'] = $view;
 
   return $export;
