@@ -2567,16 +2567,14 @@ function jbw2_view_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-slider_image-body'.
-  $fields['node-slider_image-body'] = array(
+  // Exported field: 'node-slider_image-field_body'.
+  $fields['node-slider_image-field_body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
+      'entity_types' => array(),
+      'field_name' => 'field_body',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -2603,39 +2601,37 @@ function jbw2_view_ct_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => 1,
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'body',
+      'field_name' => 'field_body',
       'label' => 'Body',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
-        'display_summary' => TRUE,
-        'text_processing' => 1,
+        'display_summary' => 0,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => 20,
+          'rows' => '20',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-4',
+        'weight' => '-3',
       ),
     ),
   );
@@ -2683,7 +2679,7 @@ function jbw2_view_ct_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 1,
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2715,7 +2711,7 @@ function jbw2_view_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '-3',
+        'weight' => '-4',
       ),
     ),
   );

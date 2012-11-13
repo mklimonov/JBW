@@ -25,7 +25,6 @@
  */
 ?>
 <?php foreach ($fields as $id => $field): ?>
-<?php print $field->class; ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>

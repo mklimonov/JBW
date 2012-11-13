@@ -1,0 +1,22 @@
+<?php
+/*
+ * implementation of hook_menu()
+ */
+
+function menu_festival_link_menu(){
+    $items['asd'] = array(
+        'title' => 'Festival',
+        'page callback' => 'redirect_user',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+        'menu_name' => 'main-menu',
+    );
+    return $items;
+}
+
+function redirect_user(){
+    /*$nodes = node_load_multiple(array(), array('type' => 'festival'));
+    $nid = $nodes[0]->$nid;*/
+    $nid = 3;
+    drupal_goto('node/'. $nid);
+}
