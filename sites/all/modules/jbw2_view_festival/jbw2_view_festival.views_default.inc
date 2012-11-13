@@ -425,8 +425,8 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['fields']['field_festival_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_festival_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_festival_image']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => 'content',
+    'image_style' => 'festival_node',
+    'image_link' => '',
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
