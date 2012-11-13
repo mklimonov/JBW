@@ -1,7 +1,0 @@
-name = jbw2_block_find_us_on_fb
-core = 7.x
-package = Features
-dependencies[] = fe_block
-features[fe_block_boxes][] = find_us_fb
-features[fe_block_settings][] = block-find_us_fb
-features[features_api][] = api:1

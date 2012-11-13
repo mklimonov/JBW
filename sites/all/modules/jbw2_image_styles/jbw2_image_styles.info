@@ -1,8 +1,0 @@
-name = jbw2_image_styles
-core = 7.x
-package = Features
-php = 5.2.4
-dependencies[] = image
-features[features_api][] = api:1
-features[image][] = festival_homepage
-features[image][] = slider_image

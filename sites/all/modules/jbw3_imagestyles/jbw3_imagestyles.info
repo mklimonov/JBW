@@ -1,0 +1,9 @@
+name = jbw3_imagestyles
+core = 7.x
+package = Features
+dependencies[] = image
+features[features_api][] = api:1
+features[image][] = event_image_list
+features[image][] = festival_homepage
+features[image][] = festival_node
+features[image][] = slider_image

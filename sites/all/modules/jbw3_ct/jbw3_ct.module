@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw3_ct feature.
+ */
+
+include_once 'jbw3_ct.features.inc';

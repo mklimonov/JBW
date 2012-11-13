@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the jbw2_image_styles feature.
- */
-
-include_once 'jbw2_image_styles.features.inc';
