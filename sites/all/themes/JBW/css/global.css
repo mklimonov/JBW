@@ -1,5 +1,9 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+body{
+    /* background: url(../images/bg_2k.jpg) no-repeat;*/
+}
+
 #page{
     margin: 0 auto;
     padding: 0;
@@ -8,7 +12,13 @@
     background: url(../images/bg.png) no-repeat;
     /*position: relative;*/
 }
+
 /*header*/
+#section-header{
+    width: 1020px;
+    height: 430px;
+}
+
 #zone-branding-wrapper{
     width: 960px;
     height: 113px;
@@ -59,7 +69,6 @@
     z-index: 10;
 }
 
-
 /*zone menu*/
 #zone-menu-wrapper{
     width: 960px;
@@ -82,61 +91,6 @@
     width: 960px;
     height: 32px;
 }
-/*
-.block-nice-menus{
-    width: 800px;
-}
-
-ul.nice-menu,
-ul.nice-menu ul{
-    margin: 0;
-    padding: 0;
-    list-style: 0;
-}
-
-ul.nice-menu li{
-    float: left;
-    list-style: none;
-    position: relative;
-    background-color: inherit;/*white/
-    border: none;
-}
-
-ul.nice-menu li a{
-    display: block;
-    /*height: 21px;/
-    margin: 3px 10px;
-    /*padding-left: 10px;
-    padding-right: 10px;/
-    /*margin: 5px 10px;/
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
-
-ul.nice-menu ul li{
-    background-color: white;/*white/
-    /*height: 21px;/
-    /*padding: 5px 10px;/
-}
-
-ul.nice-menu ul a{
-    display: block;
-    height: auto;
-    /*height: 21px;/
-    /*margin: 5px 10px;/
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
-
-ul.nice-menu ul li:hover{
-    background-color: gray;
-}
-ul.nice-menu ul a:hover{
-    text-decoration:underline;
-}
-*/
 
 /*Share component*/
 #block-sharethis-sharethis-block{
@@ -154,7 +108,39 @@ ul.nice-menu ul a:hover{
     z-index: 20;
 }
 
-/*section-footer*/
+
+/*section content*/
+#section-content{
+    position: relative;
+    top: 20px;
+    width: 1020px;
+    height: 1325px; 
+}
+
+#zone-content-wrapper{
+    margin: 0;
+    padding: 0;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;  
+    /*top: 20px;*/
+}
+
+#zone-content{
+    margin: 0;
+    padding: 0;
+    width: 960px;
+}
+
+
+/*section footer*/
+#section-footer{
+    /*top: 30px;*/
+    width: 1020px;
+    height: 42px; 
+}
+
 #zone-footer-wrapper{
     width: 960px;
     height: 42px;
@@ -178,6 +164,7 @@ ul.nice-menu ul a:hover{
     width: 960px;
     height: 42px;
 }
+
 #block-system-powered-by{
     float: left;
     margin: 10px 10px;

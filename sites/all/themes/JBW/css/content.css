@@ -1,58 +1,40 @@
-#zone-content-wrapper{
-    margin: 0;
-    width: 960px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;  
-    top: 20px;
-}
-
-#zone-content{
-    margin: 0;
-    padding: 0;
-    width: 960px;
-}
-
 #region-content{
     margin: 0;
     padding: 0;
-    /*width: 565px;*/
     width: 550px;
     
 }
 
 #region-content{
-    /*width: 565px;*/
+    margin-top: -20px;
+    /*margin: 0;*/
+    padding: 0;
     width: 550px;
 }
 
-#region-sidebar{
-    /*width: 370px;*/
-    /*width: 550px;*/
-}
-
 /*left part of content*/
-.page-home #block-system-main .pane-festivals .fest_row_homepage{
-    margin-top: 10px;
-    /*float: left;*/
+.page-home .fest_row_homepage{ /*#block-system-main .pane-festivals*/
     width: 550px;
     height: 310px;
     position: relative;
     background: url(../images/content/region-content.png) no-repeat 0 0;
-    /*margin-top: 20px;*/
+    margin-bottom: 10px;
 }
 
 /*content image*/
-.views-field-field-festival-image{
+.page-home .views-field-field-image-homepage-event,
+.page-home .views-field-field-image-homepage-fest,
+.page-home .views-field-field-image-homepage-news,
+.page-home .views-field-field-image-homepage{
     float: right;
     z-index: 1;
 }
 
-.views-field-field-festival-image img{
+.page-home .views-field-field-image-homepage-event img,
+.page-home .views-field-field-image-homepage-fest img,
+.page-home .views-field-field-image-homepage-news img,
+.page-home .views-field-field-image-homepage img{
     /*position: absolute;*/
-    /*padding: 15px 3px 15px 15px; */
-    /*margin: 15px 3px 15px 15px;*/
-    /*margin: 10px 30px 15px 15px; */
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 0px;
@@ -61,24 +43,25 @@
 }
 
 /*title of text on slider*/
-.festival-left-part .views-field-title{
+.page-home .festival-left-part .views-field-title{
     display: none;
 }
 
 /*text slider*/
-.festival-left-part .views-field-field-description p{
+.page-home .festival-left-part  p{
     text-align: left;
     width: 140px;
     height: 245px;
     position: absolute;
     /*padding: 15px 3px 15px 15px; */
     /*margin: 15px 3px 15px 15px;*/
+    
     margin: 10px 30px 15px 15px; 
     padding: 10px;
     z-index: 10;
 }
 
-.fest_row_homepage .sharethis-wrapper{
+.page-home .fest_row_homepage .sharethis-wrapper{
     position: absolute;
     float: right;
     /*width: 110px;*/
@@ -87,15 +70,15 @@
     bottom: 8px;
 }
 
-.festival-color1 .views-field-field-description p{ /*или задать размеры и позицию у .views-field-field-description*/
+.page-home .festival-color1 .views-field-field-description p{ /*или задать размеры и позицию у .views-field-field-description*/
     background-color: greenyellow;
 }
 
-.festival-color2 .views-field-field-description p{
+.page-home .festival-color2 .views-field-field-description p{
     background-color: orange;
 }
 
-.festival-color3 .views-field-field-description p{
+.page-home .festival-color3 .views-field-field-description p{
     background-color: purple;
 }
 

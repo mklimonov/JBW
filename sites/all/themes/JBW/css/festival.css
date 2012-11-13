@@ -5,57 +5,53 @@
     background: url(../images/festival_bg.png) no-repeat center 0;
 }
 
-.pane-festivals h2{
+.node-type-festival .pane-festivals h2{
     display: none;
 }
 
-#region-content h1{
+.node-type-festival #region-content h1{
     display: none;
 }
 
 .node-type-festival .festival_node_left_part{
-    width: 140px;
+    width: 150px;
     height: 440px;
     position: absolute;
-    /*padding: 10px 30px 15px 15px; */
-    /*z-index: 10;*/
 }
 
+/*festivale image*/
 .node-type-festival #festival-content .views-field-field-festival-image
 {
     float: left;
-    /*margin: 10px;*/
 }
 
 .node-type-festival #festival-content .views-field-field-festival-image img{
-    margin: 50px 0 10px 20px;
-    /*margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-bottom: 30px;
-    z-index: 1;*/
+    margin: 45px 0 10px 15px;
 }
 
 .node-type-festival .festival_node_right_part{
-    width: 410px;
+    width: 400px;
     height: 440px;
     float: right;
-    /*padding: 10px 30px 15px 15px;*/
 }
 
-.node-type-festival .festival_node_right_part p{
+/*festivale text*/
+.node-type-festival .festival_node_right_part .views-field-body{/*p*/
     float: right;
-    margin: 10px 30px 15px 15px;
+    margin: 20px 20px 15px 15px;
+    text-align: left;
 }
 
+/*festivale title*/
 .node-type-festival .views-field-title{
-    margin: 50px 0 10px 20px;
+    margin: 45px 20px 5px 15px;
 }
 
+/*festevale date*/
 .node-type-festival .views-field-field-festival-date{
-    margin: 0 10px 5px 20px;
+    margin: 0 20px 5px 15px;
 }
 
 .node-type-festival .festival_node_left_part a{
-    margin-left: 10px;
+    margin-left: 15px;
 }

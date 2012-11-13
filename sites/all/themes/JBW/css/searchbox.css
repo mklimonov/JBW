@@ -17,7 +17,6 @@
     /*border-color: #c4d9df #a4c3ca #83afb7;*/
     width: 150px;
     height: 13px;
-    /*margin: 100px auto 50px;*/
     overflow: hidden; /* Clear floats */
 }
 
@@ -35,6 +34,7 @@
     font: normal 10px 'trebuchet MS', arial, helvetica;
     background: url(../images/header/searchbox.png) no-repeat 0 0;
     text-indent: 5px;
+   /* line-height: 11px; */
 
     -moz-border-radius: 0;
      border-radius: 0;
@@ -68,8 +68,15 @@
     padding: 0;
     border: 0;  /* Small centering fix for Firefox */
 }
-
-
+/*
+#search-block-form .form-item-search-block-form input::-webkit-input-placeholder,
+#search-block-form .form-item-search-block-form input:-moz-placeholder,
+#search-block-form .form-item-search-block-form input:-ms-input-placeholder
+{
+   /*color: #999;/
+   font-weight: normal;
+   font-style: italic;
+}*/
 
 
 

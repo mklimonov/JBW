@@ -5,12 +5,22 @@
     margin-left: 15px;
 }
 
-.overview .block{
+#scrollbarY  section{ /*.overview .block*/
     width: 377px;
     /*margin-top: 10px;*/
-    margin-bottom: 10px;
+    position: relative;
     background: url(../images/content/region-sidebar.png) no-repeat 0 0;
+    margin-bottom: 10px;
 }
+
+#scrollbarY  iframe{
+        width: 377px;
+    /*margin-top: 10px;*/
+    position: relative;
+    background: white;
+    margin-bottom: 10px;
+}
+
 
 .overview section{
     padding: 10px;
