@@ -2,7 +2,8 @@
     width: 550px;
     height: 450px;
     position: relative;
-    background: url(../images/festival_bg.png) no-repeat center 0;
+    /*background: url(../images/festival_bg.png) no-repeat center 0;*/
+    background: white;
 }
 
 .node-type-festival .pane-festivals h2{

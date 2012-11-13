@@ -5,7 +5,8 @@
     padding-right: 30px;
     position: relative;
     top: 15px;
-    background: url(../images/slider/slider_bg.png) no-repeat center 0;
+    /*background: url(../images/slider/slider_bg.png) no-repeat center 0;*/
+    /*background: white;*/
 }
 
 #zone-header{
@@ -19,6 +20,7 @@
     margin: 0;
     width: 960px;
     height: 262px;
+    background: white;
 }
 
 /*.slider-left-part{
