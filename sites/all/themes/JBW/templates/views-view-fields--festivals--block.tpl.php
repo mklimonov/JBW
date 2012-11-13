@@ -22,14 +22,14 @@
  * - $row: The raw result object from the query, with all data it fetched.
  *
  * @ingroup views_templates
+ 
+ HOMEPAGE
+ 
+ 
  */
 ?>
 
 <?php foreach ($fields as $id => $field): ?>
-
-	<?php if($field->class == 'title'): ?>
-		<?php print "<div class = 'festival-left-part'>" ?>
-	<?php endif; ?>
 
   		<?php if (!empty($field->separator)): ?>
    			 <?php print $field->separator; ?>
@@ -38,10 +38,5 @@
     		<?php print $field->label_html; ?>
    		 <?php print $field->content; ?>
   		<?php print $field->wrapper_suffix; ?>
-
-
-	<?php if($field->class == 'field-description'): ?>
-		<?php print '</div>' ?>
-	<?php endif; ?>
 
 <?php endforeach; ?>

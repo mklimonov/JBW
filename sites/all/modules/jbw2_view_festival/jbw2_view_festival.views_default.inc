@@ -39,7 +39,7 @@ function jbw2_view_festival_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
@@ -121,39 +121,226 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler = $view->new_display('block', 'Festivals_homepage_block', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: description */
-  $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
-  $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
-  $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
-  $handler->display->display_options['fields']['field_description']['label'] = '';
-  $handler->display->display_options['fields']['field_description']['alter']['max_length'] = '200';
-  $handler->display->display_options['fields']['field_description']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_description']['element_label_colon'] = FALSE;
-  /* Field: Content: festival image */
-  $handler->display->display_options['fields']['field_festival_image']['id'] = 'field_festival_image';
-  $handler->display->display_options['fields']['field_festival_image']['table'] = 'field_data_field_festival_image';
-  $handler->display->display_options['fields']['field_festival_image']['field'] = 'field_festival_image';
-  $handler->display->display_options['fields']['field_festival_image']['label'] = '';
-  $handler->display->display_options['fields']['field_festival_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_festival_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_festival_image']['settings'] = array(
-    'image_style' => 'festival_homepage',
-    'image_link' => 'content',
-  );
   /* Field: Content: ShareThis Link */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
   $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['label'] = '';
   $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
+  /* Field: Content: description homepage */
+  $handler->display->display_options['fields']['field_description_homepage_fest']['id'] = 'field_description_homepage_fest';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['table'] = 'field_data_field_description_homepage_fest';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['field'] = 'field_description_homepage_fest';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['label'] = '';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description_homepage_fest']['element_wrapper_class'] = 'festival-left-part';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_description_homepage_fest']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: description homepage */
+  $handler->display->display_options['fields']['field_description_homepage_news']['id'] = 'field_description_homepage_news';
+  $handler->display->display_options['fields']['field_description_homepage_news']['table'] = 'field_data_field_description_homepage_news';
+  $handler->display->display_options['fields']['field_description_homepage_news']['field'] = 'field_description_homepage_news';
+  $handler->display->display_options['fields']['field_description_homepage_news']['label'] = '';
+  $handler->display->display_options['fields']['field_description_homepage_news']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description_homepage_news']['element_wrapper_class'] = 'festival-left-part';
+  $handler->display->display_options['fields']['field_description_homepage_news']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_description_homepage_news']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: description homepage */
+  $handler->display->display_options['fields']['field_description_homepage_blog']['id'] = 'field_description_homepage_blog';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['table'] = 'field_data_field_description_homepage_blog';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['field'] = 'field_description_homepage_blog';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['label'] = '';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description_homepage_blog']['element_wrapper_class'] = 'festival-left-part';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_description_homepage_blog']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: description homepage */
+  $handler->display->display_options['fields']['field_description_homepage_event']['id'] = 'field_description_homepage_event';
+  $handler->display->display_options['fields']['field_description_homepage_event']['table'] = 'field_data_field_description_homepage_event';
+  $handler->display->display_options['fields']['field_description_homepage_event']['field'] = 'field_description_homepage_event';
+  $handler->display->display_options['fields']['field_description_homepage_event']['label'] = '';
+  $handler->display->display_options['fields']['field_description_homepage_event']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_description_homepage_event']['element_wrapper_class'] = 'festival-left-part';
+  $handler->display->display_options['fields']['field_description_homepage_event']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_description_homepage_event']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: image homepage */
+  $handler->display->display_options['fields']['field_image_homepage_event']['id'] = 'field_image_homepage_event';
+  $handler->display->display_options['fields']['field_image_homepage_event']['table'] = 'field_data_field_image_homepage_event';
+  $handler->display->display_options['fields']['field_image_homepage_event']['field'] = 'field_image_homepage_event';
+  $handler->display->display_options['fields']['field_image_homepage_event']['label'] = '';
+  $handler->display->display_options['fields']['field_image_homepage_event']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_homepage_event']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_homepage_event']['settings'] = array(
+    'image_style' => 'festival_homepage',
+    'image_link' => 'content',
+  );
+  /* Field: Content: image homepage */
+  $handler->display->display_options['fields']['field_image_homepage_fest']['id'] = 'field_image_homepage_fest';
+  $handler->display->display_options['fields']['field_image_homepage_fest']['table'] = 'field_data_field_image_homepage_fest';
+  $handler->display->display_options['fields']['field_image_homepage_fest']['field'] = 'field_image_homepage_fest';
+  $handler->display->display_options['fields']['field_image_homepage_fest']['label'] = '';
+  $handler->display->display_options['fields']['field_image_homepage_fest']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_homepage_fest']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_homepage_fest']['settings'] = array(
+    'image_style' => 'festival_homepage',
+    'image_link' => 'content',
+  );
+  /* Field: Content: image homepage */
+  $handler->display->display_options['fields']['field_image_homepage_news']['id'] = 'field_image_homepage_news';
+  $handler->display->display_options['fields']['field_image_homepage_news']['table'] = 'field_data_field_image_homepage_news';
+  $handler->display->display_options['fields']['field_image_homepage_news']['field'] = 'field_image_homepage_news';
+  $handler->display->display_options['fields']['field_image_homepage_news']['label'] = '';
+  $handler->display->display_options['fields']['field_image_homepage_news']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_homepage_news']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_homepage_news']['settings'] = array(
+    'image_style' => 'festival_homepage',
+    'image_link' => 'content',
+  );
+  /* Field: Content: image homepage */
+  $handler->display->display_options['fields']['field_image_homepage']['id'] = 'field_image_homepage';
+  $handler->display->display_options['fields']['field_image_homepage']['table'] = 'field_data_field_image_homepage';
+  $handler->display->display_options['fields']['field_image_homepage']['field'] = 'field_image_homepage';
+  $handler->display->display_options['fields']['field_image_homepage']['label'] = '';
+  $handler->display->display_options['fields']['field_image_homepage']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_homepage']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_homepage']['settings'] = array(
+    'image_style' => 'festival_homepage',
+    'image_link' => 'content',
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['filter_groups']['operator'] = 'OR';
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'AND',
+    3 => 'AND',
+    4 => 'AND',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'blog' => 'blog',
+    'event' => 'event',
+    'festival' => 'festival',
+    'simplenews' => 'simplenews',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: description homepage (field_description_homepage_event) */
+  $handler->display->display_options['filters']['field_description_homepage_event_value']['id'] = 'field_description_homepage_event_value';
+  $handler->display->display_options['filters']['field_description_homepage_event_value']['table'] = 'field_data_field_description_homepage_event';
+  $handler->display->display_options['filters']['field_description_homepage_event_value']['field'] = 'field_description_homepage_event_value';
+  $handler->display->display_options['filters']['field_description_homepage_event_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_description_homepage_event_value']['group'] = 1;
+  /* Filter criterion: Content: image homepage (field_image_homepage_event:alt) */
+  $handler->display->display_options['filters']['field_image_homepage_event_alt']['id'] = 'field_image_homepage_event_alt';
+  $handler->display->display_options['filters']['field_image_homepage_event_alt']['table'] = 'field_data_field_image_homepage_event';
+  $handler->display->display_options['filters']['field_image_homepage_event_alt']['field'] = 'field_image_homepage_event_alt';
+  $handler->display->display_options['filters']['field_image_homepage_event_alt']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_image_homepage_event_alt']['group'] = 1;
+  /* Filter criterion: Content: image homepage (field_image_homepage:alt) */
+  $handler->display->display_options['filters']['field_image_homepage_alt']['id'] = 'field_image_homepage_alt';
+  $handler->display->display_options['filters']['field_image_homepage_alt']['table'] = 'field_data_field_image_homepage';
+  $handler->display->display_options['filters']['field_image_homepage_alt']['field'] = 'field_image_homepage_alt';
+  $handler->display->display_options['filters']['field_image_homepage_alt']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_image_homepage_alt']['group'] = 2;
+  /* Filter criterion: Content: description homepage (field_description_homepage_blog) */
+  $handler->display->display_options['filters']['field_description_homepage_blog_value']['id'] = 'field_description_homepage_blog_value';
+  $handler->display->display_options['filters']['field_description_homepage_blog_value']['table'] = 'field_data_field_description_homepage_blog';
+  $handler->display->display_options['filters']['field_description_homepage_blog_value']['field'] = 'field_description_homepage_blog_value';
+  $handler->display->display_options['filters']['field_description_homepage_blog_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_description_homepage_blog_value']['group'] = 2;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'node';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
+  $handler->display->display_options['filters']['status_1']['group'] = 2;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'blog' => 'blog',
+    'event' => 'event',
+    'festival' => 'festival',
+    'simplenews' => 'simplenews',
+  );
+  $handler->display->display_options['filters']['type_1']['group'] = 2;
+  /* Filter criterion: Content: image homepage (field_image_homepage_news:alt) */
+  $handler->display->display_options['filters']['field_image_homepage_news_alt']['id'] = 'field_image_homepage_news_alt';
+  $handler->display->display_options['filters']['field_image_homepage_news_alt']['table'] = 'field_data_field_image_homepage_news';
+  $handler->display->display_options['filters']['field_image_homepage_news_alt']['field'] = 'field_image_homepage_news_alt';
+  $handler->display->display_options['filters']['field_image_homepage_news_alt']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_image_homepage_news_alt']['group'] = 3;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_2']['id'] = 'status_2';
+  $handler->display->display_options['filters']['status_2']['table'] = 'node';
+  $handler->display->display_options['filters']['status_2']['field'] = 'status';
+  $handler->display->display_options['filters']['status_2']['value'] = '1';
+  $handler->display->display_options['filters']['status_2']['group'] = 3;
+  /* Filter criterion: Content: description homepage (field_description_homepage_news) */
+  $handler->display->display_options['filters']['field_description_homepage_news_value']['id'] = 'field_description_homepage_news_value';
+  $handler->display->display_options['filters']['field_description_homepage_news_value']['table'] = 'field_data_field_description_homepage_news';
+  $handler->display->display_options['filters']['field_description_homepage_news_value']['field'] = 'field_description_homepage_news_value';
+  $handler->display->display_options['filters']['field_description_homepage_news_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_description_homepage_news_value']['group'] = 3;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_2']['id'] = 'type_2';
+  $handler->display->display_options['filters']['type_2']['table'] = 'node';
+  $handler->display->display_options['filters']['type_2']['field'] = 'type';
+  $handler->display->display_options['filters']['type_2']['value'] = array(
+    'blog' => 'blog',
+    'event' => 'event',
+    'festival' => 'festival',
+    'simplenews' => 'simplenews',
+  );
+  $handler->display->display_options['filters']['type_2']['group'] = 3;
+  /* Filter criterion: Content: image homepage (field_image_homepage_fest:alt) */
+  $handler->display->display_options['filters']['field_image_homepage_fest_alt']['id'] = 'field_image_homepage_fest_alt';
+  $handler->display->display_options['filters']['field_image_homepage_fest_alt']['table'] = 'field_data_field_image_homepage_fest';
+  $handler->display->display_options['filters']['field_image_homepage_fest_alt']['field'] = 'field_image_homepage_fest_alt';
+  $handler->display->display_options['filters']['field_image_homepage_fest_alt']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_image_homepage_fest_alt']['group'] = 4;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_3']['id'] = 'type_3';
+  $handler->display->display_options['filters']['type_3']['table'] = 'node';
+  $handler->display->display_options['filters']['type_3']['field'] = 'type';
+  $handler->display->display_options['filters']['type_3']['value'] = array(
+    'blog' => 'blog',
+    'event' => 'event',
+    'festival' => 'festival',
+    'simplenews' => 'simplenews',
+  );
+  $handler->display->display_options['filters']['type_3']['group'] = 4;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_3']['id'] = 'status_3';
+  $handler->display->display_options['filters']['status_3']['table'] = 'node';
+  $handler->display->display_options['filters']['status_3']['field'] = 'status';
+  $handler->display->display_options['filters']['status_3']['value'] = '1';
+  $handler->display->display_options['filters']['status_3']['group'] = 4;
+  /* Filter criterion: Content: description homepage (field_description_homepage_fest) */
+  $handler->display->display_options['filters']['field_description_homepage_fest_value']['id'] = 'field_description_homepage_fest_value';
+  $handler->display->display_options['filters']['field_description_homepage_fest_value']['table'] = 'field_data_field_description_homepage_fest';
+  $handler->display->display_options['filters']['field_description_homepage_fest_value']['field'] = 'field_description_homepage_fest_value';
+  $handler->display->display_options['filters']['field_description_homepage_fest_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_description_homepage_fest_value']['group'] = 4;
 
   /* Display: Festivals all */
   $handler = $view->new_display('page', 'Festivals all', 'page_1');
@@ -169,7 +356,7 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: description */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
   $handler->display->display_options['fields']['field_description']['field'] = 'field_description';
