@@ -1,8 +1,10 @@
 #zone-header-wrapper{
     width: 960px;
     height: 262px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
     position: relative;
     top: 15px;
     /*background: url(../images/slider/slider_bg.png) no-repeat center 0;*/
@@ -26,7 +28,8 @@
 /*.slider-left-part{
     float: left;
     z-index: 10;
-}*/
+}
+*/
 
 .views-field-field-slider-image{
     float: right;

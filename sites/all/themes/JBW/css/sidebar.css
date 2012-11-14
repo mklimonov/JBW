@@ -15,10 +15,10 @@
 }
 
 #scrollbarY  iframe{
-        width: 377px;
+     width: 377px;
     /*margin-top: 10px;*/
     position: relative;
-    background: white;
+    background: white; /*#FFFFFF*/
     margin-bottom: 10px;
 }
 

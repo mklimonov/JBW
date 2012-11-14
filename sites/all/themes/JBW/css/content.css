@@ -6,7 +6,7 @@
 }
 
 #region-content{
-    margin-top: -20px;
+    /*margin-top: -20px;*/
     /*margin: 0;*/
     padding: 0;
     width: 550px;
@@ -46,6 +46,11 @@
 /*title of text on slider*/
 .page-home .festival-left-part .views-field-title{
     display: none;
+}
+
+#region-content #page-title{
+    /*display: none;*/
+    margin: 0;
 }
 
 /*text slider*/
