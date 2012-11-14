@@ -1,8 +1,13 @@
 name = jbw3_view_events
 core = 7.x
 package = Features
+php = 5.2.4
+dependencies[] = commerce_pdm
 dependencies[] = ctools
+dependencies[] = jbw3_ct
+dependencies[] = jbw3_imagestyles
 dependencies[] = views
+dependencies[] = views_ui
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
 features[views_view][] = events

@@ -4,7 +4,8 @@
  */
 
 function menu_festival_link_menu(){
-    $items['asd'] = array(
+    $nid = 3;
+    $items['node/'. $nid] = array(
         'title' => 'Festival',
         'page callback' => 'redirect_user',
         'access callback' => TRUE,
