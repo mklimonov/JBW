@@ -28,7 +28,8 @@
 #search-block-form .form-item-search-block-form input{
     margin: 0;
     padding: 0;
-    height: 13px;
+   /* height: 13px;*/
+   padding-bottom: 5px;
     width: 138px;
     border: none;
     font: normal 10px 'trebuchet MS', arial, helvetica;

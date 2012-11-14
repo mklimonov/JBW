@@ -9,7 +9,8 @@
     width: 377px;
     /*margin-top: 10px;*/
     position: relative;
-    background: url(../images/content/region-sidebar.png) no-repeat 0 0;
+    /*background: url(../images/content/region-sidebar.png) no-repeat 0 0;*/
+    background: white;
     margin-bottom: 10px;
 }
 
