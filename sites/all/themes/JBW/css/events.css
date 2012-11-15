@@ -60,23 +60,23 @@
     overflow: hidden;
 }
 
-.page-events .views-field-title{
+.page-events .events-body .views-field-title{
     margin-left: 5px;
     font-size: 10px;
     margin-bottom: 3px;
 }
 
-.page-events .views-field-title a{
+.page-events .events-body .views-field-title a{
     text-decoration: none;
     color: #fff;
 }
 
-.page-events .views-field-title a:hover{
+.page-events .events-body .views-field-title a:hover{
     text-decoration: none;
     color: #fff;
 }
 
-.page-events .views-field-body{
+.page-events .events-body .views-field-body{
     margin-left: 5px;
     font-size: 8px;
     color: #fff;

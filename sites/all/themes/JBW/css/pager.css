@@ -63,6 +63,7 @@
     text-decoration: none;
     color: gray;
     margin-right: 5px;
+    background: none;
 }
 
 #block-system-main ul.pager .pager-current,
@@ -73,6 +74,7 @@
     float: left;
     color: black;
     padding: 0;
+    background: none;
 }
 
 #block-system-main ul.pager a:link,
@@ -86,6 +88,7 @@
 
 #block-system-main ul.pager a:hover{
     color: black;
+    background: none;
 }
 
 #block-system-main ul.pager .pager-first{
@@ -93,4 +96,9 @@
     width: 12px;
     height: 12px;
     float: left;
+}
+
+#block-system-main .pager li.pager-last, 
+#block-system-main .pager li.pager-next.last{
+    position: static;
 }

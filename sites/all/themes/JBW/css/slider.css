@@ -45,12 +45,12 @@
 }
 
 /*title of text on slider*/
-.slider-left-part .views-field-title{
+#block-views-slider-block .view-slider .slider-left-part .views-field-title{
     display: none;
 }
 
 /*text slider*/
-.slider-left-part .views-field-body{/*p*/
+#block-views-slider-block .view-slider .slider-left-part .views-field-body{/*p*/
     text-align: left;
     width: 296px;
     height: 210px;
