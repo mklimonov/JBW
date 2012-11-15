@@ -12,6 +12,7 @@ stylesheets[all][] = css/content.css
 stylesheets[all][] = css/sidebar.css
 stylesheets[all][] = css/festival.css
 stylesheets[all][] = css/events.css
+stylesheets[all][] = css/pager.css
 
 ; REQUIRED CORE REGIONS
 

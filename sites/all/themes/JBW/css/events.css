@@ -1,0 +1,90 @@
+.page-events #block-system-main .view-events{
+    background: #FFFFFF;
+    width: 550px;
+}
+
+.page-events #block-system-main .view-events tr:hover td,
+.page-events #block-system-main .view-events tr.even:hover td.active,
+.page-events #block-system-main .view-events tr.odd:hover td.active {
+  background: none;
+}
+
+.page-events #block-system-main .view-events table{
+    border: 0 none;
+}
+
+.page-events .views-exposed-form-events-page input{
+    margin-left: 10px;
+}
+
+.page-events .views-exposed-form-events-page{
+    border-width: 0px;
+    border-style: none;
+}
+
+.page-events #block-system-main .views-view-grid{
+    margin: 10px auto;
+    width: 430px;
+    padding: 0;
+}
+
+.page-events #block-system-main .views-view-grid tr{
+    margin: 0;
+    padding: 0;
+}
+
+.page-events #block-system-main .views-view-grid td{
+    margin: 0;
+    padding: 0;
+    vertical-align: 0;
+}
+
+.page-events #block-system-main .views-view-grid .views-field-field-event-image{
+    float: left;
+}
+
+.page-events #block-system-main .views-view-grid .views-field-field-event-image img{
+    margin: 5px 5px 5px 15px;
+}
+
+/*.page-events .views-field-title,
+.page-events .views-field-body{*/
+.page-events .events-body{
+    margin: 105px 5px 5px 15px;
+    background: #231f20;
+    width: 135px;
+    height: 50px;
+    position: absolute;   
+    text-align: left;
+    font: normal 'trebuchet MS', tahoma, arial, helvetica;
+    overflow: hidden;
+}
+
+.page-events .views-field-title{
+    margin-left: 5px;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.page-events .views-field-title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-events .views-field-title a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-events .views-field-body{
+    margin-left: 5px;
+    font-size: 8px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.closed-ul-filter-date{
+  visible: none;
+}
+
+
