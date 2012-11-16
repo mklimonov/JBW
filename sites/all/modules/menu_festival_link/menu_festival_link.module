@@ -21,3 +21,154 @@ function redirect_user(){
     $nid = 3;
     drupal_goto('node/'. $nid);
 }
+
+function menu_festival_link_commerce_cart_order_is_cart($order, &$is_cart) {
+    $is_cart = FALSE;
+    return FALSE;
+}
+
+/*function menu_festival_link_commerce_checkout_page_info_alter(&$checkout_pages) {
+  $checkout_pages['review']['weight'] = 15;
+  ob_start();
+  $handle = fopen("a.txt", 'w');
+  print_r($checkout_pages);
+  fwrite($handle, ob_get_contents());
+  ob_end_clean();
+}*/
+
+/**
+* Implements hook_block_info().
+*/
+function menu_festival_link_block_info() {
+    $blocks['date_filter'] = array(
+        'info' => t('Filter by date'),
+        'status' => TRUE,
+        'region' => 'content',
+        'weight' => 0,
+        'visibility' => 1,
+    );
+    return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+
+function menu_festival_link_block_view($delta = '') {
+    switch ($delta) {
+        case 'date_filter':
+//            $block['subject'] = t('Date filter');
+            $block['content'] = menu_festival_link_block_contents($delta);
+            return $block;
+            break;
+    }
+}
+
+/**
+* A module-defined block content function.
+*/
+function menu_festival_link_block_contents($delta) {
+    switch ($delta) {
+        case 'date_filter':
+            $all = '';
+            $all .= '<div class = "type-filter-events-all">';
+            $href_fest = '';
+            $href_nonfest = '';
+            if(preg_match('/\?/', $_SERVER['REQUEST_URI'])){
+                if(isset($_GET['type'])){
+                    $href_fest .= preg_replace('/(type=[\w\-]{3,4,8})(&|$)/', 'type=fest&', $_SERVER['REQUEST_URI']);
+                    $href_nonfest .= preg_replace('/(type=[\w\-]{3,4,8})(&|$)/', 'type=non-fest&', $_SERVER['REQUEST_URI']);
+                }else{
+                    $href_fest .= $_SERVER['REQUEST_URI']. '&type=fest';
+                    $href_nonfest .= $_SERVER['REQUEST_URI']. '&type=non-fest';
+                }
+            }else{
+                $href_fest .= $_SERVER['REQUEST_URI']. '?type=fest';
+                $href_nonfest .= $_SERVER['REQUEST_URI']. '?type=non-fest';
+            }
+            $href_all = preg_replace('/(type=[\w\-]{4,8})(&|$)/', 'type=all&', $_SERVER['REQUEST_URI']);
+            $all .= '<div class = "type-filter-button">All</div><a href="'. $href_all. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a>';
+            if(isset($_GET['type'])){
+                $all .= '<div id="filter-type-ul" class="opened-ul-filter-type"><ul>';
+            }else{
+                $all .= '<div id="filter-type-ul" class="closed-ul-filter-type"><ul>';
+            }
+            $addition['href_fest'] = '';
+            $addition['href_nonfest'] = '';
+            if(isset($_GET['type'])){
+                if($_GET['type'] == 'fest'){
+                    $addition['href_fest'] = '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
+                }else{
+                    $addition['href_nonfest'] = '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
+                }
+            }
+            $all .= '<li><a href="'. $href_fest. '">festival</a>'. $addition['href_fest']. '</li>';
+            $all .= '<li><a href="'. $href_nonfest. '">regular</a>'. $addition['href_nonfest']. '</li>';
+            $all .= '</ul></div></div>';
+            //drupal_add_js();
+            $step = 24*60*60;
+            $href_date = preg_replace('/field_event_date_value2%5Bvalue%5D%5Bdate%5D=[\w\-]{10}(&|$)/', '', $_SERVER['REQUEST_URI']);
+            if(isset($_GET['field_event_date_value2']['value']['date'])){
+                $all .= '<div class = "date-filter-events-all"><div class="date-filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-date-ul" class="opened-ul-filter-date"><ul>';
+            }else{
+                $all .= '<div class = "date-filter-events-all"><div class="date-filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-date-ul" class="closed-ul-filter-date"><ul>';
+            }
+            for($i = 0; $i < 6; $i++){
+                $timer = $i == 0 ? date('Y-m-d') : date('Y-m-01', strtotime('+'. $i. ' month'));
+                $date_explode = explode('-', $timer);
+                $monthName = date("F", mktime(0, 0, 0, $date_explode[1], 10));
+                if(preg_match('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $_SERVER['REQUEST_URI'])){
+                    $all .= '<li><a href="'. preg_replace('/[0-9]{4}-[0-9]{2}-[0-9]{2}/', $timer, $_SERVER['REQUEST_URI']). '">'. $monthName. '</a>';
+                }else if(preg_match('/\?/', $_SERVER['REQUEST_URI'])){
+                    $all .= '<li><a href="'. $_SERVER['REQUEST_URI']. '&field_event_date_value2%5Bvalue%5D%5Bdate%5D='. $timer. '">'. $monthName. '</a>';
+                }else{
+                    $all .= '<li><a href="'. $_SERVER['REQUEST_URI']. '?field_event_date_value2%5Bvalue%5D%5Bdate%5D='. $timer. '">'. $monthName. '</a>';
+                }
+                if(isset($_GET['field_event_date_value2']['value']['date'])){
+                    if($_GET['field_event_date_value2']['value']['date'] == $timer){
+                        $all .= '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
+                    }
+                }
+                $all .= '</li>'; 
+            }
+            $all .= '</ul></div></div>';
+            
+            $vocabularys = taxonomy_get_vocabularies();
+            foreach($vocabularys as $tid => $vocabulary){
+                if($vocabulary->name == 'genre'){
+                    $tags = taxonomy_get_tree($vocabulary->vid);
+                    $href_all = preg_replace('/(tid=[\w+\-]*)(&|$)/', '', $_SERVER['REQUEST_URI']);
+                    $all .= '<div class = "tax-filter-events-all"><div class = "tax-filter-button">Genre</div><a href="'. $href_all. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a>';
+                    if(isset($_GET['tid'])){
+                        $all .= '<div id="filter-tax-ul" class="opened-ul-filter-tax"><ul>';
+                    }else{
+                        $all .= '<div id="filter-tax-ul" class="closed-ul-filter-tax"><ul>';
+                    }
+                    foreach($tags as $tag){
+                        $term = str_replace(' ', '+', $tag->name);
+                        if(preg_match('/tid=/', $_SERVER['REQUEST_URI'])){
+                            $all .= '<li><a href="'. preg_replace('/(tid=[\w+\-]*)(&|$)/', ''. $term. '&', $_SERVER['REQUEST_URI']). '">'. $tag->name. '</a>';
+                        }else if(preg_match('/\?/', $_SERVER['REQUEST_URI'])){
+                            $all .= '<li><a href="'. $_SERVER['REQUEST_URI']. '&tid='. $term. '">'. $tag->name. '</a>';
+                        }else{
+                            $all .= '<li><a href="'. $_SERVER['REQUEST_URI']. '?tid='. $term. '">'. $tag->name. '</a>';
+                        }
+                        if(isset($_GET['tid'])){
+                            if($_GET['tid'] == $tag->name){
+                                $all .= '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
+                            }
+                        }
+                        $all .= '</li>';
+                    }
+                    $all .= '</ul></div></div>';
+                }
+            }
+            return $all;
+            /*$view = views_get_view('events');
+            $view->set_display('page');
+            $view->exposed_input['field_event_date_value2']['value']['date'] = '2014-01-01';
+            $view->execute();
+            return $view->preview();*/
+            break;
+    }
+}

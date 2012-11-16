@@ -1,0 +1,35 @@
+Array
+(
+    [0] => stdClass Object
+        (
+            [tid] => 2
+            [vid] => 3
+            [name] => genre 1
+            [description] => 
+            [format] => filtered_html
+            [weight] => 0
+            [depth] => 0
+            [parents] => Array
+                (
+                    [0] => 0
+                )
+
+        )
+
+    [1] => stdClass Object
+        (
+            [tid] => 3
+            [vid] => 3
+            [name] => genre 2
+            [description] => 
+            [format] => filtered_html
+            [weight] => 0
+            [depth] => 0
+            [parents] => Array
+                (
+                    [0] => 0
+                )
+
+        )
+
+)

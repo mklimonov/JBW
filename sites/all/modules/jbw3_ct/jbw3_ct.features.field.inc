@@ -162,6 +162,12 @@ function jbw3_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'commerce_product',
       'field_name' => 'field_ref_event_ticket',
@@ -1190,7 +1196,7 @@ function jbw3_ct_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_genre',
       'label' => 'genre',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw3_page_events_all feature.
+ */
+
+include_once 'jbw3_page_events_all.features.inc';

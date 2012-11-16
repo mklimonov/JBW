@@ -3,3 +3,4 @@ description = Makes menu link to last festival
 package = JBW
 core = 7.x
 files[] = menu_festival_link.module
+scripts[] = date_calendar.js

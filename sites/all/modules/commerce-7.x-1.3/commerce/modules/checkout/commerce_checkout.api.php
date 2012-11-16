@@ -105,9 +105,9 @@ function hook_commerce_checkout_complete($order) {
  *   buttons for continuing and going back in the checkout process; defaults to
  *   TRUE
  * - back_value: the translatable value of the submit button used for going back
- *   in the checkout process; defaults to ‘Back’
+ *   in the checkout process; defaults to �?Back’
  * - submit_value: the translatable value of the submit button used for going
- *   forward in the checkout process; defaults to ‘Continue’
+ *   forward in the checkout process; defaults to �?Continue’
  * - prev_page: the page_id of the previous page in the checkout process; should
  *   not be set by the hook but will be populated automatically when the page is
  *   loaded
@@ -193,7 +193,7 @@ function hook_commerce_checkout_page_info_alter(&$checkout_pages) {
  * - name: the translatable name of the pane, used in administrative displays;
  *   if not specified, defaults to the title
  * - page: the page_id of the checkout page the pane should appear on by
- *   default; defaults to ‘checkout’
+ *   default; defaults to �?checkout’
  * - locked: boolean indicating that the pane cannot be moved from the
  *   specified checkout page.
  * - collapsible: boolean indicating whether or not the checkout pane’s fieldset
