@@ -38,7 +38,7 @@
 
 /*slider image*/
 .views-field-field-slider-image img{
-    position: absolute;
+    /*position: absolute;*/
     /*padding: 15px 3px 15px 15px; */
     margin: 15px 3px 15px 15px;
     z-index: 1;

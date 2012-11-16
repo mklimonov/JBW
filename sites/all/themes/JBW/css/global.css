@@ -27,7 +27,7 @@ section {
         }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 2560px) and (device-aspect-ratio: 16/9){
+@media screen and (min-width: 1280px) and (max-width: 2560px) /*and (device-aspect-ratio: 16/9)*/{
         body{
             background-attachment: fixed;
             background-clip: border-box;

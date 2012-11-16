@@ -33,7 +33,7 @@
     width: 138px;
     border: none;
     font: normal 10px 'trebuchet MS', arial, helvetica;
-    background: url(../images/header/searchbox.png) no-repeat 0 0;
+    background: url(../images/header/searchbox.png) no-repeat center 0;
     text-indent: 5px;
    /* line-height: 11px; */
 
@@ -46,7 +46,7 @@
 
 /*#edit-actions .form-submit{*/
 #search-block-form .form-actions input{
-    background: url(../images/header/searchbutton.png) no-repeat 0 0;
+    background: url(../images/header/searchbutton.png) no-repeat center 0;
     
     -moz-border-radius: 0;
     border-radius: 0;
