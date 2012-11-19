@@ -15,7 +15,7 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 <div id="background-image">
-    <!--<img src="<?php print base_path() .path_to_theme() .'/images/bg/bg.jpg';?>" alt="" width="800" height="600" />-->
+    <img src="<?php print base_path() .path_to_theme() .'/images/bg/bg.jpg';?>" alt="" width="800" height="600" />
 </div>
 </body>
 </html>

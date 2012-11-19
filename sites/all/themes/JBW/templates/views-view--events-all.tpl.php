@@ -46,7 +46,9 @@
   <?php endif; ?>
 
   <?php if ($pager): ?>
-    <?php print $pager; ?>
+    <div id="pager-up">
+        <?php print $pager; ?>
+     </div>
   <?php endif; ?>
     
   <?php if ($attachment_before): ?>
@@ -66,7 +68,9 @@
   <?php endif; ?>
 
   <?php if ($pager): ?>
-    <?php print $pager; ?>
+      <div id="pager-down">
+        <?php print $pager; ?>
+     </div>
   <?php endif; ?>
 
   <?php if ($attachment_after): ?>

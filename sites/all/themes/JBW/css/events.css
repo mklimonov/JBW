@@ -1,31 +1,48 @@
-.page-events #block-system-main .view-events{
+.page-events .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
     background: #FFFFFF;
-    width: 550px;
+    /*width: 550px;*/
 }
 
-.page-events #block-system-main .view-events tr:hover td,
-.page-events #block-system-main .view-events tr.even:hover td.active,
-.page-events #block-system-main .view-events tr.odd:hover td.active {
+.page-events #block-system-main .view-content{
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 430px;
+    height: 480px;
+    padding: 0;
+    /*position: relative;
+    top: 50px;
+    left: 80px;*/
+}
+
+.page-events #block-system-main .view-content /*.view-events*/ tr:hover td,
+.page-events #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
+.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active {
   background: none;
 }
 
-.page-events #block-system-main .view-events table{
+.page-events #block-system-main .view-content table{
     border: 0 none;
 }
 
-.page-events .views-exposed-form-events-page input{
+/*.page-events .views-exposed-form-events-page input{
     margin-left: 10px;
 }
 
 .page-events .views-exposed-form-events-page{
     border-width: 0px;
     border-style: none;
-}
+}*/
 
 .page-events #block-system-main .views-view-grid{
-    margin: 10px auto;
-    width: 430px;
+    /*margin: 10px auto;*/
+    /*width: 430px;
+    height: 480px;
     padding: 0;
+    position: relative;
+    top: 50px;
+    left: 80px;*/
 }
 
 .page-events #block-system-main .views-view-grid tr{
@@ -44,20 +61,32 @@
 }
 
 .page-events #block-system-main .views-view-grid .views-field-field-event-image img{
-    margin: 5px 5px 5px 15px;
+    /*margin: 5px 5px 5px 15px;*/
+    margin: 5px 0px 0px 15px;
 }
 
 /*.page-events .views-field-title,
 .page-events .views-field-body{*/
 .page-events .events-body{
-    margin: 105px 5px 5px 15px;
+    /*margin: 105px 5px 5px 15px;*/
+    margin: 105px 0 0 15px;
     background: #231f20;
     width: 135px;
     height: 50px;
-    position: absolute;   
+    position: absolute; 
     text-align: left;
     font: normal 'trebuchet MS', tahoma, arial, helvetica;
     overflow: hidden;
+}
+
+.page-events .events-body p,
+.page-events .events-body a{
+    margin-bottom: 3px;
+    color: white;
+}
+
+.page-events .events-body p{
+    margin-left: 5px;
 }
 
 .page-events .events-body .views-field-title{
@@ -83,8 +112,142 @@
     margin-bottom: 3px;
 }
 
-.closed-ul-filter-date{
-  visible: none;
+/*forms with search*/
+
+.page-events .views-exposed-form{
+    float: right;
+    position: absolute;
+    right: 95px;
+    top: 25px;
+    z-index: 10;
+}
+
+.page-events views-exposed-widgets{
+    border-width: 0px;
+    border-style: none;
+    width: 150px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.page-events .views-exposed-form #edit-field-event-date-value-wrapper{
+    display: none;
+}
+
+.page-events .views-exposed-form #edit-tid-wrapper{
+    display: none;
+}
+
+.page-events .views-exposed-form #edit-keys-wrapper,
+.page-events .views-exposed-form .views-submit-button
+{
+    margin: 0;
+    padding: 0;
+    /*float: right;*/
+}
+
+/*text field*/
+.page-events .views-exposed-form #edit-keys-wrapper input{
+    margin: 0;
+    padding: 0;
+    height: 13px;
+    /*padding-bottom: 5px;*/
+    width: 138px;
+    border: none;
+    font: normal 10px 'trebuchet MS', arial, helvetica;
+    background: url(../images/header/searchbox.png) no-repeat center 0;
+    text-indent: 5px;
+
+    -moz-border-radius: 0;
+     border-radius: 0;
+     
+     float: left;
+     position: relative;
+}
+
+/*button*/
+.page-events .views-exposed-form .views-submit-button input{
+    background: url(../images/header/searchbutton.png) no-repeat center 0;
+    
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    border-width: 0;
+    border-style: none;
+
+    width: 12px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+
+/*date search*/
+.block-menu-festival-link-date-filter{
+    /*display: none;*/
+    width: 85px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.closed-ul-filter{
+    /*visibility: hidden;*/
+    display: none;
+}
+
+.filter-button{
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 60px;
+    float: left;
+}
+
+.type-filter-events-all{
+    display: block;
+    /*position: relative;*/
+    /*width: 100px;*/
+}
+
+.date-filter-events-all{
+    display: block;
+    /*position: relative;
+    top: 10px;*/
+    /*width: 70px;*/
+}
+
+.tax-filter-events-all{
+    display: block;
+    /*position: relative;
+    top: 10px;*/
+    /*width: 70px;*/
 }
 
 
+.date-filter-events-all img{
+    float: right;
+}
+
+#filter-ul ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+#filter-ul ul li{
+    border: 0;
+    width: 70px;
+}
+
+#filter-u ul li a{
+  /*padding: 0.4em 10px 0.4em 10px;*/
+  text-decoration: none;
+  color: black;
+}
+
+#filter-u ul li a:hover {
+    text-decoration: underline;
+}

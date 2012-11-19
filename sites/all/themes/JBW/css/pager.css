@@ -37,9 +37,25 @@
 #block-system-main ul.pager{
     border: 0;
     /*margin: 5px 20px 5px 430px;*/
-    padding-left: 440px;
-    padding-bottom: 10px;
+  /*  padding-left: 440px;
+    padding-bottom: 10px;*/
+    width: 70px;
     height: 15px;
+   /* position: absolute;
+    right: 20px;
+    top: 26px;*/
+}
+
+#block-system-main #pager-up{
+    position: absolute;
+    right: 20px;
+    top: 26px;
+}
+
+#block-system-main #pager-down{
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
 }
 
 #block-system-main .pager .pager-item{

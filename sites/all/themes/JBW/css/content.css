@@ -1,4 +1,4 @@
-#region-content{
+/*#region-content{
     margin: 0;
     padding: 0;
     width: 550px;
@@ -6,11 +6,11 @@
 }
 
 #region-content{
-    /*margin-top: -20px;*/
-    /*margin: 0;*/
+    /*margin-top: -20px;/
+    /*margin: 0;/
     padding: 0;
     width: 550px;
-}
+}*/
 
 /*left part of content*/
 .page-home .fest_row_homepage{ /*#block-system-main .pane-festivals*/

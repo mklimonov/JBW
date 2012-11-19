@@ -29,10 +29,10 @@
     <?php if($field->class == 'title-1'): ?>
     <div class = "events-body">
         <?php if(strip_tags($field->content) == ''): ?>
-            Regular event
+            <p>Regular event</p>
         <?php endif; ?>
         <?php if(strip_tags($field->content) != ''): ?>
-            Festival event
+            <p>Festival event</p>
         <?php endif; ?>
     <?php endif; ?>
                     
