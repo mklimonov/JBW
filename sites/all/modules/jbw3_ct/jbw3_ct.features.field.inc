@@ -577,6 +577,157 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-donation-body'.
+  $fields['node-donation-body'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_with_summary',
+    ),
+    'field_instance' => array(
+      'bundle' => 'donation',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'trim_length' => 600,
+          ),
+          'type' => 'text_summary_or_trimmed',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'label' => 'Body',
+      'required' => FALSE,
+      'settings' => array(
+        'display_summary' => TRUE,
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 20,
+          'summary_rows' => 5,
+        ),
+        'type' => 'text_textarea_with_summary',
+        'weight' => '-4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-donation-field_product_reference'.
+  $fields['node-donation-field_product_reference'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_product_reference',
+      'foreign keys' => array(
+        'product_id' => array(
+          'columns' => array(
+            'product_id' => 'product_id',
+          ),
+          'table' => 'commerce_product',
+        ),
+      ),
+      'indexes' => array(
+        'product_id' => array(
+          0 => 'product_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'commerce_product_reference',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'commerce_product_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'donation',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'commerce_cart',
+          'settings' => array(
+            'combine' => 1,
+            'default_quantity' => '1',
+            'line_item_type' => 'donation',
+            'show_quantity' => 0,
+          ),
+          'type' => 'commerce_cart_add_to_cart_form',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_product_reference',
+      'label' => 'Product reference',
+      'required' => 0,
+      'settings' => array(
+        'field_injection' => 1,
+        'referenceable_types' => array(
+          'product' => 'product',
+          'ticket' => 0,
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'commerce_product_reference',
+        'settings' => array(
+          'autocomplete_match' => 'contains',
+          'autocomplete_path' => 'commerce_product/autocomplete',
+          'size' => '60',
+        ),
+        'type' => 'commerce_product_reference_autocomplete',
+        'weight' => '-3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-event-body'.
   $fields['node-event-body'] = array(
     'field_config' => array(
@@ -744,7 +895,7 @@ function jbw3_ct_field_default_fields() {
         ),
         'repeat' => '0',
         'timezone_db' => '',
-        'todate' => 'required',
+        'todate' => '',
         'tz_handling' => 'none',
       ),
       'translatable' => '0',
@@ -753,7 +904,7 @@ function jbw3_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'event',
       'deleted' => '0',
-      'description' => 'When it starts (required) and when it is ends (equired)',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -767,7 +918,7 @@ function jbw3_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 3,
+          'weight' => 9,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -801,7 +952,7 @@ function jbw3_ct_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '-1',
+        'weight' => '5',
       ),
     ),
   );
@@ -1121,7 +1272,7 @@ function jbw3_ct_field_default_fields() {
       'label' => 'gallery video',
       'required' => 0,
       'settings' => array(
-        'default_dimensions' => '640x360',
+        'default_dimensions' => '384x288',
         'file_directory' => 'videos/original',
         'file_extensions' => 'mp4 ogg avi mov wmv flv ogv webm',
         'max_filesize' => '',
@@ -1286,6 +1437,92 @@ function jbw3_ct_field_default_fields() {
         ),
         'type' => 'image_image',
         'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-event-field_why_not_to_try'.
+  $fields['node-event-field_why_not_to_try'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_why_not_to_try',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'event' => 'event',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 10,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_why_not_to_try',
+      'label' => 'why not to try',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '6',
       ),
     ),
   );
@@ -2582,10 +2819,10 @@ function jbw3_ct_field_default_fields() {
   t('Images for gallery of this event');
   t('Newsletter category');
   t('Price');
+  t('Product reference');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
   t('Teaser image for search and news list.');
   t('Teaser image how it shown on search, on events list.');
-  t('When it starts (required) and when it is ends (equired)');
   t('You can choose news categories. It helps user recieve only news on which he was subscribed.');
   t('blog event');
   t('blog image');
@@ -2603,6 +2840,7 @@ function jbw3_ct_field_default_fields() {
   t('image homepage');
   t('new image');
   t('slider image');
+  t('why not to try');
 
   return $fields;
 }

@@ -45,6 +45,10 @@
     </div>
   <?php endif; ?>
 
+  <?php if ($pager): ?>
+    <?php print $pager; ?>
+  <?php endif; ?>
+    
   <?php if ($attachment_before): ?>
     <div class="attachment attachment-before">
       <?php print $attachment_before; ?>

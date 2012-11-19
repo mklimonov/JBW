@@ -43,7 +43,8 @@
       <?php print $field->wrapper_suffix; ?>
 
       <?php if($field->class == 'field-festival-image'): ?>
-            <a href="festival/<?php print arg(1); ?>/programme">Festival programme</a>
+          <?php $href = url('festival/'. arg(1). '/programme', array('query' => array('tid' => ''))); ?>
+            <a href="<?php print $href; ?>">Festival programme</a>
             </div>
       <?php endif; ?>
       <?php if($field->class == 'body'): ?>

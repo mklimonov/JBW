@@ -1,0 +1,16 @@
+name = jbw3_commerce
+core = 7.x
+package = Features
+dependencies[] = commerce_cart
+dependencies[] = commerce_line_item
+dependencies[] = commerce_order
+dependencies[] = commerce_payment
+dependencies[] = commerce_product_reference
+dependencies[] = entity
+dependencies[] = mimemail
+dependencies[] = rules
+features[features_api][] = api:1
+features[rules_config][] = rules_hide_cart_while_donate
+features[rules_config][] = rules_redirect_to_checkout_while_donate
+features[rules_config][] = rules_send_e_mail_to_user_when_he_buy_ticket
+features[rules_config][] = rules_update_price_of_donate

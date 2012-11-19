@@ -25,22 +25,31 @@
  */
 ?>
 <?php foreach ($fields as $id => $field): ?>
-<?php //print $field->class?>
 
-    <?php if($field->class == 'title'): ?>
-      <div class = "events-body">
+    <?php if($field->class == 'title-1'): ?>
+    <div class = "events-body">
+        <?php if(strip_tags($field->content) == ''): ?>
+            Regular event
+        <?php endif; ?>
+        <?php if(strip_tags($field->content) != ''): ?>
+            Festival event
+        <?php endif; ?>
     <?php endif; ?>
-          
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
+                    
+  <?php if($field->class != 'title-1'): ?>   
 
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
-          
-  <?php if($field->class == 'body'): ?>
-      </div>
+    <?php if (!empty($field->separator)): ?>
+      <?php print $field->separator; ?>
+    <?php endif; ?>
+
+    <?php print $field->wrapper_prefix; ?>
+      <?php print $field->label_html; ?>
+      <?php print_r($field->content); ?>
+    <?php print $field->wrapper_suffix; ?>
+  
+  <?php endif; ?>
+                    
+  <?php if($field->class == 'title'): ?>
+        </div>
     <?php endif; ?>
 <?php endforeach; ?>
