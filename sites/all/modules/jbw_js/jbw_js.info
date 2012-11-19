@@ -5,3 +5,4 @@ core = 7.x
 files[] = jwb_js.module
 scripts[] = scrollbar.js
 scripts[] = sidebar_scroll.js
+scripts[] = background.js

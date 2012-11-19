@@ -12,6 +12,10 @@ function JBW_form_alter(&$form, &$form_state, $form_id) {
     $form['actions']['#theme_wrappers'] = array();
   }
  */
+  if($form_id == 'views-exposed-form-events-all-block-3') {
+      $form['group_button']['button']['submit'] = array('#type' => 'submit');
+  }
+  
   if($form_id == 'search_block_form') {
     $form['search_block_form']['#title'] = t('Search');
     $form['search_block_form']['#title_display'] = 'invisible';
