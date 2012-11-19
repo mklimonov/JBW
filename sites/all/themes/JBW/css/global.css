@@ -74,7 +74,7 @@ section {
     width: 960px;
     position: relative;
     top: 5px;
-    z-index: 2;
+    z-index: 20;
 }
 
 #zone-header-wrapper{
