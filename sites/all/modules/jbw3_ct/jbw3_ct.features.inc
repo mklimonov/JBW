@@ -9,6 +9,14 @@
  */
 function jbw3_ct_node_info() {
   $items = array(
+    'donation' => array(
+      'name' => t('Donation'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'event' => array(
       'name' => t('Event'),
       'base' => 'node_content',
@@ -29,14 +37,6 @@ function jbw3_ct_node_info() {
       'name' => t('News'),
       'base' => 'node_content',
       'description' => t('News for website'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-    'simplenews' => array(
-      'name' => t('Simplenews newsletter'),
-      'base' => 'node_content',
-      'description' => t('A newsletter issue to be sent to subscribed email addresses.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',

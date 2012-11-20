@@ -24,10 +24,19 @@
  * @ingroup views_templates
  */
 ?>
-<?php $i = 0; foreach ($fields as $id => $field): ?>
-
-	<?php if($i == 0): ?>
+<?php foreach ($fields as $id => $field): ?>
+<?php //print $field->class; ?>
+	<?php if($field->class == 'field-news-image'): ?>
 		<div class = "left_part">
+	<?php endif; ?>
+	
+	
+        <?php if($field->class == 'title'): ?>
+                <div class = "right_part">
+        <?php endif; ?>
+	
+        <?php if($field->class != 'field-author' && $field->class != 'field-publication-date'): ?>
+                    
 	  <?php if (!empty($field->separator)): ?>
 		<?php print $field->separator; ?>
 	  <?php endif; ?>
@@ -36,27 +45,28 @@
 		<?php print $field->label_html; ?>
 		<?php print $field->content; ?>
 	  <?php print $field->wrapper_suffix; ?>
+                    
+        <?php endif; ?>
+        
+        <?php if($field->class == 'field-publication-date'): ?>
+            <?php print $field->wrapper_prefix; ?>
+            <?php print $field->label_html; ?>
+            <?php print ' Date '. strip_tags($field->content); ?>
+	    <?php print $field->wrapper_suffix; ?>
+        <?php endif; ?>  
+                    
+	<?php if($field->class == 'field-author'): ?>
+            <?php print $field->wrapper_prefix; ?>
+            <?php print $field->label_html; ?>
+            <?php print 'Authored '. strip_tags($field->content); ?>
+	    <?php print $field->wrapper_suffix; ?>
+        <?php endif; ?>  
+	
+	<?php if($field->class == 'field-news-image'): ?>
 		</div>
 	<?php endif; ?>
-	
-	<?php if($i > 0): ?>
-	
-		<?php if($i == 1): ?>
-			<div class = "right_part">
-		<?php endif; ?>
-		
-	  <?php if (!empty($field->separator)): ?>
-		<?php print $field->separator; ?>
-	  <?php endif; ?>
-
-	  <?php print $field->wrapper_prefix; ?>
-		<?php print $field->label_html; ?>
-		<?php print $field->content; ?>
-	  <?php print $field->wrapper_suffix; ?>
-	  
-	<?php endif; ?>
-	
-	<?php $i++; ?>
-			
+                            
+        <?php if($field->class == 'sharethis'): ?>   
+                </div>             
+	<?php endif; ?>		
 <?php endforeach; ?>
-</div>
