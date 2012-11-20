@@ -1,6 +1,6 @@
 .node-type-festival #block-system-main .pane-festivals #festival-content{
     width: 550px;
-    height: 450px;
+    /*height: 450px;*/
     position: relative;
     /*background: url(../images/festival_bg.png) no-repeat center 0;*/
     background: white;
