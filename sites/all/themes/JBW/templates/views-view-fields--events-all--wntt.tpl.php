@@ -25,9 +25,10 @@
  */
 ?>
 <?php foreach ($fields as $id => $field): ?>
+<?php //print $field->class ?>
 
-    <?php if($field->class == 'title-1'): ?>
-    <div class = "events-body">
+    <?php if($field->class == 'title'): ?>
+        <div class = "events-body">
         <?php if(strip_tags($field->content) == ''): ?>
             <p>Regular event</p>
         <?php endif; ?>
@@ -35,25 +36,22 @@
             <p>Festival event</p>
         <?php endif; ?>
     <?php endif; ?>
-                    
-  <?php if($field->class != 'title-1' && $field->class != 'field-ticket-buy-link'): ?>   
-
-    <?php if (!empty($field->separator)): ?>
-      <?php print $field->separator; ?>
-    <?php endif; ?>
-
-    <?php print $field->wrapper_prefix; ?>
-      <?php print $field->label_html; ?>
-      <?php print $field->content; ?>
-    <?php print $field->wrapper_suffix; ?>
-  
-  <?php endif; ?>
+   
             
-  <?php if($field->class == 'field-ticket-buy-link' && strip_tags($field->content) != ''): ?>
-           <?php print '<a href = "'. strip_tags($field->content). '"><img src = "'. base_path(). path_to_theme(). '/images/commerce/tiny-cart.png" /></a>'; ?>  
-  <?php endif; ?>
+ <?php if($field->class != 'title'): ?>
             
-  <?php if($field->class == 'title'): ?>
+  <?php if (!empty($field->separator)): ?>
+    <?php print $field->separator; ?>
+  <?php endif; ?>
+
+  <?php print $field->wrapper_prefix; ?>
+    <?php print $field->label_html; ?>
+    <?php print $field->content; ?>
+  <?php print $field->wrapper_suffix; ?>
+            
+ <?php endif; ?>
+            
+    <?php if($field->class == 'title-1'): ?>
         </div>
     <?php endif; ?>
 <?php endforeach; ?>

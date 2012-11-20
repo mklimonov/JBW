@@ -1,1 +1,166 @@
-<span class="field-content"></span>
+Array
+(
+    [#info] => Array
+        (
+            [filter-field_event_date_value] => Array
+                (
+                    [operator] => field_event_date_value_op
+                    [value] => field_event_date_value
+                    [label] => 
+                    [description] => 
+                )
+
+            [filter-tid] => Array
+                (
+                    [operator] => tid_op
+                    [value] => tid
+                    [label] => 
+                    [description] => 
+                )
+
+            [filter-keys] => Array
+                (
+                    [operator] => keys_op
+                    [value] => keys
+                    [label] => 
+                    [description] => 
+                )
+
+        )
+
+    [q] => Array
+        (
+            [#type] => hidden
+            [#value] => 
+        )
+
+    [field_event_date_value] => Array
+        (
+            [#tree] => 1
+            [value] => Array
+                (
+                    [#title] => 
+                    [#type] => date_popup
+                    [#size] => 20
+                    [#default_value] => 2012-11-19
+                    [#date_format] => Y-m-d
+                    [#date_label_position] => within
+                    [#date_year_range] => -0:+1
+                    [#process] => Array
+                        (
+                            [0] => date_popup_element_process
+                        )
+
+                    [#prefix] => <div id="edit-field-event-date-value-value-wrapper"><div id="edit-field-event-date-value-value">
+                    [#suffix] => </div></div>
+                )
+
+        )
+
+    [tid] => Array
+        (
+            [#type] => textfield
+            [#default_value] => 
+            [#autocomplete_path] => admin/views/ajax/autocomplete/taxonomy/3
+        )
+
+    [keys] => Array
+        (
+            [#type] => textfield
+            [#size] => 15
+            [#default_value] => 
+            [#attributes] => Array
+                (
+                    [title] => Enter the terms you wish to search for.
+                )
+
+        )
+
+    [submit] => Array
+        (
+            [#name] => 
+            [#type] => submit
+            [#value] => Apply
+            [#id] => edit-submit-events-all
+        )
+
+    [#action] => /JBW/
+    [#theme] => Array
+        (
+            [0] => views_exposed_form__events_all__block_3
+            [1] => views_exposed_form__block_3
+            [2] => views_exposed_form__default
+            [3] => views_exposed_form__default
+            [4] => views_exposed_form__events_all__block
+            [5] => views_exposed_form__block
+            [6] => views_exposed_form__events_all
+            [7] => views_exposed_form
+        )
+
+    [#id] => views-exposed-form-events-all-block-3
+    [#form_id] => views_exposed_form
+    [#type] => form
+    [#method] => get
+    [#build_id] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
+    [form_build_id] => Array
+        (
+            [#type] => hidden
+            [#value] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
+            [#id] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
+            [#name] => form_build_id
+            [#parents] => Array
+                (
+                    [0] => form_build_id
+                )
+
+            [#access] => 
+        )
+
+    [#token] => views_exposed_form
+    [form_token] => Array
+        (
+            [#id] => edit-views-exposed-form-form-token
+            [#type] => token
+            [#default_value] => t2nvFoh9aQRwhULzWvp5d6fwYBd2hjzov9aathmVo4w
+            [#parents] => Array
+                (
+                    [0] => form_token
+                )
+
+            [#access] => 
+        )
+
+    [form_id] => Array
+        (
+            [#type] => hidden
+            [#value] => views_exposed_form
+            [#id] => edit-views-exposed-form
+            [#parents] => Array
+                (
+                    [0] => form_id
+                )
+
+            [#access] => 
+        )
+
+    [#theme_wrappers] => Array
+        (
+            [0] => form
+        )
+
+    [#tree] => 
+    [#parents] => Array
+        (
+        )
+
+    [#validate] => Array
+        (
+            [0] => views_exposed_form_validate
+        )
+
+    [#submit] => Array
+        (
+            [0] => views_exposed_form_submit
+        )
+
+)

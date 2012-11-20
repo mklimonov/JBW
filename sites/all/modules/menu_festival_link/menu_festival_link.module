@@ -128,9 +128,9 @@ function menu_festival_link_block_contents($delta) {
             $href_all = url('', array('query' => $var_array));
             $all .= '<div class = "filter-button">All</div><a href="'. $href_all. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a>';
             if(isset($_GET['type']) && $_GET['type'] != 'all'){
-                $all .= '<div id="filter-ul" class="opened-ul-filter"><ul>';
+                $all .= '<div id="filter-ul" class="opened-ul-filter"><ul class="events-filter-ul">';
             }else{
-                $all .= '<div id="filter-ul" class="closed-ul-filter"><ul>';
+                $all .= '<div id="filter-ul" class="closed-ul-filter"><ul class="events-filter-ul">';
             }
             $addition['href_fest'] = '';
             $addition['href_nonfest'] = '';
@@ -149,9 +149,9 @@ function menu_festival_link_block_contents($delta) {
             $var_array['field_event_date_value']['value']['date'] = '';
             $href_date = url('', array('query' => $var_array));
             if(isset($_GET['field_event_date_value']['value']['date']) && $_GET['field_event_date_value']['value']['date'] != ''){
-                $all .= '<div class = "date-filter-events-all"><div class="filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-ul" class="opened-ul-filter"><ul>';
+                $all .= '<div class = "date-filter-events-all"><div class="filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-ul" class="opened-ul-filter"><ul class="events-filter-ul">';
             }else{
-                $all .= '<div class = "date-filter-events-all"><div class="filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-ul" class="closed-ul-filter"><ul>';
+                $all .= '<div class = "date-filter-events-all"><div class="filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-ul" class="closed-ul-filter"><ul class="events-filter-ul">';
             }
             for($i = 0; $i < 6; $i++){
                 $timer = $i == 0 ? date('Y-m-d') : date('Y-m-01', strtotime('+'. $i. ' month'));
@@ -179,9 +179,9 @@ function menu_festival_link_block_contents($delta) {
                     $href_tax = url('', array('query' => $var_array));
                     $all .= '<div class = "tax-filter-events-all"><div class = "filter-button">Genre</div><a href="'. $href_tax. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a>';
                     if(isset($_GET['tid']) && $_GET['tid'] != ''){
-                        $all .= '<div id="filter-ul" class="opened-ul-filter"><ul>';
+                        $all .= '<div id="filter-ul" class="opened-ul-filter"><ul class="events-filter-ul">';
                     }else{
-                        $all .= '<div id="filter-ul" class="closed-ul-filter"><ul>';
+                        $all .= '<div id="filter-ul" class="closed-ul-filter"><ul class="events-filter-ul">';
                     }
                     foreach($tags as $tag){
                         //$term = str_replace(' ', '+', $tag->name);

@@ -25,6 +25,14 @@ function jbw3_ct_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'news' => array(
+      'name' => t('News'),
+      'base' => 'node_content',
+      'description' => t('News for website'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'simplenews' => array(
       'name' => t('Simplenews newsletter'),
       'base' => 'node_content',

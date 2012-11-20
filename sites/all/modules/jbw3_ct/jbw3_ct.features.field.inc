@@ -887,16 +887,16 @@ function jbw3_ct_field_default_fields() {
         'cache_enabled' => 0,
         'granularity' => array(
           'day' => 'day',
-          'hour' => 0,
-          'minute' => 0,
+          'hour' => 'hour',
+          'minute' => 'minute',
           'month' => 'month',
           'second' => 0,
           'year' => 'year',
         ),
         'repeat' => '0',
-        'timezone_db' => '',
+        'timezone_db' => 'UTC',
         'todate' => '',
-        'tz_handling' => 'none',
+        'tz_handling' => 'site',
       ),
       'translatable' => '0',
       'type' => 'datetime',
@@ -904,7 +904,7 @@ function jbw3_ct_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'event',
       'deleted' => '0',
-      'description' => '',
+      'description' => 'When event starts.',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -918,7 +918,7 @@ function jbw3_ct_field_default_fields() {
             'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 9,
+          'weight' => 13,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -952,7 +952,7 @@ function jbw3_ct_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '5',
+        'weight' => '9',
       ),
     ),
   );
@@ -1441,6 +1441,76 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-event-field_ticket_buy_link'.
+  $fields['node-event-field_ticket_buy_link'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_ticket_buy_link',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '511',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'If you want to sell tickets on another site please insert link here in following form: <i>http://sell-teckets-site.com/tickets23/buy</i>
+Else leave this field blank',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 11,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_ticket_buy_link',
+      'label' => 'ticket buy link',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '7',
+      ),
+    ),
+  );
+
   // Exported field: 'node-event-field_why_not_to_try'.
   $fields['node-event-field_why_not_to_try'] = array(
     'field_config' => array(
@@ -1912,6 +1982,79 @@ function jbw3_ct_field_default_fields() {
         ),
         'type' => 'image_image',
         'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-news-body'.
+  $fields['node-news-body'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'field_name' => 'body',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_with_summary',
+    ),
+    'field_instance' => array(
+      'bundle' => 'news',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'trim_length' => 600,
+          ),
+          'type' => 'text_summary_or_trimmed',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'body',
+      'label' => 'Body',
+      'required' => FALSE,
+      'settings' => array(
+        'display_summary' => TRUE,
+        'text_processing' => 1,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 20,
+          'summary_rows' => 5,
+        ),
+        'type' => 'text_textarea_with_summary',
+        'weight' => '-4',
       ),
     ),
   );
@@ -2815,6 +2958,8 @@ function jbw3_ct_field_default_fields() {
   t('Email Address of the paypal account');
   t('Event');
   t('Event which ticket you buy');
+  t('If you want to sell tickets on another site please insert link here in following form: <i>http://sell-teckets-site.com/tickets23/buy</i>
+Else leave this field blank');
   t('Image that shows in festival list, in search, in homepage.');
   t('Images for gallery of this event');
   t('Newsletter category');
@@ -2823,6 +2968,7 @@ function jbw3_ct_field_default_fields() {
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
   t('Teaser image for search and news list.');
   t('Teaser image how it shown on search, on events list.');
+  t('When event starts.');
   t('You can choose news categories. It helps user recieve only news on which he was subscribed.');
   t('blog event');
   t('blog image');
@@ -2840,6 +2986,7 @@ function jbw3_ct_field_default_fields() {
   t('image homepage');
   t('new image');
   t('slider image');
+  t('ticket buy link');
   t('why not to try');
 
   return $fields;
