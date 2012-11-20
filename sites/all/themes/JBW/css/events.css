@@ -1,6 +1,6 @@
-.page-events .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
+.page-events .region-content-inner,
+.node-type-event .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
     background: #FFFFFF;
-    /*width: 550px;*/
 }
 
 .page-events #block-system-main .view-content{
@@ -16,12 +16,17 @@
     left: 80px;*/
 }
 
+.page-node #block-system-main .view-content /*.view-events*/ tr:hover td,
+.page-node #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
+.page-node #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
 .page-events #block-system-main .view-content /*.view-events*/ tr:hover td,
 .page-events #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
-.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active {
+.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active
+{
   background: none;
 }
 
+.page-node #block-system-main .view-content table,
 .page-events #block-system-main .view-content table{
     border: 0 none;
 }
@@ -113,7 +118,6 @@
 }
 
 /*forms with search*/
-
 .page-events .views-exposed-form{
     float: right;
     position: absolute;
@@ -193,47 +197,51 @@
     left: 0;
 }
 
+/*изначально свернуто*/
 .closed-ul-filter{
-    /*visibility: hidden;*/
     display: none;
 }
 
+.type-filter-events-all,
+.date-filter-events-all,
+.tax-filter-events-all{
+    display: block;
+    margin-bottom: 5px;
+    /*position: relative;*/
+    /*width: 100px;*/
+}
+
+.type-filter-events-all img,
+.date-filter-events-all img,
+.tax-filter-events-all  img{
+    /*float: right;*/
+    margin-bottom: 3px;
+    /*margin: 0;*/
+    padding: 0;
+}
+
+.type-filter-events-all a,
+.date-filter-events-all a,
+.tax-filter-events-all  a{
+    padding: 0;
+    margin: 0;
+}
+
 .filter-button{
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     margin-left: 10px;
     width: 60px;
     float: left;
 }
 
-.type-filter-events-all{
-    display: block;
-    /*position: relative;*/
-    /*width: 100px;*/
-}
-
-.date-filter-events-all{
-    display: block;
-    /*position: relative;
-    top: 10px;*/
-    /*width: 70px;*/
-}
-
-.tax-filter-events-all{
-    display: block;
-    /*position: relative;
-    top: 10px;*/
-    /*width: 70px;*/
-}
-
-
-.date-filter-events-all img{
-    float: right;
-}
+.filter-button:hover{
+    text-decoration: underline;
+}   
 
 #filter-ul ul{
     list-style: none;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 0;
 }
 
@@ -242,12 +250,25 @@
     width: 70px;
 }
 
-#filter-u ul li a{
+#filter-ul ul li a{
   /*padding: 0.4em 10px 0.4em 10px;*/
   text-decoration: none;
   color: black;
 }
 
-#filter-u ul li a:hover {
+#filter-ul ul li a:hover {
     text-decoration: underline;
 }
+
+#filter-ul ul li img{
+    float: right;
+    margin-top: 7px;
+    padding: 0;
+}
+
+
+
+/*
+.node-type-event .event_node_left_part{
+    
+}*/

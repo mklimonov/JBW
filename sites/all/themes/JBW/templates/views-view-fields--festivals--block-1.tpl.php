@@ -28,10 +28,10 @@
     <?php foreach ($fields as $id => $field): ?>
 
     <?php if($field->class == 'field-festival-image'): ?>
-      <div class = "festival_node_left_part">
+      <div class = "node_left_part">
     <?php endif; ?>
     <?php if($field->class == 'title'): ?>
-      <div class = "festival_node_right_part">
+      <div class = "node_right_part">
     <?php endif; ?>
 
       <?php if (!empty($field->separator)): ?>

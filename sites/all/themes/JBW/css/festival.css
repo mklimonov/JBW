@@ -1,58 +1,139 @@
-.node-type-festival #block-system-main .pane-festivals #festival-content{
+/*.node-type-festival #block-system-main .pane-festivals #festival-content{
     width: 550px;
-    /*height: 450px;*/
-    position: relative;
-    /*background: url(../images/festival_bg.png) no-repeat center 0;*/
+    /*height: 450px;/
+    position: relative; 
+    /*background: url(../images/festival_bg.png) no-repeat center 0;/
     background: white;
-}
+}*/
 
-.node-type-festival .pane-festivals h2{
+/*.node-type-festival #block-system-main .pane-festivals #festival-content{*/
+
+/*------------------------просмотр события/фестиваля------------------------------------*/
+.node-type-event #page-title{
     display: none;
 }
 
-.node-type-festival #region-content h1{
+.page-node .region-content-inner{
+    background: #FFFFFF;
+    background-position: center;
+}
+
+.page-node .panels-flexible-region-new-center{
+    width: 100%;
+}
+
+.page-node .pane-festivals h2{
     display: none;
 }
 
-.node-type-festival .festival_node_left_part{
+.page-node #region-content h1{
+    display: none;
+}
+
+.page-node .node_left_part{
     width: 150px;
-    height: 440px;
-    position: absolute;
-}
-
-/*festivale image*/
-.node-type-festival #festival-content .views-field-field-festival-image
-{
     float: left;
 }
 
-.node-type-festival #festival-content .views-field-field-festival-image img{
-    margin: 45px 0 10px 15px;
-}
-
-.node-type-festival .festival_node_right_part{
+.page-node .node_right_part{
     width: 400px;
-    height: 440px;
     float: right;
 }
 
+/*festivale image*/
+.page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image{
+    /*float: left;*/
+}
+
+.page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image img,
+.page-node .node_left_part /*#festival-content*/ .views-field-field-event-image img{
+    margin: 45px 0 10px 15px;
+}
+
 /*festivale text*/
-.node-type-festival .festival_node_right_part .views-field-body{/*p*/
+.page-node .node_right_part .views-field-body{/*p*/
     float: right;
     margin: 20px 20px 15px 15px;
     text-align: left;
 }
 
 /*festivale title*/
-.node-type-festival .views-field-title{
+.page-node .views-field-title{
     margin: 45px 20px 5px 15px;
 }
 
 /*festevale date*/
-.node-type-festival .views-field-field-festival-date{
+.page-node .views-field-field-festival-date,
+.page-node .node-event-date,
+.page-node .node-event-price{
     margin: 0 20px 5px 15px;
 }
 
-.node-type-festival .festival_node_left_part a{
+.page-node .node_left_part a{
     margin-left: 15px;
+}
+
+.page-node .node_right_part .views-field-sharethis{
+    position: absolute;
+    float: right;
+    /*width: 110px;*/
+    z-index: 2;
+    right: 10px;
+    bottom: 250px;
+}
+
+/*why not try field*/
+.page-node .pane-events-all #wntt,
+.page-node .pane-events-all h2{
+    width: 400px;
+    float: right;
+}
+
+.page-node .pane-events-all h2{
+    border-top: 1px solid gray;
+}
+
+.page-node .pane-events-all #wntt .events-body{
+    /*margin: 105px 0 0 15px;*/
+    margin: -50px 0 0;
+    background: #231f20;
+    width: 135px;
+    height: 50px;
+    position: absolute; 
+    text-align: left;
+    font: normal 'trebuchet MS', tahoma, arial, helvetica;
+    overflow: hidden;
+}
+
+.page-node .pane-events-all #wntt .events-body p,
+.page-node .pane-events-all #wntt .events-body a{
+    margin-bottom: 3px;
+    color: white;
+}
+
+.page-node .pane-events-all #wntt .events-body p{
+    margin-left: 5px;
+}
+
+.page-node .pane-events-all #wntt .events-body .views-field-title{
+    margin-left: 5px;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+.page-node .pane-events-all #wntt .events-body .views-field-title a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-node .pane-events-all #wntt .events-body .views-field-title a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-node .pane-events-all #wntt .events-body .views-field-body{
+    margin-left: 5px;
+    font-size: 8px;
+    color: #fff;
+    margin-bottom: 3px;
 }

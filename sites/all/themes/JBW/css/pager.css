@@ -1,3 +1,12 @@
+.ajax-progress-throbber{ /*ajax-progress ajax-progress-throbber*/
+    display: none;
+}
+
+#block-system-main #pager-up h2,
+#block-system-main #pager-down h2{
+    display: none;
+}
+
 #block-system-main .pager{
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
@@ -39,8 +48,10 @@
     /*margin: 5px 20px 5px 430px;*/
   /*  padding-left: 440px;
     padding-bottom: 10px;*/
-    width: 70px;
-    height: 15px;
+  
+    /*width: 75px;*/
+    /*height: 15px;*/
+    
    /* position: absolute;
     right: 20px;
     top: 26px;*/
@@ -50,12 +61,14 @@
     position: absolute;
     right: 20px;
     top: 26px;
+    width: 65px;
 }
 
 #block-system-main #pager-down{
     position: absolute;
     right: 20px;
     bottom: 6px;
+    width: 65px;
 }
 
 #block-system-main .pager .pager-item{
@@ -84,22 +97,30 @@
 
 #block-system-main ul.pager .pager-current,
 #block-system-main ul.pager .pager-item{ /*li.pager-current*/
-    display: block;
-    width: 12px;
-    height: 12px;
+  /*  display: block;
+  /*  width: 12px;
+    height: 12px;/
     float: left;
-    color: black;
+    color: gray;
     padding: 0;
+    background: none;*/
+}
+
+#block-system-main ul.pager .pager-current{
+    font-weight: bold;
+    color: black;
     background: none;
 }
 
 #block-system-main ul.pager a:link,
 #block-system-main ul.pager a:visited {
-    color: black;
+    padding: 0;
+    color: gray;
     /*padding:3px 6px;*/
     text-decoration:none;
     display:block;
     float:left;
+    background: none;
 }
 
 #block-system-main ul.pager a:hover{
@@ -107,14 +128,24 @@
     background: none;
 }
 
-#block-system-main ul.pager .pager-first{
+#block-system-main ul.pager .pager-first
+/*#block-system-main ul.pager .pager-last*/{
     display: block;
     width: 12px;
     height: 12px;
     float: left;
+    /*margin-left: 5px;*/
 }
 
-#block-system-main .pager li.pager-last, 
-#block-system-main .pager li.pager-next.last{
-    position: static;
+#block-system-main ul.pager .pager-last{
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: right;
+    /*margin-left: 5px;*/
 }
+
+/*#block-system-main .pager li.pager-last, 
+#block-system-main .pager li.pager-next .last{
+    /*position: static;/
+}*/

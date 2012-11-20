@@ -27,10 +27,10 @@
 <?php foreach ($fields as $id => $field): ?>
 <?php //print $field->class; ?>
     <?php if($field->class == 'field-event-image'): ?>
-      <div class = "event_node_left_part">
+      <div class = "node_left_part">
     <?php endif; ?>
     <?php if($field->class == 'title'): ?>
-      <div class = "event_node_right_part">
+      <div class = "node_right_part">
     <?php endif; ?>
           
     <?php if($field->class == 'field-event-date'): ?>
@@ -42,7 +42,7 @@
     <?php endif; ?>
     
     <?php if($field->class == 'field-ticket-buy-link' && strip_tags($field->content) != ''): ?>
-           <?php print '<a target="_blank" href = "'. strip_tags($field->content). '">Book here</a><br /><i>You will now be taken to the King Place<br/>website to continue your booking</i>'; ?>  
+           <?php print '<a href = "'. strip_tags($field->content). '">Book here</a><br /><i>You will now be taken to the King Place<br/>website to continue your booking</i>'; ?>  
     <?php endif; ?>
           
   <?php if($field->class != 'field-event-date' && $field->class != 'commerce-price' && $field->class != 'field-ticket-buy-link'): ?>  

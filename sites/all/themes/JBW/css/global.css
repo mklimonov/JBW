@@ -13,9 +13,11 @@ nav,
 section { 
     display: block;
 }
+
 #background-image{
     z-index: 1;
 }
+
 /*@media screen and (min-width: 1280px) and (max-width: 2560px){
         body{
             background-attachment: fixed;
@@ -29,9 +31,10 @@ section {
         }
 }*/
 
-/*body{
-    background: url(../images/bg_2560px.jpg) no-repeat;
-}*/
+body{
+   /* background: url(../images/bg_2560px.jpg) no-repeat;*/
+   font-family:  georgia, verdana, arial, san-serif;
+}
 
 #page{
     margin: 0 auto;
