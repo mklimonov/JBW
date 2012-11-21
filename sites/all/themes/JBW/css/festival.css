@@ -83,6 +83,7 @@
 }
 
 /*why not try field*/
+
 .page-node .pane-events-all #wntt,
 .page-node .pane-events-all h2{
     width: 400px;
@@ -95,11 +96,21 @@
 
 .page-node .pane-events-all #wntt .events-body{
     /*margin: 105px 0 0 15px;*/
-    margin: -50px 0 0;
+    /*margin: -50px 0 0;+++++++++*/
+    
+   /* background: #231f20;
+    width: 135px;
+    height: 50px;
+    position: absolute; 
+    text-align: left;
+    font: normal 'trebuchet MS', tahoma, arial, helvetica;
+    overflow: hidden;*/
+   
     background: #231f20;
     width: 135px;
     height: 50px;
     position: absolute; 
+    top: 100px;
     text-align: left;
     font: normal 'trebuchet MS', tahoma, arial, helvetica;
     overflow: hidden;

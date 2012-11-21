@@ -3,17 +3,36 @@
     background: #FFFFFF;
 }
 
+/*------------------------------Таблица с событиями---------------------------*/
+.panels-flexible-region-new-center{
+    float: none;
+    width: 100%;
+}
+
 .page-events #block-system-main .view-content{
-    margin-left: 80px;
+   /* margin-left: 80px;
     margin-top: 50px;
     margin-right: 20px;
-    margin-bottom: 30px;
-    width: 430px;
-    height: 480px;
-    padding: 0;
-    /*position: relative;
-    top: 50px;
-    left: 80px;*/
+    margin-bottom: 30px;*/
+   
+   /*
+   float: right;
+   position: relative;
+   */
+  
+   top: 40px;
+   width: 420px;
+   /*height: 480px;*/
+   padding: 0;
+   float: right;
+   display: block;
+   margin-top: 50px;
+   margin-right: 20px;
+   /*position: absolute;
+   top: 50px;
+   right: 20px;*/
+   
+    /*left: 80px;*/
 }
 
 .page-node #block-system-main .view-content /*.view-events*/ tr:hover td,
@@ -41,6 +60,8 @@
 }*/
 
 .page-events #block-system-main .views-view-grid{
+   width: 430px;
+   height: 480px;
     /*margin: 10px auto;*/
     /*width: 430px;
     height: 480px;
@@ -50,15 +71,24 @@
     left: 80px;*/
 }
 
-.page-events #block-system-main .views-view-grid tr{
+.page-events #block-system-main .views-view-grid tr
+.page-node #block-system-main .views-view-grid td{
     margin: 0;
+    /*margin-bottom: 5px;*/
     padding: 0;
 }
 
-.page-events #block-system-main .views-view-grid td{
+.page-events #block-system-main .views-view-grid td,
+.page-node #block-system-main .views-view-grid td{
     margin: 0;
     padding: 0;
     vertical-align: 0;
+    display: block;
+    position: relative;
+    float: left;
+    width: 135px;
+    height: 165px;
+    margin: 0 5px 0 0;
 }
 
 .page-events #block-system-main .views-view-grid .views-field-field-event-image{
@@ -67,18 +97,17 @@
 
 .page-events #block-system-main .views-view-grid .views-field-field-event-image img{
     /*margin: 5px 5px 5px 15px;*/
-    margin: 5px 0px 0px 15px;
+    /*margin: 5px 0px 0px 15px;*/
 }
 
 /*.page-events .views-field-title,
 .page-events .views-field-body{*/
 .page-events .events-body{
-    /*margin: 105px 5px 5px 15px;*/
-    margin: 105px 0 0 15px;
     background: #231f20;
     width: 135px;
     height: 50px;
     position: absolute; 
+    top: 100px;
     text-align: left;
     font: normal 'trebuchet MS', tahoma, arial, helvetica;
     overflow: hidden;
@@ -191,10 +220,13 @@
 /*date search*/
 .block-menu-festival-link-date-filter{
     /*display: none;*/
-    width: 85px;
+    /*width: 85px;*/
+    width: 95px;
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 10px;
+    float: left;
+    z-index: 10;
 }
 
 /*изначально свернуто*/
@@ -229,8 +261,8 @@
 
 .filter-button{
     /*margin-top: 5px;*/
-    margin-left: 10px;
-    width: 60px;
+    /*margin-left: 10px;*/
+    width: 70px;
     float: left;
     cursor: pointer;
 }
@@ -242,13 +274,13 @@
 #filter-ul ul{
     list-style: none;
     padding: 0;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     margin-bottom: 0;
 }
 
 #filter-ul ul li{
     border: 0;
-    width: 70px;
+    width: 80px;
 }
 
 #filter-ul ul li a{
@@ -268,9 +300,32 @@
     padding: 0;
 }
 
+/*----------------------------Cart icon---------------------------------------*/
+.page-events #block-system-main .views-view-grid .buy-link-cart{
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
 
-
-/*
-.node-type-event .event_node_left_part{
+.views-view-grid .views-field-add-to-cart-form .commerce-add-to-cart input{
+    background: url(../images/commerce/cart_big.png) no-repeat center 0;
     
-}*/
+    -moz-border-radius: 0;
+    border-radius: 10px 10px 10px 10px;
+
+    border-width: 0;
+    border-style: none;
+
+    width: 22px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
