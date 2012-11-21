@@ -112,7 +112,7 @@ function menu_festival_link_block_contents($delta) {
                 $total = commerce_line_items_total($line_items);
                 $currency = commerce_currency_load($total['currency_code']);
             }
-            $cart_img = '<a href="'. url('', array('query' => array('q' => 'cart'))). '"><img src = "'. base_path() . path_to_theme() . '/images/commerce/tiny-cart.png" /></a>';
+            $cart_img = '<a href="'. url('', array('query' => array('q' => 'cart'))). '"><img src = "'. base_path() . path_to_theme() . '/images/commerce/cart_small.png" /></a>';
             return (string)$quantity. $cart_img;
             break;
         

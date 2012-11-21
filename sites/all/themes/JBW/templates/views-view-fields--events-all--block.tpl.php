@@ -50,7 +50,7 @@
   <?php endif; ?>
             
   <?php if($field->class == 'field-ticket-buy-link' && strip_tags($field->content) != ''): ?>
-           <?php print '<a target="_blank" href = "'. strip_tags($field->content). '"><img src = "'. base_path(). path_to_theme(). '/images/commerce/tiny-cart.png" /></a>'; ?>  
+           <?php print '<div class="buy-link-cart"><a target="_blank" href = "'. strip_tags($field->content). '"><img src = "'. base_path(). path_to_theme(). '/images/commerce/cart_big.png" /></a></div>'; ?>  
   <?php endif; ?>
             
   <?php if($field->class == 'title'): ?>
