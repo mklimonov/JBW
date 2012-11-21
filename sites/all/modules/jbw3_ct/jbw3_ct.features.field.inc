@@ -905,6 +905,72 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'commerce_product-ticket-field_price_saver'.
+  $fields['commerce_product-ticket-field_price_saver'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_price_saver',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'currency_price' => array(
+          0 => 'amount',
+          1 => 'currency_code',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'commerce_price',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'commerce_price',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ticket',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'If it\'s necessary print price saver if you buy a ticket on website',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => NULL,
+          'settings' => array(),
+          'type' => 'commerce_price_default',
+          'weight' => 2,
+        ),
+        'line_item' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'commerce_product',
+      'field_name' => 'field_price_saver',
+      'label' => 'Price saver',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'commerce_price',
+        'settings' => array(
+          'currency_code' => 'GBP',
+        ),
+        'type' => 'commerce_price_simple',
+        'weight' => '37',
+      ),
+    ),
+  );
+
   // Exported field: 'commerce_product-ticket-field_ref_event_ticket'.
   $fields['commerce_product-ticket-field_ref_event_ticket'] = array(
     'field_config' => array(
@@ -1069,7 +1135,7 @@ function jbw3_ct_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-4',
+        'weight' => '3',
       ),
     ),
   );
@@ -1154,7 +1220,7 @@ function jbw3_ct_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'entityreference_autocomplete_tags',
-        'weight' => '-2',
+        'weight' => '2',
       ),
     ),
   );
@@ -1234,7 +1300,168 @@ function jbw3_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '-3',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog-field_blog_publication_date'.
+  $fields['node-blog-field_blog_publication_date'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_blog_publication_date',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'date',
+      'settings' => array(
+        'cache_count' => '4',
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'repeat' => '0',
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'type' => 'datetime',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog',
+      'deleted' => '0',
+      'description' => 'Publication date. Current time as default.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'date',
+          'settings' => array(
+            'format_type' => 'long',
+            'fromto' => 'both',
+            'multiple_from' => '',
+            'multiple_number' => '',
+            'multiple_to' => '',
+            'show_repeat_rule' => 'show',
+          ),
+          'type' => 'date_default',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_blog_publication_date',
+      'label' => 'publication date',
+      'required' => 1,
+      'settings' => array(
+        'default_value' => 'now',
+        'default_value2' => 'same',
+        'default_value_code' => '',
+        'default_value_code2' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'date',
+        'settings' => array(
+          'display_all_day' => 0,
+          'increment' => '15',
+          'input_format' => 'm/d/Y - H:i:s',
+          'input_format_custom' => '',
+          'label_position' => 'above',
+          'repeat_collapsed' => 0,
+          'text_parts' => array(),
+          'year_range' => '-5:+3',
+        ),
+        'type' => 'date_popup',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog-field_blog_tags'.
+  $fields['node-blog-field_blog_tags'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_blog_tags',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'tags',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_blog_tags',
+      'label' => 'tags',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
+        'weight' => '8',
       ),
     ),
   );
@@ -1303,7 +1530,7 @@ function jbw3_ct_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => 0,
+        'weight' => '7',
       ),
     ),
   );
@@ -1383,7 +1610,94 @@ function jbw3_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '-1',
+        'weight' => '6',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-blog-field_video'.
+  $fields['node-blog-field_video'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_video',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'video',
+      'settings' => array(
+        'autoconversion' => 1,
+        'autothumbnail' => 'auto',
+        'default_video_thumbnail' => array(
+          'fid' => 0,
+          'remove_button' => 'Remove',
+          'upload' => '',
+          'upload_button' => 'Upload',
+        ),
+        'presets' => array(),
+        'preview_video_thumb_style' => 'thumbnail',
+        'thumbnail_format' => 'jpg',
+        'uri_scheme' => 'public',
+        'uri_scheme_converted' => 'public',
+        'uri_scheme_thumbnails' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'video',
+    ),
+    'field_instance' => array(
+      'bundle' => 'blog',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'video',
+          'settings' => array(
+            'poster_image_style' => '',
+            'widthxheight' => '640x360',
+          ),
+          'type' => 'video_formatter_player',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_video',
+      'label' => 'video',
+      'required' => 0,
+      'settings' => array(
+        'default_dimensions' => '384x288',
+        'file_directory' => 'videos/original',
+        'file_extensions' => 'mp4 ogg avi mov wmv flv ogv webm',
+        'max_filesize' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'video',
+        'settings' => array(
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'video_upload',
+        'weight' => '5',
       ),
     ),
   );
@@ -1676,7 +1990,7 @@ function jbw3_ct_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '10',
+        'weight' => '11',
       ),
     ),
   );
@@ -1848,6 +2162,86 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-event-field_event_image_2'.
+  $fields['node-event-field_event_image_2'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_event_image_2',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'deleted' => '0',
+      'description' => 'Addition image for event node page',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 16,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_event_image_2',
+      'label' => 'event image 2',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'festival_node',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'node-event-field_festival_reference'.
   $fields['node-event-field_festival_reference'] = array(
     'field_config' => array(
@@ -2009,7 +2403,7 @@ function jbw3_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -2096,7 +2490,7 @@ function jbw3_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'video_upload',
-        'weight' => '8',
+        'weight' => '9',
       ),
     ),
   );
@@ -2247,7 +2641,7 @@ function jbw3_ct_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '9',
+        'weight' => '10',
       ),
     ),
   );
@@ -2311,7 +2705,7 @@ function jbw3_ct_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '12',
+        'weight' => '13',
       ),
     ),
   );
@@ -2375,7 +2769,7 @@ function jbw3_ct_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '13',
+        'weight' => '14',
       ),
     ),
   );
@@ -2445,7 +2839,7 @@ Else leave this field blank',
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '11',
+        'weight' => '12',
       ),
     ),
   );
@@ -2531,7 +2925,7 @@ Else leave this field blank',
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -2841,6 +3235,86 @@ Else leave this field blank',
         ),
         'type' => 'image_image',
         'weight' => '-3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-festival-field_festival_image_gallery'.
+  $fields['node-festival-field_festival_image_gallery'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_festival_image_gallery',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'festival',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 6,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_festival_image_gallery',
+      'label' => 'Image gallery',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '2',
       ),
     ),
   );
@@ -3584,94 +4058,6 @@ Else leave this field blank',
     ),
   );
 
-  // Exported field: 'node-simplenews-field_simplenews_term'.
-  $fields['node-simplenews-field_simplenews_term'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_simplenews_term',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'parent' => 0,
-            'vocabulary' => 'newsletter',
-          ),
-        ),
-      ),
-      'translatable' => '1',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'simplenews',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 0,
-        ),
-        'email_html' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'email_plain' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'email_textalt' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_simplenews_term',
-      'label' => 'Newsletter category',
-      'required' => TRUE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => -4,
-      ),
-    ),
-  );
-
   // Exported field: 'node-slider_image-field_body'.
   $fields['node-slider_image-field_body'] = array(
     'field_config' => array(
@@ -3823,6 +4209,7 @@ Else leave this field blank',
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Addition image for event node page');
   t('Address');
   t('Billing information');
   t('Body');
@@ -3832,24 +4219,27 @@ Else leave this field blank',
   t('Email Address of the paypal account');
   t('Event');
   t('Event which ticket you buy');
+  t('If it\'s necessary print price saver if you buy a ticket on website');
   t('If you redirect user on another website to buy tickets on event please fill this field.');
   t('If you redirect user to another website to buy a ticket please fill this field - the ticket price on this website.');
   t('If you want to sell tickets on another site please insert link here in following form: <i>http://sell-teckets-site.com/tickets23/buy</i>
 Else leave this field blank');
   t('Image for news teaser');
+  t('Image gallery');
   t('Image that shows in festival list, in search, in homepage.');
   t('Images for gallery of this event');
   t('Line items');
   t('News author.');
   t('News image');
   t('News publication date. Current time as default.');
-  t('Newsletter category');
   t('Order total');
   t('Price');
   t('Price on another site');
+  t('Price saver');
   t('Print the event name that described in these news. If it\'s not necessary leave this field blank.');
   t('Product');
   t('Product reference');
+  t('Publication date. Current time as default.');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
   t('Teaser image how it shown on search, on events list.');
   t('Total');
@@ -3861,6 +4251,7 @@ Else leave this field blank');
   t('description homepage');
   t('event date');
   t('event image');
+  t('event image 2');
   t('festival');
   t('festival date');
   t('festival image');
@@ -3874,7 +4265,9 @@ Else leave this field blank');
   t('publication date');
   t('saver price');
   t('slider image');
+  t('tags');
   t('ticket buy link');
+  t('video');
   t('why not to try');
 
   return $fields;
