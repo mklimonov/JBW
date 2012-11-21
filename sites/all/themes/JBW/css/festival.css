@@ -65,9 +65,15 @@
 /*festevale date*/
 .page-node .views-field-field-festival-date,
 .page-node .node-event-date,
-.page-node .node-event-price{
+.page-node .node-event-price,
+.page-node .buy-link-cart{
     margin: 0 20px 5px 15px;
 }
+
+/*.page-node .buy-link-cart{
+    margin: 0 20px 5px 15px;
+}*/
+
 
 .page-node .node_left_part a{
     margin-left: 15px;
