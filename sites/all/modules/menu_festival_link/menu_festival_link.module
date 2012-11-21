@@ -116,7 +116,7 @@ function menu_festival_link_block_contents($delta) {
                 $quantity = '0';
             }
             $cart_img = '<a href="'. url('', array('query' => array('q' => 'cart'))). '"><img src = "'. base_path() . path_to_theme() . '/images/commerce/cart_small.png" /></a>';
-            return (string)$quantity. $cart_img;
+            return '<div class="tiny-cart-block">'. (string)$quantity. $cart_img. '</div>';
             break;
         
         case 'date_filter':
