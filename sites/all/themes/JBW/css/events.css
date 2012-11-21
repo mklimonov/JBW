@@ -230,8 +230,10 @@
 .filter-button{
     /*margin-top: 5px;*/
     margin-left: 10px;
+    margin-bottom: 5px;
     width: 60px;
     float: left;
+    cursor: pointer;
 }
 
 .filter-button:hover{
@@ -254,6 +256,7 @@
   /*padding: 0.4em 10px 0.4em 10px;*/
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 #filter-ul ul li a:hover {
