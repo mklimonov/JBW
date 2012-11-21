@@ -1,5 +1,6 @@
 .page-events .region-content-inner,
-.node-type-event .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
+.node-type-event .region-content-inner,
+.page-festival .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
     background: #FFFFFF;
 }
 
@@ -9,7 +10,8 @@
     width: 100%;
 }
 
-.page-events #block-system-main .view-content{
+.page-events #block-system-main .view-content,
+.page-festival #block-system-main .view-content{
    /* margin-left: 80px;
     margin-top: 50px;
     margin-right: 20px;
@@ -40,13 +42,17 @@
 .page-node #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
 .page-events #block-system-main .view-content /*.view-events*/ tr:hover td,
 .page-events #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
-.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active
+.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
+.page-festival #block-system-main .view-content tr:hover td,
+.page-festival #block-system-main .view-content tr.even:hover td.active,
+.page-festival #block-system-main .view-content tr.odd:hover td.active
 {
   background: none;
 }
 
 .page-node #block-system-main .view-content table,
-.page-events #block-system-main .view-content table{
+.page-events #block-system-main .view-content table,
+.page-festival #block-system-main .view-content table{
     border: 0 none;
 }
 
@@ -59,7 +65,8 @@
     border-style: none;
 }*/
 
-.page-events #block-system-main .views-view-grid{
+.page-events #block-system-main .views-view-grid,
+.page-festival #block-system-main .views-view-grid{
    width: 430px;
    height: 480px;
     /*margin: 10px auto;*/
@@ -72,14 +79,16 @@
 }
 
 .page-events #block-system-main .views-view-grid tr
-.page-node #block-system-main .views-view-grid td{
+.page-node #block-system-main .views-view-grid tr,
+.page-festival #block-system-main .views-view-grid tr{
     margin: 0;
     /*margin-bottom: 5px;*/
     padding: 0;
 }
 
 .page-events #block-system-main .views-view-grid td,
-.page-node #block-system-main .views-view-grid td{
+.page-node #block-system-main .views-view-grid td,
+.page-festival #block-system-main .views-view-grid td{
     margin: 0;
     padding: 0;
     vertical-align: 0;
@@ -91,18 +100,21 @@
     margin: 0 5px 0 0;
 }
 
-.page-events #block-system-main .views-view-grid .views-field-field-event-image{
+.page-events #block-system-main .views-view-grid .views-field-field-event-image,
+.page-festival #block-system-main .views-view-grid .views-field-field-event-image{
     float: left;
 }
 
-.page-events #block-system-main .views-view-grid .views-field-field-event-image img{
+.page-events #block-system-main .views-view-grid .views-field-field-event-image img,
+.page-festival #block-system-main .views-view-grid .views-field-field-event-image img{
     /*margin: 5px 5px 5px 15px;*/
     /*margin: 5px 0px 0px 15px;*/
 }
 
 /*.page-events .views-field-title,
 .page-events .views-field-body{*/
-.page-events .events-body{
+.page-events .events-body,
+.page-festival .events-body{
     background: #231f20;
     width: 135px;
     height: 50px;
@@ -114,32 +126,39 @@
 }
 
 .page-events .events-body p,
-.page-events .events-body a{
+.page-events .events-body a,
+.page-festival .events-body p,
+.page-festival .events-body a{
     margin-bottom: 3px;
     color: white;
 }
 
-.page-events .events-body p{
+.page-events .events-body p,
+.page-festival .events-body p{
     margin-left: 5px;
 }
 
-.page-events .events-body .views-field-title{
+.page-events .events-body .views-field-title,
+.page-festival .events-body .views-field-title{
     margin-left: 5px;
     font-size: 10px;
     margin-bottom: 3px;
 }
 
-.page-events .events-body .views-field-title a{
+.page-events .events-body .views-field-title a,
+.page-festival .events-body .views-field-title a{
     text-decoration: none;
     color: #fff;
 }
 
-.page-events .events-body .views-field-title a:hover{
+.page-events .events-body .views-field-title a:hover,
+.page-festival .events-body .views-field-title a:hover{
     text-decoration: none;
     color: #fff;
 }
 
-.page-events .events-body .views-field-body{
+.page-events .events-body .views-field-body,
+.page-festival .events-body .views-field-body{
     margin-left: 5px;
     font-size: 8px;
     color: #fff;
@@ -147,7 +166,8 @@
 }
 
 /*forms with search*/
-.page-events .views-exposed-form{
+.page-events .views-exposed-form,
+.page-festival .views-exposed-form{
     float: right;
     position: absolute;
     right: 95px;
@@ -155,7 +175,8 @@
     z-index: 10;
 }
 
-.page-events views-exposed-widgets{
+.page-events views-exposed-widgets,
+.page-festival views-exposed-widgets{
     border-width: 0px;
     border-style: none;
     width: 150px;
@@ -163,24 +184,28 @@
     overflow: hidden;
 }
 
-.page-events .views-exposed-form #edit-field-event-date-value-wrapper{
+.page-events .views-exposed-form #edit-field-event-date-value-wrapper,
+.page-festival .views-exposed-form #edit-field-event-date-value-wrapper{
     display: none;
 }
 
-.page-events .views-exposed-form #edit-tid-wrapper{
+.page-events .views-exposed-form #edit-tid-wrapper,
+.page-festival .views-exposed-form #edit-tid-wrapper{
     display: none;
 }
 
 .page-events .views-exposed-form #edit-keys-wrapper,
-.page-events .views-exposed-form .views-submit-button
-{
+.page-events .views-exposed-form .views-submit-button,
+.page-festival .views-exposed-form #edit-keys-wrapper,
+.page-festival .views-exposed-form .views-submit-button{
     margin: 0;
     padding: 0;
     /*float: right;*/
 }
 
 /*text field*/
-.page-events .views-exposed-form #edit-keys-wrapper input{
+.page-events .views-exposed-form #edit-keys-wrapper input,
+.page-festival .views-exposed-form #edit-keys-wrapper input{
     margin: 0;
     padding: 0;
     height: 13px;
@@ -198,8 +223,16 @@
      position: relative;
 }
 
+.page-events .views-exposed-form #edit-keys-wrapper input:focus,
+.page-events .views-exposed-form #edit-keys-wrapper input:active,
+.page-festival .views-exposed-form #edit-keys-wrapper input:focus,
+.page-festival .views-exposed-form #edit-keys-wrapper input:active{
+    box-shadow: none;
+}
+
 /*button*/
-.page-events .views-exposed-form .views-submit-button input{
+.page-events .views-exposed-form .views-submit-button input,
+.page-festival .views-exposed-form .views-submit-button input{
     background: url(../images/header/searchbutton.png) no-repeat center 0;
     
     -moz-border-radius: 0;
@@ -301,7 +334,8 @@
 }
 
 /*----------------------------Cart icon---------------------------------------*/
-.page-events #block-system-main .views-view-grid .buy-link-cart{
+.page-events #block-system-main .views-view-grid .buy-link-cart,
+.page-festival #block-system-main .views-view-grid .buy-link-cart{
     float: right;
     position: absolute;
     top: 5px;
@@ -328,4 +362,36 @@
     top: 5px;
     right: 5px;
     cursor: pointer;
+}
+
+.views-view-grid .views-field-add-to-cart-form .commerce-add-to-cart input:focus,
+.views-view-grid .views-field-add-to-cart-form .commerce-add-to-cart input:active{
+    box-shadow: none;
+    z-index: 2;
+}
+
+/*---------------------------количество товара--------------------------------*/
+.block-menu-festival-link-tiny-cart{
+    float: left;
+    /*width: 15px;
+    height: 15px;*/
+    position: absolute;
+    right: 250px;
+    top: 25px;
+    z-index: 10;
+}
+
+.block-menu-festival-link-tiny-cart .tiny-cart-block img{
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.block-menu-festival-link-tiny-cart .tiny-cart-block p{
+    margin: 0;
+    padding: 0;
+    float: right;
+    font-style: italic;
+    font-size: 8px;
+    font-family: sans-serif;
 }
