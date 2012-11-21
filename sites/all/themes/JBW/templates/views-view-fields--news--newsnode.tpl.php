@@ -26,24 +26,47 @@
 ?>
 <?php foreach ($fields as $id => $field): ?>
 <?php //print $field->class; ?>
-        <?php if($field->class == 'field-news-image'): ?>
+	<?php if($field->class == 'field-news-image'): ?>
 		<div class = "left_part">
 	<?php endif; ?>
-
+	
+	
         <?php if($field->class == 'title'): ?>
                 <div class = "right_part">
         <?php endif; ?>
-		
+	
+        <?php if($field->class != 'field-author' && $field->class != 'field-publication-date'): ?>
+                    
 	  <?php if (!empty($field->separator)): ?>
 		<?php print $field->separator; ?>
 	  <?php endif; ?>
+
 	  <?php print $field->wrapper_prefix; ?>
 		<?php print $field->label_html; ?>
 		<?php print $field->content; ?>
 	  <?php print $field->wrapper_suffix; ?>
+                    
+        <?php endif; ?>
+        
+        <?php if($field->class == 'field-publication-date'): ?>
+            <?php print $field->wrapper_prefix; ?>
+            <?php print $field->label_html; ?>
+            <?php print ' Date '. strip_tags($field->content); ?>
+	    <?php print $field->wrapper_suffix; ?>
+        <?php endif; ?>  
+                    
+	<?php if($field->class == 'field-author'): ?>
+            <?php print $field->wrapper_prefix; ?>
+            <?php print $field->label_html; ?>
+            <?php print 'Authored '. strip_tags($field->content); ?>
+	    <?php print $field->wrapper_suffix; ?>
+        <?php endif; ?>  
 	
-        <?php if($field->class == 'field-news-image' or $field->class == 'body'): ?>
-                </div>
+	<?php if($field->class == 'field-news-image'): ?>
+		</div>
 	<?php endif; ?>
-			
+                            
+        <?php if($field->class == 'sharethis'): ?>   
+                </div>             
+	<?php endif; ?>		
 <?php endforeach; ?>
