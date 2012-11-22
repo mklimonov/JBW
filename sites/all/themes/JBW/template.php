@@ -1,5 +1,11 @@
 <?php
 
+function JBW_preprocess_page(&$variables) {
+    if(arg(0) == 'blog'){
+        //print_r($variables);
+    }
+}
+
 function JBW_preprocess_breadcrumb(&$variables) {
    // print_r($variables);
 }

@@ -1,166 +1,71 @@
-Array
-(
-    [#info] => Array
-        (
-            [filter-field_event_date_value] => Array
-                (
-                    [operator] => field_event_date_value_op
-                    [value] => field_event_date_value
-                    [label] => 
-                    [description] => 
-                )
-
-            [filter-tid] => Array
-                (
-                    [operator] => tid_op
-                    [value] => tid
-                    [label] => 
-                    [description] => 
-                )
-
-            [filter-keys] => Array
-                (
-                    [operator] => keys_op
-                    [value] => keys
-                    [label] => 
-                    [description] => 
-                )
-
-        )
-
-    [q] => Array
-        (
-            [#type] => hidden
-            [#value] => 
-        )
-
-    [field_event_date_value] => Array
-        (
-            [#tree] => 1
-            [value] => Array
-                (
-                    [#title] => 
-                    [#type] => date_popup
-                    [#size] => 20
-                    [#default_value] => 2012-11-19
-                    [#date_format] => Y-m-d
-                    [#date_label_position] => within
-                    [#date_year_range] => -0:+1
-                    [#process] => Array
-                        (
-                            [0] => date_popup_element_process
-                        )
-
-                    [#prefix] => <div id="edit-field-event-date-value-value-wrapper"><div id="edit-field-event-date-value-value">
-                    [#suffix] => </div></div>
-                )
-
-        )
-
-    [tid] => Array
-        (
-            [#type] => textfield
-            [#default_value] => 
-            [#autocomplete_path] => admin/views/ajax/autocomplete/taxonomy/3
-        )
-
-    [keys] => Array
-        (
-            [#type] => textfield
-            [#size] => 15
-            [#default_value] => 
-            [#attributes] => Array
-                (
-                    [title] => Enter the terms you wish to search for.
-                )
-
-        )
-
-    [submit] => Array
-        (
-            [#name] => 
-            [#type] => submit
-            [#value] => Apply
-            [#id] => edit-submit-events-all
-        )
-
-    [#action] => /JBW/
-    [#theme] => Array
-        (
-            [0] => views_exposed_form__events_all__block_3
-            [1] => views_exposed_form__block_3
-            [2] => views_exposed_form__default
-            [3] => views_exposed_form__default
-            [4] => views_exposed_form__events_all__block
-            [5] => views_exposed_form__block
-            [6] => views_exposed_form__events_all
-            [7] => views_exposed_form
-        )
-
-    [#id] => views-exposed-form-events-all-block-3
-    [#form_id] => views_exposed_form
-    [#type] => form
-    [#method] => get
-    [#build_id] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
-    [form_build_id] => Array
-        (
-            [#type] => hidden
-            [#value] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
-            [#id] => form-GWMK7vlvSZdhx3pnFmrQULBZOO_YpzFO0XSE0t8_qTQ
-            [#name] => form_build_id
-            [#parents] => Array
-                (
-                    [0] => form_build_id
-                )
-
-            [#access] => 
-        )
-
-    [#token] => views_exposed_form
-    [form_token] => Array
-        (
-            [#id] => edit-views-exposed-form-form-token
-            [#type] => token
-            [#default_value] => t2nvFoh9aQRwhULzWvp5d6fwYBd2hjzov9aathmVo4w
-            [#parents] => Array
-                (
-                    [0] => form_token
-                )
-
-            [#access] => 
-        )
-
-    [form_id] => Array
-        (
-            [#type] => hidden
-            [#value] => views_exposed_form
-            [#id] => edit-views-exposed-form
-            [#parents] => Array
-                (
-                    [0] => form_id
-                )
-
-            [#access] => 
-        )
-
-    [#theme_wrappers] => Array
-        (
-            [0] => form
-        )
-
-    [#tree] => 
-    [#parents] => Array
-        (
-        )
-
-    [#validate] => Array
-        (
-            [0] => views_exposed_form_validate
-        )
-
-    [#submit] => Array
-        (
-            [0] => views_exposed_form_submit
-        )
-
-)
+<div class="view view-blog view-id-blog view-display-id-bloglist view-dom-id-4dedc88f88e6d8e0fa3445e1389905a7">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/129">Dolus Facilisis Molior</a></span>  </div>  
+  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/129"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima77D.tmp.png" width="365" height="265" alt="Dignissim immitto letalis neo patria sed ulciscor vero." title="Dolor ea exerci illum incassum metuo neo tamen." /></a></div>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Appellatio causa ille immitto inhibeo. Abdo abluo aliquip commodo eligo eu luctus mauris validus volutpat.</p>
+<p>Acsi fere mauris plaga suscipere vereor ymo. Erat ex humo in luctus obruo paratus suscipere tego usitas. Conventio fere humo iaceo melior probo tation vicis.</p></div>  </div>  
+  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_sharethis"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_pinterest"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_facebook"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_twitter"></span>
+<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
+  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/121">Abico Bene Eu Quia</a></span>  </div>  
+  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/121"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/imaD944.tmp.png" width="365" height="265" alt="Abluo genitus metuo obruo os pneum rusticus valetudo voco." title="Aliquam augue commodo eu euismod incassum inhibeo luptatum rusticus virtus." /></a></div>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Et ibidem in te vereor. Interdico jumentum lobortis luptatum natu quis refoveo tego valde zelus. Ad duis neque. Aliquam esse facilisis gemino luptatum pertineo probo vel veniam. Duis exputo molior nobis plaga zelus.</p></div>  </div>  
+  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_sharethis"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_pinterest"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_facebook"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_twitter"></span>
+<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
+  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/127">Quae Virtus</a></span>  </div>  
+  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/127"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima4EC.tmp.jpg" width="365" height="265" alt="Camur damnum fere laoreet lenis os patria sudo typicus ullamcorper." title="Antehabeo cui defui occuro populus ut uxor voco." /></a></div>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Bene gravis nulla tamen tum vulpes. Autem exerci exputo inhibeo scisco singularis sit ulciscor ullamcorper. Adipiscing huic lenis. Bene causa commoveo decet defui in mauris paratus probo quadrum.</p>
+</div>  </div>  
+  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_sharethis"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_pinterest"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_facebook"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_twitter"></span>
+<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
+  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/124">Accumsan Lucidus Sudo Tego</a></span>  </div>  
+  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/124"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima66.tmp.jpg" width="365" height="265" alt="Dolus et exerci gemino iaceo ibidem os veniam vero vulputate." title="Accumsan et iaceo sit tation turpis vulputate." /></a></div>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Acsi adipiscing amet in natu oppeto pecus roto sed ymo. Abluo et letalis pecus pertineo roto sudo tation. Cogo conventio gilvus immitto patria premo. Appellatio in odio pagus praemitto sed.</p></div>  </div>  
+  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_sharethis"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_pinterest"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_facebook"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_twitter"></span>
+<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
+  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/123">Bene Plaga Valde</a></span>  </div>  
+  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/123"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/imaFC40.tmp.png" width="365" height="265" alt="Consectetuer eros exputo illum mauris modo nutus occuro pala tincidunt." title="Augue decet defui fere ibidem populus ullamcorper ut velit." /></a></div>  </div>  
+  <div class="views-field views-field-body">        <div class="field-content"><p>Letalis meus premo proprius quadrum. At fere iustum loquor scisco vel. Consequat gilvus letalis mauris melior pagus patria suscipere tincidunt vulputate. Euismod obruo sino. Blandit jus molior saluto singularis tincidunt.</p>
+</div>  </div>  
+  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_sharethis"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_pinterest"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_facebook"></span>
+<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_twitter"></span>
+<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
+  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><img src="/jbw/sites/all/themes/JBW/images/pager/leftgray.png" /></li><li class="pager-current">1</li><li class="pager-item"><a title="Go to page 2" href="/jbw/?q=blog&amp;page=1">2</a></li><li class="pager-last last"><a href="/jbw/?q=blog&amp;page=1"><img src="/jbw/sites/all/themes/JBW/images/pager/rightgreen.png" /></a></li></ul></div>  
+  
+  
+  
+  
+</div>

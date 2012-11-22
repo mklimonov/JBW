@@ -38,13 +38,12 @@
       <?php print $header; ?>
     </div>
   <?php endif; ?>
-    
-  <?php $filter = ''; if ($exposed): ?>
-    <?php $filter .= '<div class="view-filters">'. $exposed. '</div>'; ?>
+
+  <?php if ($exposed): ?>
+    <div class="view-filters">
+      <?php print $exposed; ?>
+    </div>
   <?php endif; ?>
-    <script>
-        $('#zone-header').append(<?php print $filter; ?>);
-    </script>
 
   <?php if ($attachment_before): ?>
     <div class="attachment attachment-before">
@@ -62,20 +61,10 @@
     </div>
   <?php endif; ?>
 
-  <?php $pager_header = ''; if ($pager): ?>
-    <?php $pager_header = $pager; ?>
+  <?php if ($pager): ?>
+    <?php print $pager; ?>
   <?php endif; ?>
-    
-     <?php/*
-         (function ($) {
-             $(document).ready(function(){
-                 alert('asd');
-                $('#zone-header').append("<?php print $pager_header; ?>");
-                $("#zone-header").hide();
-            });
-        })(jQuery);*/
-    ?>
-    
+
   <?php if ($attachment_after): ?>
     <div class="attachment attachment-after">
       <?php print $attachment_after; ?>

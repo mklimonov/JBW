@@ -2,6 +2,21 @@
 /*
  * implementation of hook_menu()
  */
+function menu_festival_link_views_post_render(&$view, &$output, &$cache) {
+    //print_r($output);
+   // global $pager_for_blog;
+    if($view->name == 'blog' && $view->current_display == 'bloglist'){
+        ob_start();
+        $handle = fopen("a.txt", 'w');
+        global $custom_pager_filter_block_content;
+        $custom_pager_filter_block_content = substr($output, strpos($output, '<div class="item-list"><ul class="pager">'));
+        $custom_pager_filter_block_content = substr($custom_pager_filter_block_content, 0, strpos($custom_pager_filter_block_content, '</ul></div>') + 11);
+        $custom_pager_filter_block_content = substr();
+        print_r($output);//get_plugin('pager'));
+        fwrite($handle, ob_get_contents());
+        ob_end_clean();
+    }
+}
 
 function menu_festival_link_menu(){
     $items['festival'] = array(
@@ -67,6 +82,13 @@ function menu_festival_link_block_info() {
         'weight' => 0,
         'visibility' => 1,
     );
+    $blocks['custom_pager_filter'] = array(
+        'info' => t('Pager and filter for blog in header'),
+        'status' => TRUE,
+        'region' => 'header',
+        'weight' => 0,
+        'visibility' => 1,
+    );
     $blocks['tiny_cart'] = array(
         'info' => t('Tiny cart with quantity of goods'),
         'status' => TRUE,
@@ -83,6 +105,11 @@ function menu_festival_link_block_info() {
 
 function menu_festival_link_block_view($delta = '') {
     switch ($delta) {
+        case 'custom_pager_filter':
+            $block['content'] = menu_festival_link_block_contents($delta);
+            return $block;
+            break;
+        
         case 'date_filter':
 //            $block['subject'] = t('Date filter');
             $block['content'] = menu_festival_link_block_contents($delta);
@@ -101,6 +128,11 @@ function menu_festival_link_block_view($delta = '') {
 */
 function menu_festival_link_block_contents($delta) {
     switch ($delta) {
+        case 'custom_pager_filter':
+            global $custom_pager_filter_block_content;
+            return $custom_pager_filter_block_content;
+            break;
+        
         case 'tiny_cart':
             global $user;
             $quantity = 0;

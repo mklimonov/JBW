@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the lbw3_view_donation feature.
+ */
+
+include_once 'lbw3_view_donation.features.inc';
