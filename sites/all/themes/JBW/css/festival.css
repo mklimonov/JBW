@@ -9,16 +9,19 @@
 /*.node-type-festival #block-system-main .pane-festivals #festival-content{*/
 
 /*------------------------просмотр события/фестиваля------------------------------------*/
-.node-type-event #page-title{
+.node-type-event #page-title,
+.page-news #page-title{
     display: none;
 }
 
-.page-node .region-content-inner{
+.page-node .region-content-inner,
+.page-news .region-content-inner{
     background: #FFFFFF;
     background-position: center;
 }
 
-.page-node .panels-flexible-region-new-center{
+.page-node .panels-flexible-region-new-center,
+.page-news .panels-flexible-region-new-center{
     width: 100%;
 }
 
@@ -30,25 +33,30 @@
     display: none;
 }
 
-.page-node .node_left_part{
+.page-node .node_left_part,
+.page-news .node_left_part{
     width: 150px;
     float: left;
 }
 
-.page-node .node_right_part{
+.page-node .node_right_part,
+.page-news .node_right_part{
     width: 400px;
     float: right;
-    display: block;
 }
 
 /*festivale image*/
-.page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image{
-    /*float: left;*/
+/*.page-node .node_left_part /*#festival-content/ .views-field-field-festival-image,*/
+.page-news .node_left_part /*#festival-content*/ .views-field-field-news-image{
+    float: left;
+    display: block;
 }
 
 .page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image img,
-.page-node .node_left_part /*#festival-content*/ .views-field-field-event-image img{
+.page-node .node_left_part /*#festival-content*/ .views-field-field-event-image img,
+.page-news .node_left_part .views-field-field-news-image img{
     margin: 45px 0 10px 15px;
+    
 }
 
 .page-node .node_left_part .views-field-field-event-image-2 img{
@@ -56,23 +64,27 @@
 }
 
 /*festivale text*/
-.page-node .node_right_part .views-field-body{/*p*/
+.page-node .node_right_part .views-field-body,
+.page-news .node_right_part .views-field-body{/*p*/
     float: right;
     margin: 20px 20px 15px 15px;
     text-align: left;
 }
 
 /*festivale title*/
-.page-node .views-field-title{
+.page-node .views-field-title,
+.page-news .views-field-title{
     margin: 45px 20px 5px 15px;
 }
 
-/*festevale date*/
+/*events date*/
 .page-node .views-field-field-festival-date,
 .page-node .node-event-date,
 .page-node .node-event-price,
 .page-node .buy-link-cart,
-.page-node .Saver-price{
+.page-node .Saver-price,
+.page-news .views-field-field-author,
+.page-news .views-field-field-publication-date{
     margin: 0 20px 5px 15px;
 }
 
@@ -85,11 +97,12 @@
     margin-left: 15px;
 }
 
-.page-node .node_right_part .views-field-sharethis{
+.page-node .node_right_part .views-field-sharethis,
+.page-news .node_right_part .views-field-sharethis{
     /*position: absolute;*/
     float: right;
     margin-bottom: 5px;
-    margin-right: 5px;
+    margin-right: 15px;
     /*width: 110px;*/
     z-index: 2;
     /*right: 10px;
@@ -162,3 +175,39 @@
     color: #fff;
     margin-bottom: 3px;
 }
+
+/*----------------------------------border news-------------------------------*/
+.page-news #news-content{
+    clear: both;
+    /*position: relative;*/
+    display: block;
+    width: 550px;
+    /*border-bottom: 1px solid gray;*/
+}
+
+.page-news .node_right_part{
+    border-bottom: 1px solid gray;
+}
+
+.pane-node .views-row{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    z-index: 100;
+}
+/*
+.page-news .news-border-line{
+    width: 550px;
+}
+
+.page-news .news-border-line hr{
+    width: 500px; 
+    text-align: left;
+    size: 1;
+    color: gray;
+    background-color: gray;
+    border: none;
+}*/
+
+
+

@@ -172,7 +172,8 @@
 
 /*forms with search*/
 .page-events .views-exposed-form,
-.page-festival .views-exposed-form{
+.page-festival .views-exposed-form,
+.page-news .views-exposed-form{
     float: right;
     position: absolute;
     right: 95px;
@@ -180,11 +181,18 @@
     z-index: 10;
 }
 
-.page-events views-exposed-widgets,
-.page-festival views-exposed-widgets{
+.page-events .views-exposed-widgets,
+.page-festival .views-exposed-widgets{
     border-width: 0px;
     border-style: none;
     width: 150px;
+    height: 13px;
+    overflow: hidden;
+}
+.page-news .views-exposed-widgets{
+    border-width: 0px;
+    border-style: none;
+    width: 280px;
     height: 13px;
     overflow: hidden;
 }
@@ -202,7 +210,10 @@
 .page-events .views-exposed-form #edit-keys-wrapper,
 .page-events .views-exposed-form .views-submit-button,
 .page-festival .views-exposed-form #edit-keys-wrapper,
-.page-festival .views-exposed-form .views-submit-button{
+.page-festival .views-exposed-form .views-submit-button,
+.page-news .views-exposed-form #edit-keys-wrapper,
+.page-news .views-exposed-form .views-submit-button,
+.page-news #edit-field-publication-date-value-wrapper{
     margin: 0;
     padding: 0;
     /*float: right;*/
@@ -210,7 +221,8 @@
 
 /*text field*/
 .page-events .views-exposed-form #edit-keys-wrapper input,
-.page-festival .views-exposed-form #edit-keys-wrapper input{
+.page-festival .views-exposed-form #edit-keys-wrapper input,
+.page-news .views-exposed-form #edit-keys-wrapper input{
     margin: 0;
     padding: 0;
     height: 13px;
@@ -231,13 +243,16 @@
 .page-events .views-exposed-form #edit-keys-wrapper input:focus,
 .page-events .views-exposed-form #edit-keys-wrapper input:active,
 .page-festival .views-exposed-form #edit-keys-wrapper input:focus,
-.page-festival .views-exposed-form #edit-keys-wrapper input:active{
+.page-festival .views-exposed-form #edit-keys-wrapper input:active/*,
+.page-news .views-exposed-form #edit-keys-wrapper input:focus,
+.page-news .views-exposed-form #edit-keys-wrapper input:active*/{
     box-shadow: none;
 }
 
 /*button*/
 .page-events .views-exposed-form .views-submit-button input,
-.page-festival .views-exposed-form .views-submit-button input{
+.page-festival .views-exposed-form .views-submit-button input,
+.page-news .views-exposed-form .views-submit-button input{
     background: url(../images/header/searchbutton.png) no-repeat center 0;
     
     -moz-border-radius: 0;
@@ -253,6 +268,26 @@
     cursor: pointer;
     float: right;
     position: relative;
+}
+
+/*-------------------------выпадающий спискок---------------------------------*/
+.page-news .views-exposed-form #edit-field-publication-date-value-wrapper /*.form-type-select*/ select{
+    margin: 0;
+    padding: 0;
+    height: 13px;
+    /*padding-bottom: 5px;*/
+    width: 60px;
+    /*border: none;*/
+    font-family: Arial,sans-serif;
+    font-size: 10px;
+    /*background: url(../images/header/searchbox.png) no-repeat center 0;*/
+
+    -moz-border-radius: 0;
+     border-radius: 0;
+     
+     float: left;
+     position: relative;
+     cursor: pointer;
 }
 
 /*date search*/

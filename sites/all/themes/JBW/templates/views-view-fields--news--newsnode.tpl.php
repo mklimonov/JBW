@@ -24,15 +24,16 @@
  * @ingroup views_templates
  */
 ?>
+<div id="news-content">
 <?php foreach ($fields as $id => $field): ?>
 <?php //print $field->class; ?>
 	<?php if($field->class == 'field-news-image'): ?>
-		<div class = "left_part">
+		<div class = "node_left_part">
 	<?php endif; ?>
 	
 	
         <?php if($field->class == 'title'): ?>
-                <div class = "right_part">
+                <div class = "node_right_part">
         <?php endif; ?>
 	
         <?php if($field->class != 'field-author' && $field->class != 'field-publication-date'): ?>
@@ -70,3 +71,4 @@
                 </div>             
 	<?php endif; ?>		
 <?php endforeach; ?>
+</divs>
