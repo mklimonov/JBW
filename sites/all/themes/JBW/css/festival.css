@@ -38,6 +38,7 @@
 .page-node .node_right_part{
     width: 400px;
     float: right;
+    display: block;
 }
 
 /*festivale image*/
@@ -48,6 +49,10 @@
 .page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image img,
 .page-node .node_left_part /*#festival-content*/ .views-field-field-event-image img{
     margin: 45px 0 10px 15px;
+}
+
+.page-node .node_left_part .views-field-field-event-image-2 img{
+    margin: 10px 0 10px 15px;
 }
 
 /*festivale text*/
@@ -66,7 +71,8 @@
 .page-node .views-field-field-festival-date,
 .page-node .node-event-date,
 .page-node .node-event-price,
-.page-node .buy-link-cart{
+.page-node .buy-link-cart,
+.page-node .Saver-price{
     margin: 0 20px 5px 15px;
 }
 
@@ -80,12 +86,14 @@
 }
 
 .page-node .node_right_part .views-field-sharethis{
-    position: absolute;
+    /*position: absolute;*/
     float: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
     /*width: 110px;*/
     z-index: 2;
-    right: 10px;
-    bottom: 250px;
+    /*right: 10px;
+    bottom: 250px;*/
 }
 
 /*why not try field*/

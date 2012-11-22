@@ -4,6 +4,11 @@
     background: #FFFFFF;
 }
 
+.page-events #region-content{
+    background: #FFFFFF;
+    min-height: 300px;
+}
+
 /*------------------------------Таблица с событиями---------------------------*/
 .panels-flexible-region-new-center{
     float: none;
@@ -68,7 +73,7 @@
 .page-events #block-system-main .views-view-grid,
 .page-festival #block-system-main .views-view-grid{
    width: 430px;
-   height: 480px;
+   /*height: 480px;*/
     /*margin: 10px auto;*/
     /*width: 430px;
     height: 480px;
