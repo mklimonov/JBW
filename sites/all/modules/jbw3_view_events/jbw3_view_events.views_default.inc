@@ -205,7 +205,18 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => 'event_image_list',
+    'image_style' => 'festival_node',
+    'image_link' => '',
+  );
+  /* Field: Content: event image 2 */
+  $handler->display->display_options['fields']['field_event_image_2']['id'] = 'field_event_image_2';
+  $handler->display->display_options['fields']['field_event_image_2']['table'] = 'field_data_field_event_image_2';
+  $handler->display->display_options['fields']['field_event_image_2']['field'] = 'field_event_image_2';
+  $handler->display->display_options['fields']['field_event_image_2']['label'] = '';
+  $handler->display->display_options['fields']['field_event_image_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_image_2']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_event_image_2']['settings'] = array(
+    'image_style' => 'festival_node',
     'image_link' => '',
   );
   /* Field: Content: Title */
@@ -242,6 +253,39 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['commerce_price']['settings'] = array(
     'calculation' => '0',
   );
+  /* Field: Content: Price on another site */
+  $handler->display->display_options['fields']['field_price_on_another_site']['id'] = 'field_price_on_another_site';
+  $handler->display->display_options['fields']['field_price_on_another_site']['table'] = 'field_data_field_price_on_another_site';
+  $handler->display->display_options['fields']['field_price_on_another_site']['field'] = 'field_price_on_another_site';
+  $handler->display->display_options['fields']['field_price_on_another_site']['label'] = '';
+  $handler->display->display_options['fields']['field_price_on_another_site']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_price_on_another_site']['settings'] = array(
+    'thousand_separator' => ' ',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Commerce Product: Price saver */
+  $handler->display->display_options['fields']['field_price_saver']['id'] = 'field_price_saver';
+  $handler->display->display_options['fields']['field_price_saver']['table'] = 'field_data_field_price_saver';
+  $handler->display->display_options['fields']['field_price_saver']['field'] = 'field_price_saver';
+  $handler->display->display_options['fields']['field_price_saver']['relationship'] = 'reverse_field_ref_event_ticket_commerce_product';
+  $handler->display->display_options['fields']['field_price_saver']['label'] = '';
+  $handler->display->display_options['fields']['field_price_saver']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_price_saver']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['field_price_saver']['type'] = 'commerce_price_raw_amount';
+  /* Field: Content: saver price */
+  $handler->display->display_options['fields']['field_saver_price']['id'] = 'field_saver_price';
+  $handler->display->display_options['fields']['field_saver_price']['table'] = 'field_data_field_saver_price';
+  $handler->display->display_options['fields']['field_saver_price']['field'] = 'field_saver_price';
+  $handler->display->display_options['fields']['field_saver_price']['label'] = '';
+  $handler->display->display_options['fields']['field_saver_price']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_saver_price']['settings'] = array(
+    'thousand_separator' => ' ',
+    'decimal_separator' => '.',
+    'scale' => '2',
+    'prefix_suffix' => 1,
+  );
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -255,6 +299,18 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_ticket_buy_link']['label'] = '';
   $handler->display->display_options['fields']['field_ticket_buy_link']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ticket_buy_link']['element_default_classes'] = FALSE;
+  /* Field: Commerce Product: Add to Cart form */
+  $handler->display->display_options['fields']['add_to_cart_form']['id'] = 'add_to_cart_form';
+  $handler->display->display_options['fields']['add_to_cart_form']['table'] = 'commerce_product';
+  $handler->display->display_options['fields']['add_to_cart_form']['field'] = 'add_to_cart_form';
+  $handler->display->display_options['fields']['add_to_cart_form']['relationship'] = 'reverse_field_ref_event_ticket_commerce_product';
+  $handler->display->display_options['fields']['add_to_cart_form']['label'] = '';
+  $handler->display->display_options['fields']['add_to_cart_form']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['add_to_cart_form']['show_quantity'] = 0;
+  $handler->display->display_options['fields']['add_to_cart_form']['default_quantity'] = '1';
+  $handler->display->display_options['fields']['add_to_cart_form']['combine'] = 1;
+  $handler->display->display_options['fields']['add_to_cart_form']['display_path'] = 0;
+  $handler->display->display_options['fields']['add_to_cart_form']['line_item_type'] = 'product';
   /* Field: Content: ShareThis Link */
   $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
   $handler->display->display_options['fields']['sharethis']['table'] = 'node';
@@ -343,6 +399,19 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: festival (field_festival_reference) */
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['title'] = '%2';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['breadcrumb_enable'] = TRUE;
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['breadcrumb'] = '%2';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -430,10 +499,10 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['id'] = 'reverse_field_ref_event_ticket_commerce_product';
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['field'] = 'reverse_field_ref_event_ticket_commerce_product';
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['id'] = 'reverse_field_festival_reference_node';
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['field'] = 'reverse_field_festival_reference_node';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: ticket buy link */
   $handler->display->display_options['fields']['field_ticket_buy_link']['id'] = 'field_ticket_buy_link';
@@ -480,6 +549,15 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: festival (field_festival_reference) */
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -514,12 +592,6 @@ function jbw3_view_events_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'genre';
-  /* Filter criterion: Content: festival (field_festival_reference) */
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['operator'] = 'not empty';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['group'] = 1;
   /* Filter criterion: Content: event date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
@@ -552,6 +624,12 @@ function jbw3_view_events_views_default_views() {
     1 => 0,
     3 => 0,
   );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['filters']['title']['operator'] = 'not empty';
 
   /* Display: Events_non-fest */
   $handler = $view->new_display('block', 'Events_non-fest', 'block_5');
@@ -576,10 +654,10 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['id'] = 'reverse_field_ref_event_ticket_commerce_product';
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_ref_event_ticket_commerce_product']['field'] = 'reverse_field_ref_event_ticket_commerce_product';
-  /* Relationship: Entity Reference: Referencing entity */
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['id'] = 'reverse_field_festival_reference_node';
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['table'] = 'node';
-  $handler->display->display_options['relationships']['reverse_field_festival_reference_node']['field'] = 'reverse_field_festival_reference_node';
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
+  $handler->display->display_options['relationships']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: ticket buy link */
   $handler->display->display_options['fields']['field_ticket_buy_link']['id'] = 'field_ticket_buy_link';
@@ -626,6 +704,17 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: festival (field_festival_reference) */
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['title_enable'] = TRUE;
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['breadcrumb_enable'] = TRUE;
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_festival_reference_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -660,12 +749,6 @@ function jbw3_view_events_views_default_views() {
   );
   $handler->display->display_options['filters']['tid']['reduce_duplicates'] = TRUE;
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'genre';
-  /* Filter criterion: Content: festival (field_festival_reference) */
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['operator'] = 'empty';
-  $handler->display->display_options['filters']['field_festival_reference_target_id']['group'] = 1;
   /* Filter criterion: Content: event date (field_event_date) */
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
@@ -698,6 +781,11 @@ function jbw3_view_events_views_default_views() {
     1 => 0,
     3 => 0,
   );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['relationship'] = 'field_festival_reference_target_id';
 
   /* Display: why not to try */
   $handler = $view->new_display('block', 'why not to try', 'wntt');

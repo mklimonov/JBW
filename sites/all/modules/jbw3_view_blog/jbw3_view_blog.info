@@ -1,8 +1,6 @@
-name = View_blog
+name = jbw3_view_blog
 core = 7.x
 package = Features
-version = 7.x-1.0
-project = view_blog
 dependencies[] = ctools
 dependencies[] = views
 features[ctools][] = views:views_default:3.0

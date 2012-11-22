@@ -1,5 +1,9 @@
 <?php
 
+function JBW_preprocess_breadcrumb(&$variables) {
+   // print_r($variables);
+}
+
 function JBW_form_alter(&$form, &$form_state, $form_id) {
     if($form['#id'] == 'views-exposed-form-events-all-block-3'
                 || $form['#id'] == 'views-exposed-form-events-all-block-5') {

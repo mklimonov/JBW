@@ -42,11 +42,16 @@
     <?php endif; ?>
     
     <?php if($field->class == 'field-price-on-another-site' && strip_tags($field->content) != ''): ?>
-          <?php print '<div class="node-event-price">Price: &pound;'. strip_tags($field->content). '</div>'; ?>
+          <?php if($field->content == 0): ?>
+          <div class="node-event-price">Free event</div>
+          <?php endif; ?>
+          <?php if($field->content != 0): ?>
+            <?php print '<div class="node-event-price">Price: &pound;'. strip_tags($field->content). '</div>'; ?>
+          <?php endif; ?>
     <?php endif; ?>
           
     <?php if($field->class == 'field-ticket-buy-link' && strip_tags($field->content) != ''): ?>
-           <?php print '<div class="buy-link-cart"><a href = "'. strip_tags($field->content). '">Book here</a><br /><i>You will now be taken to the King Place<br/>website to continue your booking</i>'; ?>  
+           <?php print '<div class="buy-link-cart"><a href = "'. strip_tags($field->content). '">Book here</a><br /><i>You will now be taken to the King Place<br/>website to continue your booking</i></div>'; ?>  
     <?php endif; ?>
           
     <?php if(($field->class == 'field-price-saver' || $field->class == 'field-saver-price') && strip_tags($field->content) != ''): ?>
@@ -66,7 +71,7 @@
           
   <?php endif; ?>
           
-    <?php if($field->class == 'field-event-image' || $field->class == 'sharethis'): ?>
+    <?php if($field->class == 'sharethis' || $field->class == 'field-event-image-2'): ?>
       </div>
     <?php endif; ?>
           
