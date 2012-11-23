@@ -4,9 +4,11 @@
     background: #FFFFFF;
 }
 
-.page-events #region-content{
+.page-events #region-content,
+.page-festival #region-content,
+.page-node #region-content{
     background: #FFFFFF;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 /*------------------------------Таблица с событиями---------------------------*/
@@ -213,7 +215,7 @@
 .page-festival .views-exposed-form .views-submit-button,
 .page-news .views-exposed-form #edit-keys-wrapper,
 .page-news .views-exposed-form .views-submit-button,
-.page-news #edit-field-publication-date-value-wrapper{
+.page-news #edit-date-filter-wrapper /*edit-field-publication-date-value-wrapper*/{
     margin: 0;
     padding: 0;
     /*float: right;*/
@@ -271,7 +273,7 @@
 }
 
 /*-------------------------выпадающий спискок---------------------------------*/
-.page-news .views-exposed-form #edit-field-publication-date-value-wrapper /*.form-type-select*/ select{
+.page-news .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select{
     margin: 0;
     padding: 0;
     height: 13px;

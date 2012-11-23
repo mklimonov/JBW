@@ -24,13 +24,62 @@
 }
 
 
+
 #scrollbarY  section .block-inner{
-    /*padding: 5px;*/
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 10px;
     margin-bottom: 5px;
-    
+}
+
+#scrollbarY h2.block-title {
+    padding-top: 5px;
+}
+
+#scrollbarY .views-field-sharethis{
+    float: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    /*width: 110px;*/
+    z-index: 2;
+}
+
+#scrollbarY .views-row .node_left_part{
+    width: 150px;
+    float: left;
+}
+
+#scrollbarY .views-row .node_right_part{
+    width: 200px;
+    float: right;
+}
+
+#scrollbarY .views-row .node_right_part .views-field-title a{
+    text-decoration: none;
+    color: black;
+}
+
+/*sidebar image*/
+#scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-news-image{
+    float: left;
+    display: block;
+}
+
+#scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-festival-image img{
+    margin: 45px 0 10px 15px;  
+}
+
+#scrollbarY .views-row .node_left_part .views-field-field-event-image-2 img{
+    margin: 10px 0 10px 15px;
+}
+
+/*for news page*/
+/*.page-news #scrollbarY #news-content{
+    clear: none;
+    width: 350px;
+}*/
+
+.page-news #scrollbarY .views-row .node_left_part .views-field-field-festival-image img{
+    margin: 0;  
 }
 
 

@@ -57,8 +57,8 @@ body{
 }
 
 #section-footer{
-    display: none;
-    /*clear: both;*/
+    /*display: none;*/
+    clear: both;
     position: relative;
     top: 20px;
     width: 1020px;
@@ -183,7 +183,7 @@ body{
 }
 
 /*-------------------------site slogan-----------------------------------*/
-.site-slogan{
+#site-slogan{
     width: 300px;
     height: 40px;
     float: right;
@@ -191,6 +191,15 @@ body{
     right: 15px;
     top: 65px;
     z-index: 10;
+}
+
+#site-slogan .site-slogan{
+    text-align: right;
+    /*font-family: sans-serif;*/
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 /*-------------------------Share component---------------------------------*/
@@ -203,3 +212,24 @@ body{
     z-index: 20;
 }
 
+/*------------------------------footer menu-----------------------------------*/
+#region-footer .block-nice-menus .nice-menu{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+#region-footer .block-nice-menus .nice-menu li a{
+    border-right: 1px solid black;
+    padding: 0;
+    padding-left: 3px; 
+    padding-right: 3px; 
+}
+
+#region-footer .images{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 10;
+}
