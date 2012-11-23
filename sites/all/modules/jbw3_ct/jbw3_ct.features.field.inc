@@ -1305,93 +1305,6 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-blog-field_blog_publication_date'.
-  $fields['node-blog-field_blog_publication_date'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_blog_publication_date',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'date',
-      'settings' => array(
-        'cache_count' => '4',
-        'cache_enabled' => 0,
-        'granularity' => array(
-          'day' => 'day',
-          'hour' => 0,
-          'minute' => 0,
-          'month' => 'month',
-          'second' => 0,
-          'year' => 'year',
-        ),
-        'repeat' => '0',
-        'timezone_db' => '',
-        'todate' => '',
-        'tz_handling' => 'none',
-      ),
-      'translatable' => '0',
-      'type' => 'datetime',
-    ),
-    'field_instance' => array(
-      'bundle' => 'blog',
-      'deleted' => '0',
-      'description' => 'Publication date. Current time as default.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'date',
-          'settings' => array(
-            'format_type' => 'long',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
-            'show_repeat_rule' => 'show',
-          ),
-          'type' => 'date_default',
-          'weight' => 6,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_blog_publication_date',
-      'label' => 'publication date',
-      'required' => 1,
-      'settings' => array(
-        'default_value' => 'now',
-        'default_value2' => 'same',
-        'default_value_code' => '',
-        'default_value_code2' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'date',
-        'settings' => array(
-          'display_all_day' => 0,
-          'increment' => '15',
-          'input_format' => 'm/d/Y - H:i:s',
-          'input_format_custom' => '',
-          'label_position' => 'above',
-          'repeat_collapsed' => 0,
-          'text_parts' => array(),
-          'year_range' => '-5:+3',
-        ),
-        'type' => 'date_popup',
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported field: 'node-blog-field_blog_tags'.
   $fields['node-blog-field_blog_tags'] = array(
     'field_config' => array(
@@ -2998,7 +2911,7 @@ Else leave this field blank',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '-4',
+        'weight' => '1',
       ),
     ),
   );
@@ -3067,7 +2980,7 @@ Else leave this field blank',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '1',
+        'weight' => '6',
       ),
     ),
   );
@@ -3154,7 +3067,7 @@ Else leave this field blank',
           'year_range' => '-5:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '-1',
+        'weight' => '3',
       ),
     ),
   );
@@ -3234,7 +3147,7 @@ Else leave this field blank',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '-3',
+        'weight' => '2',
       ),
     ),
   );
@@ -3314,7 +3227,7 @@ Else leave this field blank',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '2',
+        'weight' => '4',
       ),
     ),
   );
@@ -3394,7 +3307,7 @@ Else leave this field blank',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '0',
+        'weight' => '5',
       ),
     ),
   );
@@ -3472,14 +3385,14 @@ Else leave this field blank',
     ),
   );
 
-  // Exported field: 'node-news-field_author'.
-  $fields['node-news-field_author'] = array(
+  // Exported field: 'node-news-field_news_description_homepage'.
+  $fields['node-news-field_news_description_homepage'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_author',
+      'field_name' => 'field_news_description_homepage',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -3495,24 +3408,22 @@ Else leave this field blank',
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(
-        'max_length' => '127',
-      ),
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'text_with_summary',
     ),
     'field_instance' => array(
       'bundle' => 'news',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'News author.',
+      'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3522,21 +3433,23 @@ Else leave this field blank',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_author',
-      'label' => 'author',
+      'field_name' => 'field_news_description_homepage',
+      'label' => 'description homepage',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'display_summary' => 0,
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => '60',
+          'rows' => '20',
+          'summary_rows' => 5,
         ),
-        'type' => 'text_textfield',
-        'weight' => '-1',
+        'type' => 'text_textarea_with_summary',
+        'weight' => '2',
       ),
     ),
   );
@@ -3707,55 +3620,50 @@ Else leave this field blank',
     ),
   );
 
-  // Exported field: 'node-news-field_publication_date'.
-  $fields['node-news-field_publication_date'] = array(
+  // Exported field: 'node-news-field_news_image_homepage'.
+  $fields['node-news-field_news_image_homepage'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_publication_date',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'date',
-      'settings' => array(
-        'cache_count' => '4',
-        'cache_enabled' => 0,
-        'granularity' => array(
-          'day' => 'day',
-          'hour' => 0,
-          'minute' => 0,
-          'month' => 'month',
-          'second' => 0,
-          'year' => 'year',
+      'field_name' => 'field_news_image_homepage',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
         ),
-        'repeat' => '0',
-        'timezone_db' => '',
-        'todate' => '',
-        'tz_handling' => 'none',
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
       ),
       'translatable' => '0',
-      'type' => 'datetime',
+      'type' => 'image',
     ),
     'field_instance' => array(
       'bundle' => 'news',
       'deleted' => '0',
-      'description' => 'News publication date. Current time as default.',
+      'description' => 'If you want these news shown on homepage please enter description homepage and image homepage',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'date',
+          'module' => 'image',
           'settings' => array(
-            'format_type' => 'long',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
-            'show_repeat_rule' => 'show',
+            'image_link' => '',
+            'image_style' => '',
           ),
-          'type' => 'date_default',
-          'weight' => 4,
+          'type' => 'image',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3765,31 +3673,29 @@ Else leave this field blank',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_publication_date',
-      'label' => 'publication date',
-      'required' => 1,
+      'field_name' => 'field_news_image_homepage',
+      'label' => 'image homepage',
+      'required' => 0,
       'settings' => array(
-        'default_value' => 'now',
-        'default_value2' => 'same',
-        'default_value_code' => '',
-        'default_value_code2' => '',
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'date',
+        'module' => 'image',
         'settings' => array(
-          'display_all_day' => 0,
-          'increment' => '15',
-          'input_format' => 'm/d/Y - H:i:s',
-          'input_format_custom' => '',
-          'label_position' => 'above',
-          'repeat_collapsed' => 0,
-          'text_parts' => array(),
-          'year_range' => '-5:+3',
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
         ),
-        'type' => 'date_popup',
-        'weight' => 0,
+        'type' => 'image_image',
+        'weight' => '1',
       ),
     ),
   );
@@ -4222,6 +4128,7 @@ Else leave this field blank',
   t('If it\'s necessary print price saver if you buy a ticket on website');
   t('If you redirect user on another website to buy tickets on event please fill this field.');
   t('If you redirect user to another website to buy a ticket please fill this field - the ticket price on this website.');
+  t('If you want these news shown on homepage please enter description homepage and image homepage');
   t('If you want to sell tickets on another site please insert link here in following form: <i>http://sell-teckets-site.com/tickets23/buy</i>
 Else leave this field blank');
   t('Image for news teaser');
@@ -4229,9 +4136,7 @@ Else leave this field blank');
   t('Image that shows in festival list, in search, in homepage.');
   t('Images for gallery of this event');
   t('Line items');
-  t('News author.');
   t('News image');
-  t('News publication date. Current time as default.');
   t('Order total');
   t('Price');
   t('Price on another site');
@@ -4239,13 +4144,11 @@ Else leave this field blank');
   t('Print the event name that described in these news. If it\'s not necessary leave this field blank.');
   t('Product');
   t('Product reference');
-  t('Publication date. Current time as default.');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
   t('Teaser image how it shown on search, on events list.');
   t('Total');
   t('Unit price');
   t('When event starts.');
-  t('author');
   t('blog event');
   t('blog image');
   t('description homepage');
@@ -4262,7 +4165,6 @@ Else leave this field blank');
   t('if you want to provide it to homepage enter a short description');
   t('image homepage');
   t('product ref');
-  t('publication date');
   t('saver price');
   t('slider image');
   t('tags');

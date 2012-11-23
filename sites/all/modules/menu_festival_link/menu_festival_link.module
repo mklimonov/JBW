@@ -11,7 +11,7 @@ function menu_festival_link_views_post_render(&$view, &$output, &$cache) {
         global $custom_pager_filter_block_content;
         $custom_pager_filter_block_content = substr($output, strpos($output, '<div class="item-list"><ul class="pager">'));
         $custom_pager_filter_block_content = substr($custom_pager_filter_block_content, 0, strpos($custom_pager_filter_block_content, '</ul></div>') + 11);
-        $custom_pager_filter_block_content = substr();
+        //$custom_pager_filter_block_content = substr();
         print_r($output);//get_plugin('pager'));
         fwrite($handle, ob_get_contents());
         ob_end_clean();

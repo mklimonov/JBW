@@ -1,4 +1,4 @@
-<div class="view view-blog view-id-blog view-display-id-bloglist view-dom-id-4dedc88f88e6d8e0fa3445e1389905a7">
+<div class="view view-blog view-id-blog view-display-id-bloglist view-dom-id-13a3712cda5a2d79619b72616a43acfe">
         
   
   
