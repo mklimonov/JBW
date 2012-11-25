@@ -45,9 +45,9 @@
 }
 
 /*title of text on slider*/
-#block-views-slider-block .view-slider .slider-left-part .views-field-title{
+/*#block-views-slider-block .view-slider .slider-left-part .views-field-title{
     display: none;
-}
+}*/
 
 /*text slider*/
 #block-views-slider-block .view-slider .slider-left-part .views-field-body{/*p*/
@@ -110,7 +110,7 @@
     text-align: center;
     font-size: 14px;
     margin: 15px 3px 15px 15px; 
-    /*z-index: 10;*/
+    /*z-index: 10;/
 }
 /*title slider/
 .views-field-title{

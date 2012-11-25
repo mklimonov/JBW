@@ -9,10 +9,11 @@
 /*.node-type-festival #block-system-main .pane-festivals #festival-content{*/
 
 /*------------------------просмотр события/фестиваля------------------------------------*/
-.node-type-event #page-title,
+/*-----------------------------------Заголовки--------------------------------*/
+/*.node-type-event #page-title,
 .page-news #page-title{
     display: none;
-}
+}*/
 
 .page-node .region-content-inner,
 .page-news .region-content-inner{
@@ -25,13 +26,13 @@
     width: 100%;
 }
 
-.page-node .pane-festivals h2{
+/*.page-node .pane-festivals h2{
     display: none;
 }
 
 .page-node #region-content h1{
     display: none;
-}
+}*/
 
 .page-node .node_left_part,
 .page-news #region-content .node_left_part{
