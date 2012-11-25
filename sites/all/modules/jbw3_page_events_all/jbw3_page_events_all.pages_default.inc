@@ -80,7 +80,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Festival programme';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -170,7 +170,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Festival programme';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -239,7 +239,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Festival programme';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -346,7 +346,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Events';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -436,7 +436,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Events';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -505,7 +505,7 @@ function jbw3_page_events_all_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Events';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

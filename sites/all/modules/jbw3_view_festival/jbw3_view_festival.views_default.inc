@@ -139,17 +139,6 @@ print theme(\'facebookshare\', array(\'url\' => $url));
     'trim_length' => '300',
   );
   /* Field: Content: description homepage */
-  $handler->display->display_options['fields']['field_description_homepage_news']['id'] = 'field_description_homepage_news';
-  $handler->display->display_options['fields']['field_description_homepage_news']['table'] = 'field_data_field_description_homepage_news';
-  $handler->display->display_options['fields']['field_description_homepage_news']['field'] = 'field_description_homepage_news';
-  $handler->display->display_options['fields']['field_description_homepage_news']['label'] = '';
-  $handler->display->display_options['fields']['field_description_homepage_news']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_description_homepage_news']['element_wrapper_class'] = 'festival-left-part';
-  $handler->display->display_options['fields']['field_description_homepage_news']['type'] = 'text_summary_or_trimmed';
-  $handler->display->display_options['fields']['field_description_homepage_news']['settings'] = array(
-    'trim_length' => '300',
-  );
-  /* Field: Content: description homepage */
   $handler->display->display_options['fields']['field_description_homepage_blog']['id'] = 'field_description_homepage_blog';
   $handler->display->display_options['fields']['field_description_homepage_blog']['table'] = 'field_data_field_description_homepage_blog';
   $handler->display->display_options['fields']['field_description_homepage_blog']['field'] = 'field_description_homepage_blog';
@@ -190,17 +179,6 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['fields']['field_image_homepage_fest']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image_homepage_fest']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image_homepage_fest']['settings'] = array(
-    'image_style' => 'festival_homepage',
-    'image_link' => 'content',
-  );
-  /* Field: Content: image homepage */
-  $handler->display->display_options['fields']['field_image_homepage_news']['id'] = 'field_image_homepage_news';
-  $handler->display->display_options['fields']['field_image_homepage_news']['table'] = 'field_data_field_image_homepage_news';
-  $handler->display->display_options['fields']['field_image_homepage_news']['field'] = 'field_image_homepage_news';
-  $handler->display->display_options['fields']['field_image_homepage_news']['label'] = '';
-  $handler->display->display_options['fields']['field_image_homepage_news']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image_homepage_news']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_image_homepage_news']['settings'] = array(
     'image_style' => 'festival_homepage',
     'image_link' => 'content',
   );
@@ -283,24 +261,12 @@ print theme(\'facebookshare\', array(\'url\' => $url));
     'simplenews' => 'simplenews',
   );
   $handler->display->display_options['filters']['type_1']['group'] = 2;
-  /* Filter criterion: Content: image homepage (field_image_homepage_news:alt) */
-  $handler->display->display_options['filters']['field_image_homepage_news_alt']['id'] = 'field_image_homepage_news_alt';
-  $handler->display->display_options['filters']['field_image_homepage_news_alt']['table'] = 'field_data_field_image_homepage_news';
-  $handler->display->display_options['filters']['field_image_homepage_news_alt']['field'] = 'field_image_homepage_news_alt';
-  $handler->display->display_options['filters']['field_image_homepage_news_alt']['operator'] = 'not empty';
-  $handler->display->display_options['filters']['field_image_homepage_news_alt']['group'] = 3;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status_2']['id'] = 'status_2';
   $handler->display->display_options['filters']['status_2']['table'] = 'node';
   $handler->display->display_options['filters']['status_2']['field'] = 'status';
   $handler->display->display_options['filters']['status_2']['value'] = '1';
   $handler->display->display_options['filters']['status_2']['group'] = 3;
-  /* Filter criterion: Content: description homepage (field_description_homepage_news) */
-  $handler->display->display_options['filters']['field_description_homepage_news_value']['id'] = 'field_description_homepage_news_value';
-  $handler->display->display_options['filters']['field_description_homepage_news_value']['table'] = 'field_data_field_description_homepage_news';
-  $handler->display->display_options['filters']['field_description_homepage_news_value']['field'] = 'field_description_homepage_news_value';
-  $handler->display->display_options['filters']['field_description_homepage_news_value']['operator'] = 'not empty';
-  $handler->display->display_options['filters']['field_description_homepage_news_value']['group'] = 3;
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type_2']['id'] = 'type_2';
   $handler->display->display_options['filters']['type_2']['table'] = 'node';
@@ -456,6 +422,12 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: ShareThis Link */
+  $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['table'] = 'node';
+  $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['label'] = '';
+  $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';

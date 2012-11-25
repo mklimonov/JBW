@@ -2559,6 +2559,81 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-event-field_is_sold_out_'.
+  $fields['node-event-field_is_sold_out_'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_is_sold_out_',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'default_value' => array(
+        0 => array(
+          'value' => '1',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => 'Please do not enter your own value in "other" option - use checkboxes only.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 0,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_integer',
+          'weight' => 17,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_is_sold_out_',
+      'label' => 'is sold out?',
+      'required' => 1,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'select_or_other',
+        'settings' => array(
+          'available_options' => '0|Yes, tickets has being sold out
+1|No, tickets are available',
+          'available_options_php' => '',
+          'markup_available_options_php' => '&lt;none&gt;',
+          'other' => 'Other',
+          'other_title' => '',
+          'other_unknown_defaults' => 'other',
+          'sort_options' => 0,
+        ),
+        'type' => 'select_or_other_buttons',
+        'weight' => '15',
+      ),
+    ),
+  );
+
   // Exported field: 'node-event-field_price_on_another_site'.
   $fields['node-event-field_price_on_another_site'] = array(
     'field_config' => array(
@@ -3700,6 +3775,82 @@ Else leave this field blank',
     ),
   );
 
+  // Exported field: 'node-page-field_page_image'.
+  $fields['node-page-field_page_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_page_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'page',
+      'deleted' => '0',
+      'description' => 'Teaser decorate image of your page',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '1',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_page_image',
+      'label' => 'page image',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => 'page_image',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '-3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-paypal_donate-body'.
   $fields['node-paypal_donate-body'] = array(
     'field_config' => array(
@@ -4033,6 +4184,77 @@ Else leave this field blank',
     ),
   );
 
+  // Exported field: 'node-slider_image-field_header'.
+  $fields['node-slider_image-field_header'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_header',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'sildertypes',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'slider_image',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Where will this header be shown?',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 2,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_header',
+      'label' => 'Header',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '-2',
+      ),
+    ),
+  );
+
   // Exported field: 'node-slider_image-field_slider_image'.
   $fields['node-slider_image-field_slider_image'] = array(
     'field_config' => array(
@@ -4102,12 +4324,17 @@ Else leave this field blank',
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'imagefield_crop',
         'settings' => array(
+          'collapsible' => '2',
+          'croparea' => '500x500',
+          'enforce_minimum' => 1,
+          'enforce_ratio' => 1,
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
+          'resolution' => '400x100',
         ),
-        'type' => 'image_image',
+        'type' => 'imagefield_crop_widget',
         'weight' => '-4',
       ),
     ),
@@ -4125,6 +4352,7 @@ Else leave this field blank',
   t('Email Address of the paypal account');
   t('Event');
   t('Event which ticket you buy');
+  t('Header');
   t('If it\'s necessary print price saver if you buy a ticket on website');
   t('If you redirect user on another website to buy tickets on event please fill this field.');
   t('If you redirect user to another website to buy a ticket please fill this field - the ticket price on this website.');
@@ -4138,6 +4366,7 @@ Else leave this field blank');
   t('Line items');
   t('News image');
   t('Order total');
+  t('Please do not enter your own value in "other" option - use checkboxes only.');
   t('Price');
   t('Price on another site');
   t('Price saver');
@@ -4145,10 +4374,12 @@ Else leave this field blank');
   t('Product');
   t('Product reference');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
+  t('Teaser decorate image of your page');
   t('Teaser image how it shown on search, on events list.');
   t('Total');
   t('Unit price');
   t('When event starts.');
+  t('Where will this header be shown?');
   t('blog event');
   t('blog image');
   t('description homepage');
@@ -4164,6 +4395,8 @@ Else leave this field blank');
   t('genre of event');
   t('if you want to provide it to homepage enter a short description');
   t('image homepage');
+  t('is sold out?');
+  t('page image');
   t('product ref');
   t('saver price');
   t('slider image');

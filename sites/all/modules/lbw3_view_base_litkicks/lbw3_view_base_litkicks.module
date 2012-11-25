@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the lbw3_view_base-litkicks feature.
- */
-
-include_once 'lbw3_view_base_litkicks.features.inc';

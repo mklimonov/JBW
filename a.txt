@@ -1,71 +1,9 @@
-<div class="view view-blog view-id-blog view-display-id-bloglist view-dom-id-13a3712cda5a2d79619b72616a43acfe">
-        
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/129">Dolus Facilisis Molior</a></span>  </div>  
-  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/129"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima77D.tmp.png" width="365" height="265" alt="Dignissim immitto letalis neo patria sed ulciscor vero." title="Dolor ea exerci illum incassum metuo neo tamen." /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Appellatio causa ille immitto inhibeo. Abdo abluo aliquip commodo eligo eu luctus mauris validus volutpat.</p>
-<p>Acsi fere mauris plaga suscipere vereor ymo. Erat ex humo in luctus obruo paratus suscipere tego usitas. Conventio fere humo iaceo melior probo tation vicis.</p></div>  </div>  
-  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_sharethis"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_pinterest"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_facebook"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/129" st_title="Dolus Facilisis Molior" class="st_twitter"></span>
-<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
-  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/121">Abico Bene Eu Quia</a></span>  </div>  
-  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/121"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/imaD944.tmp.png" width="365" height="265" alt="Abluo genitus metuo obruo os pneum rusticus valetudo voco." title="Aliquam augue commodo eu euismod incassum inhibeo luptatum rusticus virtus." /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Et ibidem in te vereor. Interdico jumentum lobortis luptatum natu quis refoveo tego valde zelus. Ad duis neque. Aliquam esse facilisis gemino luptatum pertineo probo vel veniam. Duis exputo molior nobis plaga zelus.</p></div>  </div>  
-  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_sharethis"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_pinterest"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_facebook"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/121" st_title="Abico Bene Eu Quia" class="st_twitter"></span>
-<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
-  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/127">Quae Virtus</a></span>  </div>  
-  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/127"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima4EC.tmp.jpg" width="365" height="265" alt="Camur damnum fere laoreet lenis os patria sudo typicus ullamcorper." title="Antehabeo cui defui occuro populus ut uxor voco." /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Bene gravis nulla tamen tum vulpes. Autem exerci exputo inhibeo scisco singularis sit ulciscor ullamcorper. Adipiscing huic lenis. Bene causa commoveo decet defui in mauris paratus probo quadrum.</p>
-</div>  </div>  
-  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_sharethis"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_pinterest"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_facebook"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/127" st_title="Quae Virtus" class="st_twitter"></span>
-<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
-  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/124">Accumsan Lucidus Sudo Tego</a></span>  </div>  
-  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/124"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/ima66.tmp.jpg" width="365" height="265" alt="Dolus et exerci gemino iaceo ibidem os veniam vero vulputate." title="Accumsan et iaceo sit tation turpis vulputate." /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Acsi adipiscing amet in natu oppeto pecus roto sed ymo. Abluo et letalis pecus pertineo roto sudo tation. Cogo conventio gilvus immitto patria premo. Appellatio in odio pagus praemitto sed.</p></div>  </div>  
-  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_sharethis"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_pinterest"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_facebook"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/124" st_title="Accumsan Lucidus Sudo Tego" class="st_twitter"></span>
-<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
-  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd views-row-last">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/jbw/?q=node/123">Bene Plaga Valde</a></span>  </div>  
-  <div class="views-field views-field-field-blog-image">        <div class="field-content"><a href="/jbw/?q=node/123"><img typeof="foaf:Image" src="http://localhost/jbw/sites/default/files/styles/festival_homepage/public/imaFC40.tmp.png" width="365" height="265" alt="Consectetuer eros exputo illum mauris modo nutus occuro pala tincidunt." title="Augue decet defui fere ibidem populus ullamcorper ut velit." /></a></div>  </div>  
-  <div class="views-field views-field-body">        <div class="field-content"><p>Letalis meus premo proprius quadrum. At fere iustum loquor scisco vel. Consequat gilvus letalis mauris melior pagus patria suscipere tincidunt vulputate. Euismod obruo sino. Blandit jus molior saluto singularis tincidunt.</p>
-</div>  </div>  
-  <div class="views-field views-field-sharethis">        <span class="field-content"><div class="sharethis-wrapper"><span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_sharethis"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_pinterest"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_facebook"></span>
-<span st_url="http://localhost/jbw/jbw/?q=node/123" st_title="Bene Plaga Valde" class="st_twitter"></span>
-<script type='text/javascript'>var switchTo5x = true;</script><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js'></script><script type='text/javascript'>stLight.options({"publisher":"dr-68363dda-ffdf-3c85-fa8e-b0dac44dec8c"});</script></div></span>  </div>  
-  <div class="views-field views-field-field-video">        <div class="field-content"></div>  </div>  </div>
-    </div>
-  
-      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><img src="/jbw/sites/all/themes/JBW/images/pager/leftgray.png" /></li><li class="pager-current">1</li><li class="pager-item"><a title="Go to page 2" href="/jbw/?q=blog&amp;page=1">2</a></li><li class="pager-last last"><a href="/jbw/?q=blog&amp;page=1"><img src="/jbw/sites/all/themes/JBW/images/pager/rightgreen.png" /></a></li></ul></div>  
-  
-  
-  
-  
-</div>
+Array
+(
+    [0] => <a href="/JBW/">Home</a>
+    [breadcrumb] => 
+    [theme_hook_suggestions] => Array
+        (
+        )
+
+)

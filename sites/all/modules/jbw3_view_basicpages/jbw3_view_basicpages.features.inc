@@ -1,12 +1,12 @@
 <?php
 /**
  * @file
- * lbw3_view_base_litkicks.features.inc
+ * jbw3_view_basicpages.features.inc
  */
 
 /**
  * Implements hook_views_api().
  */
-function lbw3_view_base_litkicks_views_api() {
+function jbw3_view_basicpages_views_api() {
   return array("version" => "3.0");
 }

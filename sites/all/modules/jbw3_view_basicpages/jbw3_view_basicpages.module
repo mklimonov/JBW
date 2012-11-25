@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jbw3_view_basicpages feature.
+ */
+
+include_once 'jbw3_view_basicpages.features.inc';

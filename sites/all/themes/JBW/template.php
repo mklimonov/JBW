@@ -6,7 +6,49 @@ function JBW_preprocess_page(&$variables) {
     }
 }
 
+/*function JBW_breadcrumb($variables){
+    print_r($variables);
+    return 'asd';
+}*/
+
 function JBW_preprocess_breadcrumb(&$variables) {
+    if(arg(0) == 'node'){
+        $nid = (int)arg(1);
+        $node = node_load($nid);
+        $variables['breadcrumb'][] = $variables['0'];
+        if($node->type == 'event'){
+            $menu_item = menu_get_item('events_all');
+            $variables['breadcrumb'][] = '<a href="'. url($menu_item['href']). '">'. $menu_item['title']. '</a>';
+            $variables['breadcrumb'][] = $node->title;
+        }
+        if($node->type == 'news'){
+            $variables['breadcrumb'][] = '<a href="'. url('news'). '">News</a>';
+            $variables['breadcrumb'][] = $node->title;
+        }
+        if($node->type == 'blog'){
+            $menu_item = menu_get_item('blog');
+            $variables['breadcrumb'][] = '<a href="'. url($menu_item['href']). '">'. $menu_item['title']. '</a>';
+            $variables['breadcrumb'][] = $node->title;
+        } 
+        if($node->type == 'festival'){
+            $menu_item = menu_get_item('festival');
+            $variables['breadcrumb'][] = $menu_item['title'];
+        }
+        
+        
+    }else if(arg(0) != 'blog'){
+        $i = 0;
+        while(isset($variables[$i])){
+            $variables['breadcrumb'][] = $variables[$i];
+            $i++;
+        }
+        $variables['breadcrumb'][] = drupal_get_title();
+   }
+    ob_start();
+        $handle = fopen("a.txt", 'w');
+                print_r($variables);//get_plugin('pager'));
+        fwrite($handle, ob_get_contents());
+        ob_end_clean();
    // print_r($variables);
 }
 
@@ -261,7 +303,7 @@ function JBW_pager_link($variables) {
   }
   $attributes['href'] = url($_GET['q'], array('query' => $query));
   //if(strip_tags($text, 'img') != $text){
-    return '<a' . drupal_attributes($attributes) . '>' . $text . '</a>';
+    return '<a' . drupal_attributes($attributes) . '>' .$text . '</a>';
   //}else{
       //return '<a' . drupal_attributes($attributes) . '>' . check_plain($text) . '</a>';
  // }

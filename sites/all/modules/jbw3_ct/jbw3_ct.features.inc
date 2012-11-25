@@ -42,7 +42,7 @@ function jbw3_ct_node_info() {
       'help' => '',
     ),
     'slider_image' => array(
-      'name' => t('Slider image'),
+      'name' => t('Header images'),
       'base' => 'node_content',
       'description' => t('Slider images with short description text.'),
       'has_title' => '1',

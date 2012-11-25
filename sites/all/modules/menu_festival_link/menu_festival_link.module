@@ -6,15 +6,14 @@ function menu_festival_link_views_post_render(&$view, &$output, &$cache) {
     //print_r($output);
    // global $pager_for_blog;
     if($view->name == 'blog' && $view->current_display == 'bloglist'){
-        ob_start();
-        $handle = fopen("a.txt", 'w');
+        $custom_pager = '';
+        $custom_pager = substr($output, strpos($output, '<div class="item-list"><ul class="pager">'));
+        $custom_pager = substr($custom_pager, 0, strpos($custom_pager, '</ul></div>') + 11);
+        $custom_filter = '';
+        $custom_filter = substr($output, strpos($output, '<div class="view-filters">'));
+        $custom_filter = substr($custom_filter, 0, strpos($custom_filter, '</form>    </div>') + 17);
         global $custom_pager_filter_block_content;
-        $custom_pager_filter_block_content = substr($output, strpos($output, '<div class="item-list"><ul class="pager">'));
-        $custom_pager_filter_block_content = substr($custom_pager_filter_block_content, 0, strpos($custom_pager_filter_block_content, '</ul></div>') + 11);
-        //$custom_pager_filter_block_content = substr();
-        print_r($output);//get_plugin('pager'));
-        fwrite($handle, ob_get_contents());
-        ob_end_clean();
+        $custom_pager_filter_block_content = $custom_filter. $custom_pager;
     }
 }
 

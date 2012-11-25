@@ -1,4 +1,4 @@
-name = lbw3_view_base-litkicks
+name = jbw3_view_basicpages
 core = 7.x
 package = Features
 dependencies[] = ctools
