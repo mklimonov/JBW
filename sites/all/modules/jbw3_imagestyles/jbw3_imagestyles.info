@@ -7,4 +7,6 @@ features[features_api][] = api:1
 features[image][] = event_image_list
 features[image][] = festival_homepage
 features[image][] = festival_node
+features[image][] = litkicks_sidebar
 features[image][] = slider_image
+features[image][] = static_header

@@ -3,5 +3,7 @@
 ?>
 
 <?php
-    print implode(' > ', $breadcrumb);
+    if(arg(0) != 'blog'){
+        print implode(' > ', $breadcrumb);
+    }
 ?>

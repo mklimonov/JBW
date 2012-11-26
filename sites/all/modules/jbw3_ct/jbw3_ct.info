@@ -28,6 +28,7 @@ features[field][] = commerce_order-commerce_order-commerce_order_total
 features[field][] = commerce_product-product-commerce_price
 features[field][] = commerce_product-product-field_product_ref
 features[field][] = commerce_product-ticket-commerce_price
+features[field][] = commerce_product-ticket-commerce_stock
 features[field][] = commerce_product-ticket-field_price_saver
 features[field][] = commerce_product-ticket-field_ref_event_ticket
 features[field][] = node-blog-body

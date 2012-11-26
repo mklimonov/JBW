@@ -380,7 +380,6 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   /* Display: Festival node page */
   $handler = $view->new_display('block', 'Festival node page', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Festival';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: festival image */
@@ -402,6 +401,7 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: festival date */
   $handler->display->display_options['fields']['field_festival_date']['id'] = 'field_festival_date';
   $handler->display->display_options['fields']['field_festival_date']['table'] = 'field_data_field_festival_date';
@@ -434,7 +434,6 @@ print theme(\'facebookshare\', array(\'url\' => $url));
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
-  $handler->display->display_options['arguments']['nid']['breadcrumb_enable'] = TRUE;
   $handler->display->display_options['arguments']['nid']['breadcrumb'] = '%1';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';

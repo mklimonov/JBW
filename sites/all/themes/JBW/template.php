@@ -27,7 +27,7 @@ function JBW_preprocess_breadcrumb(&$variables) {
         }
         if($node->type == 'blog'){
             $menu_item = menu_get_item('blog');
-            $variables['breadcrumb'][] = '<a href="'. url($menu_item['href']). '">'. $menu_item['title']. '</a>';
+            $variables['breadcrumb'][] = '<a href="'. url($menu_item['href']). '">Blog</a>';
             $variables['breadcrumb'][] = $node->title;
         } 
         if($node->type == 'festival'){

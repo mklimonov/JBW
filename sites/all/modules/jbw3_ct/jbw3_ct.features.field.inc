@@ -905,6 +905,79 @@ function jbw3_ct_field_default_fields() {
     ),
   );
 
+  // Exported field: 'commerce_product-ticket-commerce_stock'.
+  $fields['commerce_product-ticket-commerce_stock'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(
+        0 => 'commerce_product',
+      ),
+      'field_name' => 'commerce_stock',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ticket',
+      'default_value' => array(
+        0 => array(
+          'value' => '0',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => NULL,
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 0,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_integer',
+          'weight' => 4,
+        ),
+        'line_item' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'node_teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'commerce_product',
+      'field_name' => 'commerce_stock',
+      'label' => 'Stock',
+      'required' => TRUE,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => 39,
+      ),
+    ),
+  );
+
   // Exported field: 'commerce_product-ticket-field_price_saver'.
   $fields['commerce_product-ticket-field_price_saver'] = array(
     'field_config' => array(
@@ -3840,12 +3913,17 @@ Else leave this field blank',
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'imagefield_crop',
         'settings' => array(
+          'collapsible' => '2',
+          'croparea' => '500x500',
+          'enforce_minimum' => 1,
+          'enforce_ratio' => 1,
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
+          'resolution' => '200x50',
         ),
-        'type' => 'image_image',
+        'type' => 'imagefield_crop_widget',
         'weight' => '-3',
       ),
     ),
@@ -4332,7 +4410,7 @@ Else leave this field blank',
           'enforce_ratio' => 1,
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
-          'resolution' => '400x100',
+          'resolution' => '127x47',
         ),
         'type' => 'imagefield_crop_widget',
         'weight' => '-4',
@@ -4374,6 +4452,7 @@ Else leave this field blank');
   t('Product');
   t('Product reference');
   t('Start typing the festival name which have this event. If you want create NON-festival event leave this field empty.');
+  t('Stock');
   t('Teaser decorate image of your page');
   t('Teaser image how it shown on search, on events list.');
   t('Total');
