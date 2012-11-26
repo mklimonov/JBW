@@ -21,7 +21,22 @@ ul.primary{
     margin-top: 0;
     /*margin-bottom: 10px;*/
 }
-
+.breadcrumb{
+    float: right;
+    font-size: 10px;
+    font-style: italic;
+    margin-right: 10px;
+  color: #58595b;
+}
+.breadcrumb a:visited,
+.breadcrumb a:link,
+.breadcrumb a{
+  color: #58595b;
+  text-decoration: none;
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
 /*left part of content*/
 .page-home .fest_row_homepage{ /*#block-system-main .pane-festivals*/
     width: 550px;
@@ -88,7 +103,7 @@ ul.primary{
     bottom: 8px;
 }
 
-/*раскраска левой части контента в хоум пайдж*/
+/*ра�?кра�?ка левой ча�?ти контента в хоум пайдж*/
 .page-home .festival-color1 .views-field-field-description-homepage-fest,
 .page-home .festival-color1 .views-field-field-description-homepage-blog,
 .page-home .festival-color1 .views-field-field-description-homepage-event{ 

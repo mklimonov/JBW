@@ -31,9 +31,9 @@ ul.nice-menu li {
 }
 
 ul.nice-menu a {
-  padding: 0.4em 10px 0.4em 10px;
+  padding: 0.7em 10px 0.4em 10px;
   text-decoration: none;
-  color: black;
+  color: #58595b;
 }
 
 ul.nice-menu a:hover {
@@ -46,7 +46,7 @@ ul.nice-menu ul {
   top: 30px;
   left:-1px;
   border: 0;
-  /*border-top: 1px solid #ccc;*/  /*граница между родительским и дочерними*/
+  /*border-top: 1px solid #ccc;*/  /*граница между родитель�?ким и дочерними*/
   margin-right: 0; /* LTR */
 }
 
