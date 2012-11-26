@@ -56,7 +56,7 @@ ul.primary{
     display: none;
 }*/
 
-#region-content #page-title{
+#region-content h1#page-title{
     /*display: none;*/
     margin: 0;
 }

@@ -10,10 +10,27 @@
 
 /*------------------------просмотр события/фестиваля------------------------------------*/
 /*-----------------------------------Заголовки--------------------------------*/
-/*.node-type-event #page-title,
-.page-news #page-title{
-    display: none;
-}*/
+.page-node h1#page-title,
+.page-news h1#page-title,
+.page-events h1#page-title{
+    width: 100px;
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 2;
+    /*margin-top: 20px;
+    margin-left: 15px;
+   /* margin-bottom: 15px;
+   /* position: absolute;*/
+ /*   margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    width: 100px;
+    z-index: 2;
+    float: left;*/
+}
 
 .page-node .region-content-inner,
 .page-news .region-content-inner{
@@ -65,7 +82,7 @@
 }
 
 /*festivale text*/
-.page-node .node_right_part .views-field-body,
+.page-node #region-content .node_right_part .views-field-body,
 .page-news #region-content .node_right_part .views-field-body{/*p*/
     float: right;
     margin: 20px 20px 15px 15px;
@@ -79,7 +96,7 @@
 }
 
 /*festivale title*/
-.page-node .views-field-title,
+.page-node #region-content .views-field-title,
 .page-news #region-content .views-field-title{
     margin: 45px 20px 5px 15px;
 }
@@ -100,7 +117,7 @@
 }*/
 
 
-.page-node .node_left_part a{
+.page-node #region-content .node_left_part a{
     margin-left: 15px;
 }
 

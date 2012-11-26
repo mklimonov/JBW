@@ -6,7 +6,7 @@
     margin-left: 15px;
 }*/
 
-#scrollbarY  section{ /*.overview .block*/
+#region-sidebar #scrollbarY  section{ /*.overview .block*/
     width: 370px;
     /*margin-top: 10px;*/
     position: relative;
@@ -15,7 +15,7 @@
     margin-bottom: 10px;
 }
 
-#scrollbarY  iframe{
+#region-sidebar #scrollbarY  iframe{
      width: 370px;
     /*margin-top: 10px;*/
     position: relative;
@@ -23,19 +23,17 @@
     margin-bottom: 10px;
 }
 
-
-
-#scrollbarY  section .block-inner{
+#region-sidebar #scrollbarY  section .block-inner{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
 }
 
-#scrollbarY h2.block-title {
+#region-sidebar #scrollbarY h2.block-title {
     padding-top: 5px;
 }
 
-#scrollbarY .views-field-sharethis{
+#region-sidebar #scrollbarY .views-field-sharethis{
     float: right;
     margin-bottom: 5px;
     margin-right: 5px;
@@ -43,32 +41,32 @@
     z-index: 2;
 }
 
-#scrollbarY .views-row .node_left_part{
+#region-sidebar #scrollbarY .views-row .node_left_part{
     width: 150px;
     float: left;
 }
 
-#scrollbarY .views-row .node_right_part{
+#region-sidebar #scrollbarY .views-row .node_right_part{
     width: 200px;
     float: right;
 }
 
-#scrollbarY .views-row .node_right_part .views-field-title a{
+#region-sidebar #scrollbarY .views-row .node_right_part .views-field-title a{
     text-decoration: none;
     color: black;
 }
 
 /*sidebar image*/
-#scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-news-image{
+#region-sidebar #scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-news-image{
     float: left;
     display: block;
 }
 
-#scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-festival-image img{
+#region-sidebar #scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-festival-image img{
     margin: 45px 0 10px 15px;  
 }
 
-#scrollbarY .views-row .node_left_part .views-field-field-event-image-2 img{
+#region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-event-image-2 img{
     margin: 10px 0 10px 15px;
 }
 
@@ -78,7 +76,8 @@
     width: 350px;
 }*/
 
-.page-news #scrollbarY .views-row .node_left_part .views-field-field-festival-image img{
+.page-news #region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-festival-image img,
+.page-node #region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-festival-image img{
     margin: 0;  
 }
 

@@ -298,7 +298,7 @@
     /*width: 85px;*/
     width: 95px;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 10px;
     float: left;
     z-index: 10;
@@ -436,4 +436,29 @@
     font-style: italic;
     font-size: 8px;
     font-family: sans-serif;
+}
+
+/*----------------------------------breadcrumbs-------------------------------*/
+#region-content #breadcrumb{
+    width: 350px;
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    z-index: 20;
+}
+
+#region-content #breadcrumb a{
+    text-decoration: none;
+    color: black;
+    z-index: 20;
+}
+
+#region-content #breadcrumb a:hover{
+    text-decoration: underline;
+    z-index: 20;
 }

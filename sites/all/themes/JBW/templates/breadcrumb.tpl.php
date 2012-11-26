@@ -1,7 +1,6 @@
-<?php 
-    $breadcrumb = $variables['breadcrumb'];
-?>
+<div id="breadcrumb">
+    <?php $breadcrumb = $variables['breadcrumb'];?>
+    <?php print implode(' > ', $breadcrumb); ?>  
+</div>
 
-<?php
-    print implode(' > ', $breadcrumb);
-?>
+
