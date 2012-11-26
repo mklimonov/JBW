@@ -56,6 +56,16 @@
     color: black;
 }
 
+/*Donate title*/
+#region-sidebar #scrollbarY .views-field-title{
+    
+}
+
+#region-sidebar #scrollbarY .views-field-title a{
+    text-decoration: none;
+    color: black;
+}
+
 /*sidebar image*/
 #region-sidebar #scrollbarY .views-row .node_left_part /*#festival-content*/ .views-field-field-news-image{
     float: left;
