@@ -1,7 +1,13 @@
 Array
 (
     [0] => <a href="/JBW/">Home</a>
-    [breadcrumb] => 
+    [breadcrumb] => Array
+        (
+            [0] => <a href="/JBW/?q=home">Home</a>
+            [1] => <a href="/JBW/?q=events_all">Events</a>
+            [2] => Fere Oppeto
+        )
+
     [theme_hook_suggestions] => Array
         (
         )

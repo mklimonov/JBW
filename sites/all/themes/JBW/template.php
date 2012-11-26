@@ -15,7 +15,7 @@ function JBW_preprocess_breadcrumb(&$variables) {
     if(arg(0) == 'node'){
         $nid = (int)arg(1);
         $node = node_load($nid);
-        $variables['breadcrumb'][] = $variables['0'];
+        $variables['breadcrumb'][0] = l('Home', variable_get('site_frontpage', 'node'));
         if($node->type == 'event'){
             $menu_item = menu_get_item('events_all');
             $variables['breadcrumb'][] = '<a href="'. url($menu_item['href']). '">'. $menu_item['title']. '</a>';
@@ -34,7 +34,9 @@ function JBW_preprocess_breadcrumb(&$variables) {
             $menu_item = menu_get_item('festival');
             $variables['breadcrumb'][] = $menu_item['title'];
         }
-        
+        if($node->type == 'page'){
+            $variables['breadcrumb'][] = drupal_get_title();
+        }
         
     }else if(arg(0) != 'blog'){
         $i = 0;
