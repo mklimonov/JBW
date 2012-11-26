@@ -1,6 +1,8 @@
 <div id="breadcrumb">
     <?php $breadcrumb = $variables['breadcrumb'];?>
-    <?php print implode(' > ', $breadcrumb); ?>  
+    <?php
+		if(arg(0) != 'blog'){
+			print implode(' > ', $breadcrumb);
+		}
+	?>
 </div>
-
-

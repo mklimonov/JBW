@@ -16,8 +16,10 @@
     width: 550px;
 }*/
 
+/*view/edit panel in node*/
 ul.primary{
     margin-top: 0;
+    /*margin-bottom: 10px;*/
 }
 
 /*left part of content*/
@@ -27,7 +29,7 @@ ul.primary{
     position: relative;
    /* background: url(../images/content/region-content.png) no-repeat 0 0;*/
    background: white;
-    margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
 /*content image*/
@@ -43,7 +45,6 @@ ul.primary{
 .page-home .views-field-field-image-homepage-fest img,
 .page-home .views-field-field-image-homepage-news img,
 .page-home .views-field-field-image-homepage img{
-    /*position: absolute;*/
     margin-top: 10px;
     margin-right: 10px;
     margin-left: 0px;
@@ -87,17 +88,36 @@ ul.primary{
     bottom: 8px;
 }
 
-.page-home .festival-color1 .views-field-field-description p{ /*или задать размеры и позицию у .views-field-field-description*/
-    background-color: greenyellow;
+/*раскраска левой части контента в хоум пайдж*/
+.page-home .festival-color1 .festival-left-part .field-content{ /*или задать размеры и позицию у .views-field-field-description*/
+    background: greenyellow;
+    width: 140px;
+    height: 245px;
+    color: black;
+    z-index: 1;
 }
 
-.page-home .festival-color2 .views-field-field-description p{
+.page-home .festival-color2 .festival-left-part{
     background-color: orange;
 }
 
-.page-home .festival-color3 .views-field-field-description p{
+.page-home .festival-color3 .festival-left-part{
     background-color: purple;
 }
+
+.page-home .fest_row_homepage .festival-left-part .field-content p{
+    color: black;
+    z-index: 120;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*----------изначально накатал------------*/
