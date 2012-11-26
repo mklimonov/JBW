@@ -246,6 +246,41 @@ function jbw3_view_slider_views_default_views() {
   /* Display: Slider */
   $handler = $view->new_display('block', 'Slider', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['field_body']['id'] = 'field_body';
+  $handler->display->display_options['fields']['field_body']['table'] = 'field_data_field_body';
+  $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
+  $handler->display->display_options['fields']['field_body']['label'] = '';
+  $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_body']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: ShareThis Link */
+  $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['table'] = 'node';
+  $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['label'] = '';
+  $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
+  /* Field: Content: slider image */
+  $handler->display->display_options['fields']['field_slider_image']['id'] = 'field_slider_image';
+  $handler->display->display_options['fields']['field_slider_image']['table'] = 'field_data_field_slider_image';
+  $handler->display->display_options['fields']['field_slider_image']['field'] = 'field_slider_image';
+  $handler->display->display_options['fields']['field_slider_image']['label'] = '';
+  $handler->display->display_options['fields']['field_slider_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slider_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_slider_image']['settings'] = array(
+    'image_style' => 'slider_image',
+    'image_link' => '',
+  );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */

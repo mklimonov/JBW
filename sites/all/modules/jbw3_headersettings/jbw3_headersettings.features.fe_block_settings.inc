@@ -14,6 +14,10 @@ function jbw3_headersettings_default_fe_block_settings() {
 
   // Theme independent visibility settings.
   $export['visibility'] = array(
+    'menu_festival_link-custom_pager_filter' => array(
+      'delta' => 'custom_pager_filter',
+      'module' => 'menu_festival_link',
+    ),
     'views-slider-block' => array(
       'delta' => 'slider-block',
       'module' => 'views',
@@ -73,6 +77,20 @@ function jbw3_headersettings_default_fe_block_settings() {
 
   // bartik
   $theme = array();
+
+  $theme['menu_festival_link-custom_pager_filter'] = array(
+    'module' => 'menu_festival_link',
+    'delta' => 'custom_pager_filter',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
+  );
 
   $theme['views-slider-block'] = array(
     'module' => 'views',
@@ -224,6 +242,20 @@ news',
   // JBW
   $theme = array();
 
+  $theme['menu_festival_link-custom_pager_filter'] = array(
+    'module' => 'menu_festival_link',
+    'delta' => 'custom_pager_filter',
+    'theme' => 'JBW',
+    'status' => '1',
+    'weight' => '-22',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
+  );
+
   $theme['views-slider-block'] = array(
     'module' => 'views',
     'delta' => 'slider-block',
@@ -374,6 +406,20 @@ news',
 
   // seven
   $theme = array();
+
+  $theme['menu_festival_link-custom_pager_filter'] = array(
+    'module' => 'menu_festival_link',
+    'delta' => 'custom_pager_filter',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '1',
+  );
 
   $theme['views-slider-block'] = array(
     'module' => 'views',

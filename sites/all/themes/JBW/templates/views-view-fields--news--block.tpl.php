@@ -43,9 +43,9 @@
 		<?php print $field->content; ?>
 	  <?php print $field->wrapper_suffix; ?>
 	
-        <?php if($field->class == 'field-news-image' or $field->class == 'body'): ?>
+        <?php if($field->class == 'field-news-image' or $field->class == 'sharethis'): ?>
                 </div>
 	<?php endif; ?>
 			
 <?php endforeach; ?>
-</divs>
+</div>
