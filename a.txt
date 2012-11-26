@@ -4,8 +4,7 @@ Array
     [breadcrumb] => Array
         (
             [0] => <a href="/JBW/?q=home">Home</a>
-            [1] => <a href="/JBW/?q=events_all">Events</a>
-            [2] => Fere Oppeto
+            [1] => Festival
         )
 
     [theme_hook_suggestions] => Array

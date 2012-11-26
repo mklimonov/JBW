@@ -78,5 +78,4 @@ features[node][] = festival
 features[node][] = news
 features[node][] = slider_image
 features[taxonomy][] = genre
-features[taxonomy][] = sildertypes
 features[taxonomy][] = tags
