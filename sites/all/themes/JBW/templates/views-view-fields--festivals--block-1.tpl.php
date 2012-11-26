@@ -47,7 +47,7 @@
             <a href="<?php print $href; ?>">Festival programme</a>
             </div>
       <?php endif; ?>
-      <?php if($field->class == 'body'): ?>
+      <?php if($field->class == 'sharethis'): ?>
             </div>
       <?php endif; ?>
     <?php endforeach; ?>

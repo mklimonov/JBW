@@ -90,7 +90,7 @@ function jbw3_imagestyles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => '930',
+          'width' => '635',
           'height' => '235',
         ),
         'weight' => '1',
