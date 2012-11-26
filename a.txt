@@ -1,7 +1,10 @@
 Array
 (
-    [0] => <a href="/JBW/">Home</a>
-    [breadcrumb] => 
+    [breadcrumb] => Array
+        (
+            [0] => 
+        )
+
     [theme_hook_suggestions] => Array
         (
         )
