@@ -34,6 +34,7 @@ section {
 body{
    /* background: url(../images/bg_2560px.jpg) no-repeat;*/
    font-family:  georgia, verdana, arial, san-serif;
+   font-size: 12px;
 }
 
 #page{
@@ -200,6 +201,7 @@ body{
     margin-left: 15px;
     margin-top: 3px;
     margin-bottom: 3px;
+    font-style: italic;
 }
 
 /*-------------------------Share component---------------------------------*/

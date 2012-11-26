@@ -273,23 +273,66 @@
 }
 
 /*-------------------------выпадающий спискок---------------------------------*/
-.page-news .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select{
+.page-news .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select#edit-date-filter-value-year{
     margin: 0;
     padding: 0;
-    height: 13px;
-    /*padding-bottom: 5px;*/
-    width: 60px;
-    /*border: none;*/
+    background: transparent;
     font-family: Arial,sans-serif;
-    font-size: 10px;
-    /*background: url(../images/header/searchbox.png) no-repeat center 0;*/
-
+    font-size: 8px;
+    width: 70px;
+    border: 1px solid #73c049;
+    height: 12px;
+    
+    
     -moz-border-radius: 0;
-     border-radius: 0;
-     
-     float: left;
-     position: relative;
-     cursor: pointer;
+    border-radius: 0;
+  
+    float: left;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.page-news .views-exposed-form #edit-date-filter-wrapper select#edit-date-filter-value-month{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: Arial,sans-serif;
+    font-size: 8px;
+    width: 70px;
+    border: 1px solid #73c049;
+    height: 12px;
+    
+    
+    -moz-border-radius: 0;
+    border-radius: 0;
+  
+    float: left;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.page-news .views-exposed-form #edit-date-filter-wrapper  .date-month{
+    width: 50px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/select/but.png) no-repeat right 0; 
+    margin-right: 3px;
+}
+
+.page-news .views-exposed-form #edit-date-filter-wrapper .date-year{
+    width: 50px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/select/but.png) no-repeat right 0;
+    margin-right: 3px;
+}
+
+.page-news .views-exposed-form #edit-date-filter-wrapper option{
+    background-color: #73c049;
+    color: white;
+    margin: 0;
 }
 
 /*date search*/
@@ -298,7 +341,7 @@
     /*width: 85px;*/
     width: 95px;
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 10px;
     float: left;
     z-index: 10;
@@ -436,4 +479,29 @@
     font-style: italic;
     font-size: 8px;
     font-family: sans-serif;
+}
+
+/*----------------------------------breadcrumbs-------------------------------*/
+#region-content #breadcrumb{
+    width: 350px;
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    /*margin-top: 5px;*/
+    font-size: 10px;
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    z-index: 20;
+}
+
+#region-content #breadcrumb a{
+    text-decoration: none;
+    color: black;
+    z-index: 20;
+}
+
+#region-content #breadcrumb a:hover{
+    text-decoration: underline;
+    z-index: 20;
 }

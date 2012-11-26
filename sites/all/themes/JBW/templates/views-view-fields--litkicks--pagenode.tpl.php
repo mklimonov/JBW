@@ -28,11 +28,11 @@
 <?php //print $field->class; ?>
 
 <?php if($field->class == "field-page-image"): ?>
-    <div class="left-part">
+    <div class="node-left-part">
 <?php endif; ?>
 
 <?php if($field->class == "title"): ?>
-    <div class="right-part">
+    <div class="node-right-part">
 <?php endif; ?>
         
   <?php if (!empty($field->separator)): ?>
