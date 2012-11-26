@@ -20,3 +20,4 @@ features[fe_block_settings][] = views-slider-block_7
 features[fe_block_settings][] = views-slider-block_8
 features[fe_block_settings][] = views-slider-block_9
 features[features_api][] = api:1
+features[taxonomy][] = sildertypes

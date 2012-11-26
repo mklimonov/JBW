@@ -46,11 +46,11 @@ function JBW_preprocess_breadcrumb(&$variables) {
         }
         $variables['breadcrumb'][] = drupal_get_title();
    }
-    ob_start();
+   /* ob_start();
         $handle = fopen("a.txt", 'w');
                 print_r($variables);//get_plugin('pager'));
         fwrite($handle, ob_get_contents());
-        ob_end_clean();
+        ob_end_clean();*/
    // print_r($variables);
 }
 
