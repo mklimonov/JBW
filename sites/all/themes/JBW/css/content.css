@@ -89,25 +89,27 @@ ul.primary{
 }
 
 /*раскраска левой части контента в хоум пайдж*/
-.page-home .festival-color1 .festival-left-part .field-content{ /*или задать размеры и позицию у .views-field-field-description*/
+.page-home .festival-color1 .views-field-field-description-homepage-fest,
+.page-home .festival-color1 .views-field-field-description-homepage-blog,
+.page-home .festival-color1 .views-field-field-description-homepage-event{ 
     background: greenyellow;
-    width: 140px;
-    height: 245px;
-    color: black;
-    z-index: 1;
 }
 
-.page-home .festival-color2 .festival-left-part{
+.page-home .festival-color2 .views-field-field-description-homepage-fest,
+.page-home .festival-color2 .views-field-field-description-homepage-blog,
+.page-home .festival-color2 .views-field-field-description-homepage-event{ 
     background-color: orange;
 }
 
-.page-home .festival-color3 .festival-left-part{
+.page-home .festival-color3 .views-field-field-description-homepage-fest,
+.page-home .festival-color3 .views-field-field-description-homepage-blog,
+.page-home .festival-color3 .views-field-field-description-homepage-event{ 
     background-color: purple;
 }
 
 .page-home .fest_row_homepage .festival-left-part .field-content p{
     color: black;
-    z-index: 120;
+    z-index: 12;
 }
 
 
