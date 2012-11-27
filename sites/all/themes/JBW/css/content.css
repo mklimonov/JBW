@@ -1,29 +1,31 @@
-/*.page-node .region-content-inner{
-    background: #FFFFFF;
-}*/
-
-/*#region-content{
-    margin: 0;
-    padding: 0;
-    width: 550px;
-    
-}
-
-#region-content{
-    /*margin-top: -20px;/
-    /*margin: 0;/
-    padding: 0;
-    width: 550px;
-}*/
-
 /*view/edit panel in node*/
 ul.primary{
     margin-top: 0;
     /*margin-bottom: 10px;*/
 }
+/*----------------------------------breadcrumbs-------------------------------*/
+.breadcrumb{
+    float: right;
+    font-size: 10px;
+    font-style: italic;
+    margin-right: 10px;
+    color: #58595b;
+    padding-bottom: 0;
+}
+
+.breadcrumb a:visited,
+.breadcrumb a:link,
+.breadcrumb a{
+  color: #58595b;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover{
+    text-decoration: underline;
+}
 
 /*left part of content*/
-.page-home .fest_row_homepage{ /*#block-system-main .pane-festivals*/
+.page-home .fest_row_homepage{
     width: 550px;
     height: 310px;
     position: relative;
@@ -32,20 +34,24 @@ ul.primary{
    margin-bottom: 10px;
 }
 
-/*content image*/
+/*-----------------------content image---------------------------------------*/
 .page-home .views-field-field-image-homepage-event,
 .page-home .views-field-field-image-homepage-fest,
 .page-home .views-field-field-image-homepage-news,
 .page-home .views-field-field-image-homepage{
-    float: right;
-    z-index: 1;
+   /* padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;*/
+   /* float: right;
+    z-index: 1;*/
 }
 
 .page-home .views-field-field-image-homepage-event img,
 .page-home .views-field-field-image-homepage-fest img,
 .page-home .views-field-field-image-homepage-news img,
 .page-home .views-field-field-image-homepage img{
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 30px;
@@ -63,17 +69,20 @@ ul.primary{
 }
 
 /*text slider*/
-.page-home .festival-left-part{/*p*/
-    text-align: left;
-    width: 140px;
-    height: 245px;
-    position: absolute;
-    /*padding: 15px 3px 15px 15px; */
-    /*margin: 15px 3px 15px 15px;*/
+.page-home .festival-left-part{
+    float: left;
+    line-height: 1.2em;
+    color: #ffffff;
+    /*text-align: left;*/
+    /*width: 140px;
+    height: 250px;*/
     
-    font-size: 10px;
-    margin: 10px 0 30px 15px; 
-    padding: 10px;
+    width: 138px;
+    height: 249px;
+    
+    font-size: 12px;
+    margin: 15px 0 30px 15px; 
+    padding: 8px;
     z-index: 10;
 }
 
@@ -88,129 +97,41 @@ ul.primary{
     bottom: 8px;
 }
 
-/*раскраска левой части контента в хоум пайдж*/
+/*----------------bg left part in content block on homepage-------------------*/
+
+.page-home .festival-color1 .festival-left-part{
+    background: url(../images/content/green.png) no-repeat top left;
+}
+
+.page-home .festival-color2 .festival-left-part{
+    background: url(../images/content/green.png) no-repeat top left;
+}
+
+.page-home .festival-color3 .festival-left-part{
+    background: url(../images/content/green.png) no-repeat top left;
+}
+
+/*
 .page-home .festival-color1 .views-field-field-description-homepage-fest,
 .page-home .festival-color1 .views-field-field-description-homepage-blog,
 .page-home .festival-color1 .views-field-field-description-homepage-event{ 
-    background: greenyellow;
+    background: url(../images/content/green.png) no-repeat top right;
+    /*background: url(../images/content/green.png) no-repeat 0 0;/
 }
 
 .page-home .festival-color2 .views-field-field-description-homepage-fest,
 .page-home .festival-color2 .views-field-field-description-homepage-blog,
 .page-home .festival-color2 .views-field-field-description-homepage-event{ 
-    background-color: orange;
+    background: url(../images/content/orange.png) no-repeat top left;
 }
 
 .page-home .festival-color3 .views-field-field-description-homepage-fest,
 .page-home .festival-color3 .views-field-field-description-homepage-blog,
 .page-home .festival-color3 .views-field-field-description-homepage-event{ 
-    background-color: purple;
-}
-
-.page-home .fest_row_homepage .festival-left-part .field-content p{
-    color: black;
-    z-index: 12;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*----------изначально накатал------------*/
-/*section-content*/
-/*#zone-content-wrapper{
-    margin: 0;
-    width: 960px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;  
-    top: 10px;
-}
-
-#zone-content{
-    width: 960px;
-}
-
-#region-content{
-    width: 565px;
-}
-
-#region-sidebar{
-    margin: 0;
-    float: right;
-    width: 370px;
-    /*height: 310px;/
-    position: relative;
-    /*background: url(../images/content/region-sidebar.png) no-repeat 0 0;/
-}
-
-.fest_row_homepage{
-    margin: 0;
-    float: left;
-    width: 550px;
-    /*height: 310px;/
-    position: relative;
-    background: url(../images/content/region-content.png) no-repeat 0 0;
-    margin-top: 20px;
-}
-
-.festival-left-part{
-    float: left;
-    width: 155px;
-    height: 265px;
-}
-
-.views-field-field-festival-image{
-    float: right;
-    margin-top: 10px;
-    margin-right: 5px;
-    /*margin: 10px 5px 5px 5px;/
-}
-
-.views-field-field-festival-image img{
-    z-index: 10;
-}
-
-.views-field-field-description{
-    /*float: left;/
-    width: 155px;
-    height: 265px;
-    position: absolute;
-    text-align: center;
-    font-size: 14px;
-    margin-left: 15px;
-    margin-top: 10px;
-}
-/*share in content/
-.views-field-sharethis{
-    
-    float: right;
-    position: relative;
-    right: 0;
-    z-index: 20;
+   background: url(../images/content/purple.png) no-repeat top left;
 }*/
 
-/*sidebar*/
-/*.overview .block{
-    width: 370px;
-    margin-bottom: 5px;
-    background: url(../images/content/region-sidebar.png) no-repeat 0 0;
-}
-
-.festival-color1 .views-field-field-description{
-    background-color: greenyellow;
-}
-
-.festival-color2 .views-field-field-description{
-    background-color: orange;
-}
-
-.festival-color3 .views-field-field-description{
-    background-color: purple;
+/*.page-home .fest_row_homepage .festival-left-part .field-content p{
+    color: black;
+    z-index: 12;
 }*/

@@ -1,17 +1,4 @@
-/*#zone-header-wrapper{
-    width: 960px;
-    height: 262px;
-    margin-left: 30px;
-    margin-right: 30px;
-    /*padding-left: 30px;
-    padding-right: 30px;/
-    position: relative;
-    top: 15px;
-    /*background: url(../images/slider/slider_bg.png) no-repeat center 0;/
-    /*background: white;/
-}*/
-
-#zone-header{
+/*#zone-header{
     margin: 0;
     padding: 0;
     width: 960px;
@@ -24,15 +11,32 @@
     height: 262px;
     background: white;
 }
-
-/*.slider-left-part{
-    float: left;
-    z-index: 10;
-}
 */
 
+.view-slider .views-row{
+    width: 960px;
+}
+
+.slider-left-part{
+    float: left;
+    line-height: 1.2em;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 15px 0 15px 15px;
+    width: 279px;
+    height: 219px;
+    padding: 8px;
+    background: url(../images/slider/slider_bg.png) no-repeat top left;
+}
+.slider-left-part .views-field-sharethis{
+    position: absolute;
+    bottom: 24px;
+}
+.slider-right-part{
+    padding: 15px 0;
+}
+
 .views-field-field-slider-image{
-    float: right;
     z-index: 1;
 }
 
@@ -40,7 +44,7 @@
 .views-field-field-slider-image img{
     /*position: absolute;*/
     /*padding: 15px 3px 15px 15px; */
-    margin: 15px 3px 15px 15px;
+    /*margin: 15px 3px 15px 15px;*/
     z-index: 1;
 }
 
@@ -51,68 +55,16 @@
 
 /*text slider*/
 #block-views-slider-block .view-slider .slider-left-part .views-field-body{/*p*/
-    text-align: left;
+   /* text-align: left;
     width: 296px;
     height: 210px;
     position: absolute;
     margin: 15px 3px 15px 15px;
     padding: 10px;
-    z-index: 10;
+    z-index: 10;*/
 }
 
 
 /*.slider-left-part .views-field-body p{
     margin-bottom: 0;
-}*/
-
-
-/*------------------изначально накатал---------------*/
-
-/*Slider zone*/
-/*#zone-header-wrapper{
-    width: 960px;
-    height: 262px;
-    padding-left: 30px;
-    padding-right: 30px;
-    /*position: absolute;  /
-    position: relative;
-    top: 15px;
-    background: url(../images/slider/slider_bg.png) no-repeat center 0;
-}
-
-#zone-header{
-    width: 960px;
-    height: 262px;
-}
-
-#region-header{
-    margin: 0;
-    width: 960px;
-    height: 262px;
-}
-
-/* image slider/
-.slider-left-part{
-    float: left;
-}
-
-.views-field-field-slider-image{
-    float: right;
-    margin: 10px 5px 5px 5px;
-}
-
-/*text slider/
-.views-field-body  .field-content p{
-    /*display: block;/
-    width: 296px;
-    height: 210px;
-    position: absolute;
-    text-align: center;
-    font-size: 14px;
-    margin: 15px 3px 15px 15px; 
-    /*z-index: 10;/
-}
-/*title slider/
-.views-field-title{
-    display: none;
 }*/
