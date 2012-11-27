@@ -26,34 +26,25 @@
 ?>
 <?php foreach ($fields as $id => $field): ?>
 
-    <?php if($field->class == 'title-1'): ?>
-    <div class = "events-body">
-        <?php if(strip_tags($field->content) == ''): ?>
-            <p>Non-festival event</p>
-        <?php endif; ?>
-        <?php if(strip_tags($field->content) != ''): ?>
-            <p><?php print strip_tags($field->content); ?></p>
-        <?php endif; ?>
-    <?php endif; ?>
-                    
-  <?php if($field->class != 'title-1' && $field->class != 'field-ticket-buy-link'): ?>   
-
-    <?php if (!empty($field->separator)): ?>
-      <?php print $field->separator; ?>
-    <?php endif; ?>
-
-    <?php print $field->wrapper_prefix; ?>
-      <?php print $field->label_html; ?>
-      <?php print $field->content; ?>
-    <?php print $field->wrapper_suffix; ?>
-  
+  <?php if ($field->class == "title"): ?>
+    <div class = "slider-left-part">
+  <?php endif; ?>
+        
+  <?php if ($field->class == "field-slider-image"): ?>
+        <div class = "slider-right-part">
   <?php endif; ?>
             
-  <?php if($field->class == 'field-ticket-buy-link' && strip_tags($field->content) != ''): ?>
-           <?php //print '<div class="buy-link-cart"><a target="_blank" href = "'. strip_tags($field->content). '"><img src = "'. base_path(). path_to_theme(). '/images/commerce/cart_big.png" /></a></div>'; ?>  
+  <?php if (!empty($field->separator)): ?>
+    <?php print $field->separator; ?>
   <?php endif; ?>
-            
-  <?php if($field->class == 'title'): ?>
-        </div>
-    <?php endif; ?>
+
+  <?php print $field->wrapper_prefix; ?>
+    <?php print $field->label_html; ?>
+    <?php print $field->content; ?>
+  <?php print $field->wrapper_suffix; ?>
+
+  <?php if ($field->class == "sharethis" || $field->class == "field-slider-image"): ?>
+    </div>
+  <?php endif; ?>
+
 <?php endforeach; ?>

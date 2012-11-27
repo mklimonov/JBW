@@ -20,10 +20,30 @@ ul.primary{
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+=======
+/*view/edit panel in node*/
+ul.primary{
+    margin-top: 0;
+    /*margin-bottom: 10px;*/
+}
+.breadcrumb{
+    float: right;
+    font-size: 10px;
+    font-style: italic;
+    margin-right: 10px;
+  color: #58595b;
+}
+.breadcrumb a:visited,
+.breadcrumb a:link,
+.breadcrumb a{
+  color: #58595b;
+  text-decoration: none;
+}
+>>>>>>> d97f69192341971df48e72d3e98e8dc91eb20d6e
 .breadcrumb a:hover{
     text-decoration: underline;
 }
-
 /*left part of content*/
 .page-home .fest_row_homepage{
     width: 550px;
@@ -51,7 +71,11 @@ ul.primary{
 .page-home .views-field-field-image-homepage-fest img,
 .page-home .views-field-field-image-homepage-news img,
 .page-home .views-field-field-image-homepage img{
+<<<<<<< HEAD
     margin-top: 15px;
+=======
+    margin-top: 10px;
+>>>>>>> d97f69192341971df48e72d3e98e8dc91eb20d6e
     margin-right: 10px;
     margin-left: 0px;
     margin-bottom: 30px;
@@ -97,6 +121,7 @@ ul.primary{
     bottom: 8px;
 }
 
+<<<<<<< HEAD
 /*----------------bg left part in content block on homepage-------------------*/
 
 .page-home .festival-color1 .festival-left-part{
@@ -109,6 +134,51 @@ ul.primary{
 
 .page-home .festival-color3 .festival-left-part{
     background: url(../images/content/green.png) no-repeat top left;
+=======
+/*ра�?кра�?ка левой ча�?ти контента в хоум пайдж*/
+.page-home .festival-color1 .views-field-field-description-homepage-fest,
+.page-home .festival-color1 .views-field-field-description-homepage-blog,
+.page-home .festival-color1 .views-field-field-description-homepage-event{ 
+    background: greenyellow;
+}
+
+.page-home .festival-color2 .views-field-field-description-homepage-fest,
+.page-home .festival-color2 .views-field-field-description-homepage-blog,
+.page-home .festival-color2 .views-field-field-description-homepage-event{ 
+    background-color: orange;
+}
+
+.page-home .festival-color3 .views-field-field-description-homepage-fest,
+.page-home .festival-color3 .views-field-field-description-homepage-blog,
+.page-home .festival-color3 .views-field-field-description-homepage-event{ 
+    background-color: purple;
+}
+
+.page-home .fest_row_homepage .festival-left-part .field-content p{
+    color: black;
+    z-index: 12;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------изначально накатал------------*/
+/*section-content*/
+/*#zone-content-wrapper{
+    margin: 0;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;  
+    top: 10px;
+>>>>>>> d97f69192341971df48e72d3e98e8dc91eb20d6e
 }
 
 /*

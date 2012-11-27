@@ -24,16 +24,9 @@
  * @ingroup views_templates
  */
 ?>
+<div class="static-header">
 <?php foreach ($fields as $id => $field): ?>
-
-  <?php if ($field->class == "title"): ?>
-    <div class = "slider-left-part">
-  <?php endif; ?>
-        
-  <?php if ($field->class == "field-slider-image"): ?>
-        <div class = "slider-right-part">
-  <?php endif; ?>
-            
+    
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
@@ -43,8 +36,6 @@
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
 
-  <?php if ($field->class == "sharethis" || $field->class == "field-slider-image"): ?>
-    </div>
-  <?php endif; ?>
 
 <?php endforeach; ?>
+</div>
