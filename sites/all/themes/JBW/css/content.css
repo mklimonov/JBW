@@ -6,10 +6,13 @@ ul.primary{
 /*----------------------------------breadcrumbs-------------------------------*/
 .breadcrumb{
     float: right;
+    text-align: right;
+    width: 350px;
     font-size: 10px;
     font-style: italic;
     margin-right: 10px;
     color: #58595b;
+    padding-top: 5px;
     padding-bottom: 0;
 }
 
@@ -104,11 +107,11 @@ ul.primary{
 }
 
 .page-home .festival-color2 .festival-left-part{
-    background: url(../images/content/green.png) no-repeat top left;
+    background: url(../images/content/orange.png) no-repeat top left;
 }
 
 .page-home .festival-color3 .festival-left-part{
-    background: url(../images/content/green.png) no-repeat top left;
+    background: url(../images/content/purple.png) no-repeat top left;
 }
 
 /*

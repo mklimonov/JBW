@@ -60,9 +60,9 @@
 #block-system-main #pager-up{
     position: absolute;
     right: 20px;
-    top: 26px;
+    top: 45px;
     width: 65px;
-    float: right;
+    /*float: right;*/
 }
 
 #block-system-main #pager-down{

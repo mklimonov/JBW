@@ -11,7 +11,7 @@
     min-height: 500px;
 }
 
-/*------------------------------Таблица с событиями---------------------------*/
+/*------------------------------Table with events---------------------------*/
 .panels-flexible-region-new-center{
     float: none;
     width: 100%;
@@ -28,8 +28,8 @@
    float: right;
    position: relative;
    */
-  
-   top: 40px;
+
+   /*top: 40px;*/
    width: 420px;
    /*height: 480px;*/
    padding: 0;
@@ -172,14 +172,15 @@
     margin-bottom: 3px;
 }
 
-/*forms with search*/
+/*--------------------------forms with search---------------------------------*/
 .page-events .views-exposed-form,
 .page-festival .views-exposed-form,
 .page-news .views-exposed-form{
-    float: right;
+    /*float: right;*/
     position: absolute;
     right: 95px;
-    top: 25px;
+    /*top: 25px;*/
+    top: 45px;
     z-index: 10;
 }
 
@@ -221,7 +222,7 @@
     /*float: right;*/
 }
 
-/*text field*/
+/*-------------------------------search text field-----------------------------*/
 .page-events .views-exposed-form #edit-keys-wrapper input,
 .page-festival .views-exposed-form #edit-keys-wrapper input,
 .page-news .views-exposed-form #edit-keys-wrapper input{
@@ -239,7 +240,7 @@
      border-radius: 0;
      
      float: left;
-     position: relative;
+     /*position: relative;*/
 }
 
 .page-events .views-exposed-form #edit-keys-wrapper input:focus,
@@ -251,7 +252,7 @@
     box-shadow: none;
 }
 
-/*button*/
+/*------------------------------search button---------------------------------*/
 .page-events .views-exposed-form .views-submit-button input,
 .page-festival .views-exposed-form .views-submit-button input,
 .page-news .views-exposed-form .views-submit-button input{
@@ -269,7 +270,7 @@
     padding: 0;
     cursor: pointer;
     float: right;
-    position: relative;
+    /*position: relative;*/
 }
 
 /*-------------------------выпадающий спискок---------------------------------*/
@@ -343,7 +344,7 @@
     position: absolute;
     top: 70px;
     left: 10px;
-    float: left;
+    /*float: left;*/
     z-index: 10;
 }
 
@@ -457,12 +458,12 @@
 
 /*---------------------------количество товара--------------------------------*/
 .block-menu-festival-link-tiny-cart{
-    float: left;
+    /*float: left;*/
     /*width: 15px;
     height: 15px;*/
     position: absolute;
     right: 250px;
-    top: 25px;
+    top: 45px;
     z-index: 10;
 }
 
