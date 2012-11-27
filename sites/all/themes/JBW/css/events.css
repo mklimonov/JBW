@@ -482,12 +482,11 @@
 }
 
 /*----------------------------------breadcrumbs-------------------------------*/
-#region-content #breadcrumb{
+/*#region-content #breadcrumb{
     width: 350px;
     float: right;
     text-align: right;
     margin-right: 15px;
-    /*margin-top: 5px;*/
     font-size: 10px;
     font-style: italic;
     text-decoration: none;
@@ -504,4 +503,4 @@
 #region-content #breadcrumb a:hover{
     text-decoration: underline;
     z-index: 20;
-}
+}*/

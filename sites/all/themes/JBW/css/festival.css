@@ -50,7 +50,7 @@
     float: left;
 }
 
-.page-node .node_right_part,
+.page-node #region-content .node_right_part,
 .page-news #region-content .node_right_part{
     width: 400px;
     float: right;

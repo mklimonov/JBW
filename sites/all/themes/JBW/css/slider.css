@@ -11,18 +11,12 @@
     height: 262px;
     background: white;
 }
-<<<<<<< HEAD
 */
 
 .view-slider .views-row{
     width: 960px;
 }
 
-=======
-.view-slider .views-row{
-    width: 960px;
-}
->>>>>>> d97f69192341971df48e72d3e98e8dc91eb20d6e
 .slider-left-part{
     float: left;
     line-height: 1.2em;
