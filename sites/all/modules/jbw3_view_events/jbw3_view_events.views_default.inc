@@ -61,6 +61,7 @@ function jbw3_view_events_views_default_views() {
 
   /* Display: Event node */
   $handler = $view->new_display('block', 'Event node', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
@@ -226,6 +227,7 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['default_action'] = 'empty';
+  $handler->display->display_options['arguments']['nid']['breadcrumb'] = '%1';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
@@ -336,7 +338,6 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
-  $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_value']['expose']['operator_id'] = 'field_event_date_value_op';
@@ -345,10 +346,10 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_event_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_event_date_value']['year_range'] = '-0:+1';
   /* Filter criterion: Content: Has taxonomy term */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
@@ -407,13 +408,6 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['relationships']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
   $handler->display->display_options['relationships']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: ticket buy link */
-  $handler->display->display_options['fields']['field_ticket_buy_link']['id'] = 'field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['table'] = 'field_data_field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['field'] = 'field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['label'] = '';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ticket_buy_link']['element_default_classes'] = FALSE;
   /* Field: Commerce Product: Add to Cart form */
   $handler->display->display_options['fields']['add_to_cart_form']['id'] = 'add_to_cart_form';
   $handler->display->display_options['fields']['add_to_cart_form']['table'] = 'commerce_product';
@@ -441,7 +435,7 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'reverse_field_festival_reference_node';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_festival_reference_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
@@ -452,6 +446,29 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
+  /* Field: Content: event date */
+  $handler->display->display_options['fields']['field_event_date']['id'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: festival (field_festival_reference) */
   $handler->display->display_options['arguments']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
@@ -499,7 +516,6 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
-  $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_value']['expose']['operator_id'] = 'field_event_date_value_op';
@@ -508,10 +524,10 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_event_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_event_date_value']['year_range'] = '-0:+1';
   /* Filter criterion: Search: Search Terms */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
@@ -527,12 +543,28 @@ function jbw3_view_events_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['relationship'] = 'field_festival_reference_target_id';
-  $handler->display->display_options['filters']['title']['operator'] = 'not empty';
+  /* Filter criterion: Global: PHP */
+  $handler->display->display_options['filters']['php']['id'] = 'php';
+  $handler->display->display_options['filters']['php']['table'] = 'views';
+  $handler->display->display_options['filters']['php']['field'] = 'php';
+  $handler->display->display_options['filters']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['filters']['php']['php_filter'] = '    $query = new EntityFieldQuery();
+    $result = $query->entityCondition(\'entity_type\', \'node\')
+      ->entityCondition(\'bundle\', \'festival\')
+      ->fieldOrderBy(\'field_festival_date\', \'value\', \'DESC\')
+      ->execute();
+    foreach($result[\'node\'] as $nid => $useless_variable){
+        $eventNode = node_load($data->nid);
+                $fieldPrepare = $eventNode->field_event_date;
+                $allDate = $fieldPrepare[\'und\'][0][\'value\'];
+                $dateArray = explode(\' \', $allDate);
+                $timer = $dateArray[0];
+        if($row->nid == $nid && $timer >= date(\'Y-m-d\')){  
+           return FALSE;
+        }else{
+           return TRUE;
+        }
+    }';
 
   /* Display: Events_non-fest */
   $handler = $view->new_display('block', 'Events_non-fest', 'block_5');
@@ -562,13 +594,6 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['relationships']['field_festival_reference_target_id']['table'] = 'field_data_field_festival_reference';
   $handler->display->display_options['relationships']['field_festival_reference_target_id']['field'] = 'field_festival_reference_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: ticket buy link */
-  $handler->display->display_options['fields']['field_ticket_buy_link']['id'] = 'field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['table'] = 'field_data_field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['field'] = 'field_ticket_buy_link';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['label'] = '';
-  $handler->display->display_options['fields']['field_ticket_buy_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ticket_buy_link']['element_default_classes'] = FALSE;
   /* Field: Commerce Product: Add to Cart form */
   $handler->display->display_options['fields']['add_to_cart_form']['id'] = 'add_to_cart_form';
   $handler->display->display_options['fields']['add_to_cart_form']['table'] = 'commerce_product';
@@ -596,7 +621,7 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'reverse_field_festival_reference_node';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_festival_reference_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
@@ -607,6 +632,14 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['relationship'] = 'field_festival_reference_target_id';
+  $handler->display->display_options['fields']['nid']['label'] = '';
+  $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: festival (field_festival_reference) */
   $handler->display->display_options['arguments']['field_festival_reference_target_id']['id'] = 'field_festival_reference_target_id';
@@ -656,7 +689,6 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['id'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['table'] = 'field_data_field_event_date';
   $handler->display->display_options['filters']['field_event_date_value']['field'] = 'field_event_date_value';
-  $handler->display->display_options['filters']['field_event_date_value']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_date_value']['group'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_event_date_value']['expose']['operator_id'] = 'field_event_date_value_op';
@@ -665,10 +697,10 @@ function jbw3_view_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    4 => 0,
     3 => 0,
   );
   $handler->display->display_options['filters']['field_event_date_value']['form_type'] = 'date_popup';
-  $handler->display->display_options['filters']['field_event_date_value']['default_date'] = 'now';
   $handler->display->display_options['filters']['field_event_date_value']['year_range'] = '-0:+1';
   /* Filter criterion: Search: Search Terms */
   $handler->display->display_options['filters']['keys']['id'] = 'keys';
@@ -684,11 +716,22 @@ function jbw3_view_events_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Content: Title */
-  $handler->display->display_options['filters']['title']['id'] = 'title';
-  $handler->display->display_options['filters']['title']['table'] = 'node';
-  $handler->display->display_options['filters']['title']['field'] = 'title';
-  $handler->display->display_options['filters']['title']['relationship'] = 'field_festival_reference_target_id';
+  /* Filter criterion: Global: PHP */
+  $handler->display->display_options['filters']['php']['id'] = 'php';
+  $handler->display->display_options['filters']['php']['table'] = 'views';
+  $handler->display->display_options['filters']['php']['field'] = 'php';
+  $handler->display->display_options['filters']['php']['use_php_setup'] = 0;
+  $handler->display->display_options['filters']['php']['php_filter'] = '        $eventNode = node_load($data->nid);
+                $fieldPrepare = $eventNode->field_event_date;
+                $allDate = $fieldPrepare[\'und\'][0][\'value\'];
+                $dateArray = explode(\' \', $allDate);
+                $timer = $dateArray[0];
+        if(empty($row->nid) && $timer >= date(\'Y-m-d\')){  
+           return FALSE;
+        }else{
+           return TRUE;
+        }
+';
 
   /* Display: why not to try */
   $handler = $view->new_display('block', 'why not to try', 'wntt');
