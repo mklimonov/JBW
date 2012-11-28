@@ -37,19 +37,19 @@ function menu_festival_link_menu(){
     return $items;
 }
 
-function menu_festival_link_festival(){
-    /*$nodes = node_load_multiple(array(), array('type' => 'festival'));
-    $nid = $nodes[0]->$nid;
-    return (print_r($nodes));*/
+function getLastFestivalId(){
     $query = new EntityFieldQuery();
-    $query->entityCondition('entity_type', 'node')
+    $result = $query->entityCondition('entity_type', 'node')
       ->entityCondition('bundle', 'festival')
       ->fieldOrderBy('field_festival_date', 'value', 'DESC')
-      ->pager(1);
-    $result = $query->execute();
+      ->execute();
     foreach($result['node'] as $nid => $useless_variable){
-        drupal_goto('node/'. $nid);
+        return $nid;
     }
+}
+
+function menu_festival_link_festival(){
+    drupal_goto('node/'. getLastFestivalId());
 }
 
 function menu_festival_link_events_redirect(){
@@ -179,6 +179,8 @@ function menu_festival_link_block_contents($delta) {
             $all .= '<li><a href="'. $href_nonfest. '">regular</a>'. $addition['href_nonfest']. '</li>';
             $all .= '</ul></div></div>';
             
+            //DATE
+ 
             $var_array = $_GET;
             $var_array['field_event_date_value']['value']['date'] = '';
             $href_date = url('', array('query' => $var_array));
@@ -187,20 +189,51 @@ function menu_festival_link_block_contents($delta) {
             }else{
                 $all .= '<div class = "date-filter-events-all"><div class="filter-button">Date</div><a href="'. $href_date. '"><img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-big.png" /></a><div id="filter-ul" class="closed-ul-filter"><ul class="events-filter-ul">';
             }
-            for($i = 0; $i < 6; $i++){
-                $timer = $i == 0 ? date('Y-m-d') : date('Y-m-01', strtotime('+'. $i. ' month'));
-                $date_explode = explode('-', $timer);
-                $monthName = date("F", mktime(0, 0, 0, $date_explode[1], 10));
-                $var_array['field_event_date_value']['value']['date'] = $timer;
-                $href_date = url('', array('query' => $var_array));
-                $all .= '<li><a href="'. $href_date. '">'. $monthName. '</a>';
-                if(isset($_GET['field_event_date_value']['value']['date'])){
-                    if($_GET['field_event_date_value']['value']['date'] == $timer){
-                        $all .= '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
-                    }
+            
+            $query = new EntityFieldQuery();
+            $query->entityCondition('entity_type', 'node')
+                  ->entityCondition('bundle', 'event')
+                  ->fieldCondition('field_event_date', 'value', date('Y-m-d'),'>=')
+                  ->fieldOrderBy('field_event_date', 'value');
+            $lastFestId = getLastFestivalId();
+            if(isset($_GET['type'])){
+                switch($_GET['type']){
+                    case 'fest':
+                        $query->fieldCondition('field_festival_reference', 'target_id', $lastFestId,'=');
+                        break;
+                    
+                    case 'non-fest':
+                        $query->fieldCondition('field_festival_reference', 'target_id', $lastFestId, '!=');
+                        break;
+                    
                 }
-                $all .= '</li>'; 
             }
+            $eventsWeNeed = $query->execute();
+            if(isset($eventsWeNeed['node'])){
+                foreach($eventsWeNeed['node'] as $nid => $useless){
+
+                    $eventNode = node_load($nid);
+                    //make event time
+                    $fieldPrepare = $eventNode->field_event_date;
+                    $allDate = $fieldPrepare['und'][0]['value'];
+                    $dateArray = explode(' ', $allDate);
+                    $timer = $dateArray[0];
+                    //make event time in <a> tag
+                    $particularDate = explode('-', $timer);
+                    $dateLink = date('D jS F', mktime('0', '0', '0', $particularDate[1], $particularDate[2], $particularDate[0]));
+                    //
+                    $var_array['field_event_date_value']['value']['date'] = $timer;
+                    $href_date = url('', array('query' => $var_array));
+                    $all .= '<li><a href="'. $href_date. '">'. $dateLink. '</a>';
+                    if(isset($_GET['field_event_date_value']['value']['date'])){
+                        if($_GET['field_event_date_value']['value']['date'] == $timer){
+                            $all .= '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
+                        }
+                    }
+                    $all .= '</li>'; 
+                }
+            }
+            
             $all .= '</ul></div></div>';
             
             

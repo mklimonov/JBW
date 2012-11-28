@@ -212,7 +212,7 @@ function jbw3_view_slider_views_default_views() {
   $handler->display->display_options['fields']['field_slider_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_slider_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_slider_image']['settings'] = array(
-    'image_style' => 'slider_image',
+    'image_style' => 'static_header',
     'image_link' => '',
   );
   /* Sort criterion: Content: Post date */
@@ -584,7 +584,7 @@ function jbw3_view_slider_views_default_views() {
   $handler->display->display_options['fields']['field_page_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_page_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_page_image']['settings'] = array(
-    'image_style' => 'slider_image',
+    'image_style' => 'static_header',
     'image_link' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;

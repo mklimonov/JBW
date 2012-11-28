@@ -76,6 +76,28 @@ function jbw3_imagestyles_image_default_styles() {
     ),
   );
 
+  // Exported image style: litkicks_sidebar.
+  $styles['litkicks_sidebar'] = array(
+    'name' => 'litkicks_sidebar',
+    'effects' => array(
+      6 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '215',
+          'height' => '155',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported image style: slider_image.
   $styles['slider_image'] = array(
     'name' => 'slider_image',
@@ -91,6 +113,28 @@ function jbw3_imagestyles_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => '635',
+          'height' => '235',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported image style: static_header.
+  $styles['static_header'] = array(
+    'name' => 'static_header',
+    'effects' => array(
+      5 => array(
+        'label' => 'Scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image, then crop the larger dimension. This is most useful for creating perfectly square thumbnails without stretching the image.',
+        'effect callback' => 'image_scale_and_crop_effect',
+        'dimensions callback' => 'image_resize_dimensions',
+        'form callback' => 'image_resize_form',
+        'summary theme' => 'image_resize_summary',
+        'module' => 'image',
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => '930',
           'height' => '235',
         ),
         'weight' => '1',
