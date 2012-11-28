@@ -1,0 +1,112 @@
+#page{
+   font-family:  Georgia, verdana, arial, san-serif;
+   /*Georgia,'Times New Roman',serif*/
+   font-size: 12px;
+}
+
+.page-home a,
+.page-events a,
+.page-news a,
+.page-node a,
+.page-festival a,
+.page-home a:link,
+.page-events a:link,
+.page-news a:link,
+.page-node a:link,
+.page-festival a:link,
+.page-home a:visited,
+.page-events a:visited,
+.page-news a:visited,
+.page-node a:visited,
+.page-festival a:visited{
+    text-decoration: none;
+    color: #58595b;
+}
+
+/*------------------------------Header titles---------------------------------*/
+.page-home #region-content h1#page-title,
+.page-events #region-content h1#page-title,
+.page-news #region-content h1#page-title,
+.page-node #region-content h1#page-title,
+.page-festival #region-content h1#page-title{
+    color: #333333;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1em;
+    padding-top: 0;
+}
+
+/*-------------------font events date,price, etc------------------------------*/
+.page-node .views-field-field-festival-date,
+.page-node .node-event-date,
+.page-node .node-event-price,
+.page-node .buy-link-cart,
+.page-node .Saver-price,
+.page-news .views-field-field-author,
+.page-news .views-field-field-publication-date{
+    /*margin: 0 20px 5px 15px;*/
+    margin-left: 5px;
+    margin-bottom: 3px;
+    font-family: georgia;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.page-node .Saver-price{
+    color: red;
+}
+
+.page-node .buy-link-cart a{
+    text-decoration: none;
+    font-style: italic;
+    color: #77c24e;
+    font-size: 12px;
+}
+
+
+.page-node .pane-events-all #wntt .events-body p,
+.page-node .pane-events-all #wntt .events-body a,
+.page-events .events-body p,
+.page-events .events-body a,
+.page-festival .events-body p,
+.page-festival .events-body a{
+    color: white;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 0.8em;
+    padding-top: 0;
+    margin-bottom: 3px;
+}
+
+/*--------------------------------data filter fonts---------------------------*/
+.events-filter-ul li a{
+    font-style: italic;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+/*-------------------------------View programme--------a-----------------------*/
+.page-node #festival-content .node_left_part a{
+    font-style: italic;
+    font-size: 10px;
+}
+
+/*-----------------------------WNTT------------------------------------------*/
+.page-node h2.pane-title{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.1em;
+    padding-top: 10px;
+}
+
+.page-node .views-field-body{
+    font-size: 12px;
+    font-family: georgia;
+    margin-top: 10px;
+}
+
+.page-node .views-field-title{
+    font-size: 14px;
+    margin-bottom: 3px;
+}

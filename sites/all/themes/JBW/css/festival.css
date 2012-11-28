@@ -10,18 +10,20 @@
 
 /*------------------------просмотр события/фестиваля------------------------------------*/
 /*-----------------------------------Заголовки--------------------------------*/
-.pane-festivals h2#page-title{
-  display: none;   
+/*.pane-festivals h2#page-title{
+  display: none;
+}*/
+
+.node-type-festival h1#page-title{
+    display: none;
 }
 .page-node h1#page-title,
 .page-news h1#page-title,
 .page-events h1#page-title{
-    /*width: 100px;*/
-    font-size: 17px;
-    margin: 0;
-    position: absolute;
-    top: 20px;
-    left: 15px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     z-index: 2;
 }
 
@@ -31,20 +33,97 @@
     background-position: center;
 }
 
+/*------------------------------Festival page---------------------------------*/
+.page-node #region-content .block-inner{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.page-node #region-content .node_left_part{
+    width: 135px;/*width: 150px;*/
+    float: left;
+}
+
+.page-node #region-content .node_right_part{
+    width: 380px;
+    float: right;
+}
+    
+.page-node #region-content .node_right_part .views-field-title,
+.page-node #region-content .node_right_part .views-field-field-festival-date,
+.page-node #region-content .node_right_part .views-field-body,
+.page-news #region-content .node_right_part .views-field-title,
+.page-news #region-content .node_right_part .views-field-field-festival-date,
+.page-news #region-content .node_right_part .views-field-body{
+    margin-left: 5px;
+}
+
+.page-node #region-content .node_left_part .views-field-field-event-image-2{
+    margin-top: 10px;
+}
+
+/*----------------------------NEWS--------------------------------------------*/
+.page-news #region-content .block-inner{
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.page-news #region-content .view-content{
+    margin-top: 55px;
+}
+
+.page-news #region-content .views-row{
+    clear: both;
+    display: block;
+    min-height: 170px;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.page-news #region-content .views-row #news-content{
+    display: block;
+    
+}
+/*
+.page-news #region-content .views-row .node_left_part{
+    width: 135px;
+    float: left;
+}
+
+.page-news #region-content .views-row .node_right_part{
+    width: 380px;
+    float: right;
+}*/
+
+.page-news #region-content .views-row .node_left_part .views-field-field-news-image{
+    float: left;
+    display: block;
+    margin-right: 10px;
+}
+
+.page-news #region-content .views-row .node_right_part .views-field-sharethis{
+    float: right;
+    margin-bottom: 3px;
+    z-index: 2;
+}
+
+.page-news #region-content .views-row-last{
+    border-bottom: none;
+}
+
+
 .page-node .panels-flexible-region-new-center,
 .page-news .panels-flexible-region-new-center{
     width: 100%;
 }
 
-/*.page-node .pane-festivals h2{
-    display: none;
-}
 
-.page-node #region-content h1{
-    display: none;
-}*/
-
-.page-node .node_left_part,
+/*
+.page-node #region-content .node_left_part,
 .page-news #region-content .node_left_part{
     width: 150px;
     float: left;
@@ -54,17 +133,18 @@
 .page-news #region-content .node_right_part{
     width: 400px;
     float: right;
-}
+}*/
 
-/*festivale image*/
+/*-----------------------festivale/news image---------------------------------*/
 /*.page-node .node_left_part /*#festival-content/ .views-field-field-festival-image,*/
-.page-news .node_left_part /*#festival-content*/ .views-field-field-news-image{
+/*.page-news .node_left_part .views-field-field-news-image{
     float: left;
     display: block;
 }
 
-.page-node .node_left_part /*#festival-content*/ .views-field-field-festival-image img,
-.page-node .node_left_part /*#festival-content*/ .views-field-field-event-image img,
+.page-node #region-content .node_left_part .views-field-field-festival-image img,
+.page-node #region-content .node_left_part .views-field-field-event-image img,
+.page-node #region-content .node_left_part .views-field-field-news-image img
 .page-news #region-content .node_left_part .views-field-field-news-image img{
     margin: 45px 0 10px 15px;
     
@@ -72,77 +152,55 @@
 
 .page-node .node_left_part .views-field-field-event-image-2 img{
     margin: 10px 0 10px 15px;
-}
+}*/
 
-/*festivale text*/
-.page-node #region-content .node_right_part .views-field-body,
-.page-news #region-content .node_right_part .views-field-body{/*p*/
+/*--------------------------festivale text------------------------------------*/
+/*.page-node #region-content .node_right_part .views-field-body,
+.page-news #region-content .node_right_part .views-field-body{
     float: right;
     margin: 20px 20px 15px 15px;
     text-align: left;
-}
+}*/
 
-/*news title*/
-.page-news #region-content .node_right_part .views-field-title a,
+/*---------------------------news title---------------------------------------*/
+/*.page-news #region-content .node_right_part .views-field-title a,
 .page-node #region-content .node_right_part .views-field-title a{
     text-decoration: none;
     color: black;
     font-size: 12px;
-}
+}*/
 
-/*festivale title*/
-.page-node #region-content .views-field-title,
+/*--------------------------festivale title------------------------------------*/
+/*.page-node #region-content .views-field-title,
 .page-news #region-content .views-field-title{
     margin: 45px 20px 5px 15px;
-}
-
-/*events date*/
-.page-node .views-field-field-festival-date,
-.page-node .node-event-date,
-.page-node .node-event-price,
-.page-node .buy-link-cart,
-.page-node .Saver-price,
-.page-news .views-field-field-author,
-.page-news .views-field-field-publication-date{
-    margin: 0 20px 5px 15px;
-    font-family: georgia;
-    font-style: italic;
-    font-size: 10px;
-}
-
-.page-node .buy-link-cart a{
-    text-decoration: none;
-    font-style: italic;
-    color: #77c24e;
-    font-size: 12px;
-}
+}*/
 
 /*.page-node .buy-link-cart{
     margin: 0 20px 5px 15px;
 }*/
 
 
-.page-node #region-content .node_left_part a{
+/*.page-node #region-content .node_left_part a{
     margin-left: 15px;
-}
+}*/
 
-.page-node .node_right_part .views-field-sharethis,
-.page-news #region-content .node_right_part .views-field-sharethis{
+.page-node .node_right_part .views-field-sharethis{
     /*position: absolute;*/
     float: right;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     margin-right: 15px;
     /*width: 110px;*/
     z-index: 2;
     /*right: 10px;
     bottom: 250px;*/
 }
-
-/*why not try field*/
+/*------------------------------------*/
+/*------------------------why not try field-----------------------------------*/
 
 .page-node .pane-events-all #wntt,
 .page-node .pane-events-all h2{
-    width: 400px;
+    width: 380px;
     float: right;
 }
 
@@ -172,25 +230,20 @@
     overflow: hidden;
 }
 
-.page-node .pane-events-all #wntt .events-body p,
-.page-node .pane-events-all #wntt .events-body a{
-    margin-bottom: 3px;
-    color: white;
-}
-
 .page-node .pane-events-all #wntt .events-body p{
+    margin-top: 3px;
     margin-left: 5px;
 }
 
-.page-node .pane-events-all #wntt .events-body .views-field-title{
+.page-node .pane-events-all #wntt .events-body .views-field-title-1{
     margin-left: 5px;
-    font-size: 10px;
-    margin-bottom: 3px;
+    /*font-size: 10px;*/
+    /*margin-bottom: 3px;*/
 }
 
 .page-node .pane-events-all #wntt .events-body .views-field-title a{
     text-decoration: none;
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .page-node .pane-events-all #wntt .events-body .views-field-title a:hover{
@@ -200,23 +253,23 @@
 
 .page-node .pane-events-all #wntt .events-body .views-field-body{
     margin-left: 5px;
-    font-size: 8px;
-    color: #fff;
+    /*font-size: 8px;
+    color: #fff;*/
     margin-bottom: 3px;
 }
 
 /*----------------------------------border news-------------------------------*/
-.page-news #region-content #news-content{
+/*.page-news #region-content #news-content{
     clear: both;
-    /*position: relative;*/
+    /*position: relative;/
     display: block;
     width: 550px;
-    /*border-bottom: 1px solid gray;*/
-}
+    /*border-bottom: 1px solid gray;/
+}*/
 
-.page-news #region-content .node_right_part{
+/*.page-news #region-content .node_right_part{
     border-bottom: 1px solid gray;
-}
+}*/
 
 /*
 .page-news .news-border-line{
@@ -235,6 +288,6 @@
 
 /*---------------------------margin on basic page----------------------------*/
 .page-node article{
-    margin: 10px;
-    margin-top: 30px;
+    /*margin: 10px;*/
+    margin-top: 45px;
 }

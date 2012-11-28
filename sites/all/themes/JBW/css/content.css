@@ -3,8 +3,14 @@ ul.primary{
     margin-top: 0;
     /*margin-bottom: 10px;*/
 }
+.page-home h1#page-title{
+    display: none;
+}
 /*----------------------------------breadcrumbs-------------------------------*/
-.breadcrumb{
+.page-news .breadcrumb,
+.page-node .breadcrumb,
+.page-events .breadcrumb,
+.page-festival .breadcrumb{
     float: right;
     text-align: right;
     width: 350px;
@@ -23,8 +29,15 @@ ul.primary{
   text-decoration: none;
 }
 
-.breadcrumb a:hover{
+.page-news .breadcrumb a:hover,
+.page-node .breadcrumb a:hover,
+.page-events .breadcrumb a:hover,
+.page-festival .breadcrumb a:hover{
     text-decoration: underline;
+}
+
+.page-home .breadcrumb{
+    padding: 0;
 }
 
 /*left part of content*/
@@ -68,7 +81,7 @@ ul.primary{
 
 #region-content h1#page-title{
     /*display: none;*/
-    margin: 0;
+    /*margin: 0;*/
 }
 
 /*text slider*/
