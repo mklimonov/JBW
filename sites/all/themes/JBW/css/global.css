@@ -31,11 +31,11 @@ section {
         }
 }*/
 
-body{
+/*body{
    /* background: url(../images/bg_2560px.jpg) no-repeat;*/
-   font-family:  georgia, verdana, arial, san-serif;
+ /*  font-family:  georgia, verdana, arial, san-serif;
    font-size: 12px;
-}
+}*/
 
 #page{
     margin: 0 auto;
@@ -61,7 +61,7 @@ body{
     /*display: none;*/
     clear: both;
     position: relative;
-    top: 20px;
+    top: 40px;
     width: 1020px;
     z-index: 2;
 }
@@ -101,7 +101,7 @@ body{
     z-index: 2;
 }
 
-/*------------------------------------------------------------*/
+/*----------------------------------Zones--------------------------------------*/
 #zone-branding{
     margin: 0 auto;
     width: 960px;
@@ -169,6 +169,12 @@ body{
 
 #region-footer{
     margin: 0 auto;
+    /*padding: 8px 0 0 8px;*/
+    /*padding-bottom: 0px;*/
+    
+    /*padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;*/
     width: 960px;
     height: 42px;
     background: #FFFFFF;
@@ -217,9 +223,14 @@ body{
 
 /*------------------------------footer menu-----------------------------------*/
 #region-footer .block-nice-menus .nice-menu{
-    margin-left: 10px;
+    /*margin-left: 10px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
+    
+    /*padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;*/
+    /*padding-bottom: 2px;*/
     font-size: 10px;
 }
 
@@ -227,12 +238,21 @@ body{
     border-right: 1px solid black;
     padding: 0;
     padding-left: 3px; 
-    padding-right: 3px; 
+    padding-right: 3px;
 }
 
 #region-footer .images{
-    position: absolute;
+    /*float: right;*/
+    /*background:  url(../images/footer/footer_images.png) no-repeat right center;*/
+    /*background-position: right;
+    /*position: absolute;
     right: 5px;
-    top: 5px;
+    top: 5px;*/
+    /*padding-top: 5px;*/
+    /*width: 945px;*/
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 42px;
+    background: url("../images/footer/footer_images.png") no-repeat scroll top right #FFFFFF;
     z-index: 10;
 }
