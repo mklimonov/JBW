@@ -1,0 +1,249 @@
+/*--------------------------Content--------------------------------------------*/
+.page-blog #section-header{
+    width: 1020px;
+    height: 220px;
+    z-index: 2;
+}
+
+.page-blog #region-header{
+    margin: 0 auto;
+    width: 960px;
+    height: 60px;
+    background: #FFFFFF;
+    z-index: 2;
+}
+
+.page-blog .breadcrumb{
+    padding: 0;
+}
+/*отключил лишнее*/
+.page-blog .block-views-festivals-block{
+    display: none;
+}
+
+.page-blog #region-content .views-row{
+    width: 550px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.page-blog #region-content .views-row .blog_left_part,
+/*.page-blog #region-content .views-row .blog_central_part,*/
+.page-blog #region-content .views-row .blog_right_part{
+    margin-bottom: -10000px; 
+    padding-bottom: 10000px; 
+}
+
+.page-blog #region-content .views-row.festival-color1 .blog_left_part{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    background: #00adef;
+    /*background: url(../images/content/green.png) no-repeat top left;*/
+}
+.page-blog #region-content .views-row.festival-color2 .blog_left_part{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    background: #ff8f05;
+    /*background: url(../images/content/orange.png) no-repeat top left;*/
+}
+.page-blog #region-content .views-row.festival-color3 .blog_left_part{
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 130px;
+    background: #ec008c;
+    /*background: url(../images/content/purple.png) no-repeat top left;*/
+}
+
+.page-blog #region-content .views-row .blog_right_part{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    width: 370px;
+    background: #fff;
+    margin-left: 10px;
+}
+
+/*.page-blog #region-content .views-row .blog_central_part{
+    overflow: hidden;
+    background: transparent;
+}*/
+
+/*-------------margin in right part in content part on blog page--------------*/
+.page-blog #region-content .views-row .blog_right_part .views-field-title,
+.page-blog #region-content .views-row .blog_right_part .views-field-body,
+.page-blog #region-content .views-row .blog_right_part .views-field-field-video,
+.page-blog #region-content .views-row .blog_right_part .views-field-field-blog-image,
+.page-blog #region-content .views-row .blog_right_part .views-field-sharethis{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*-------------margin in left part in content part on blog page--------------*/
+.page-blog #region-content .views-row .blog_left_part .views-field-created,
+.page-blog #region-content .views-row .blog_left_part .views-field-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*------------------------------view-filters----------------------------------*/
+.page-blog #region-content .view-filters{
+    display: none;
+}
+
+/*-----------------------------Blog search------------------------------------*/
+.page-blog .views-exposed-form .views-exposed-widget{
+    padding: 0;
+}
+.page-blog .views-exposed-form{
+    /*float: right;*/
+    position: absolute;
+    right: 15px;
+    /*top: 25px;*/
+    /*top: 45px;*/
+    top: 20px;
+    z-index: 10;
+}
+
+.page-blog .views-exposed-widgets{
+    border-width: 0px;
+    border-style: none;
+    width: 280px;
+    height: 13px;
+    overflow: hidden;
+}
+
+.page-blog .views-exposed-form #edit-keys-wrapper,
+.page-blog .views-exposed-form .views-submit-button{
+    margin: 0;
+    padding: 0;
+    /*float: right;*/
+}
+
+/*-------------------------------search text field-----------------------------*/
+.page-blog .views-exposed-form #edit-keys-wrapper input{
+    margin: 0;
+    padding: 0;
+    height: 13px;
+    /*padding-bottom: 5px;*/
+    width: 138px;
+    border: none;
+    font: normal 10px 'trebuchet MS', arial, helvetica;
+    background: url(../images/header/searchbox.png) no-repeat center 0;
+    text-indent: 5px;
+
+    -moz-border-radius: 0;
+     border-radius: 0;
+     
+     float: left;
+     /*position: relative;*/
+}
+
+.page-blog .views-exposed-form #edit-keys-wrapper input:focus,
+.page-blog .views-exposed-form #edit-keys-wrapper input:active{
+    box-shadow: none;
+}
+
+
+/*------------------------------search button---------------------------------*/
+.page-blog .views-exposed-form .views-submit-button input{
+    background: url(../images/header/searchbutton.png) no-repeat center 0;
+    
+    -moz-border-radius: 0;
+    border-radius: 0;
+
+    border-width: 0;
+    border-style: none;
+
+    width: 12px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    float: right;
+    /*position: relative;*/
+}
+
+/*-------------------------выпадающий спискок---------------------------------*/
+.page-blog .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select#edit-date-filter-value-year{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: Arial,sans-serif;
+    font-size: 8px;
+    width: 70px;
+    border: 1px solid #73c049;
+    height: 12px;
+    
+    
+    -moz-border-radius: 0;
+    border-radius: 0;
+  
+    float: left;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.page-blog .views-exposed-form #edit-date-filter-wrapper select#edit-date-filter-value-month{
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: Arial,sans-serif;
+    font-size: 8px;
+    width: 70px;
+    border: 1px solid #73c049;
+    height: 12px;
+    
+    
+    -moz-border-radius: 0;
+    border-radius: 0;
+  
+    float: left;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.page-blog .views-exposed-form #edit-date-filter-wrapper  .date-month{
+    width: 50px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/select/but.png) no-repeat right 0; 
+    margin-right: 3px;
+}
+
+.page-blog .views-exposed-form #edit-date-filter-wrapper .date-year{
+    width: 50px;
+    height: 12px;
+    overflow: hidden;
+    background: url(../images/select/but.png) no-repeat right 0;
+    margin-right: 3px;
+}
+
+.page-blog .views-exposed-form #edit-date-filter-wrapper option{
+    background-color: #73c049;
+    color: white;
+    margin: 0;
+}
+/*----------------------invisible pager down----------------------------------*/
+.page-blog #region-content .view-blog .item-list{
+    display: none;
+}
+
+.page-blog #region-content .view-blog h2.element-invisible{
+    display: none;
+}

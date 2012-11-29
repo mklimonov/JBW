@@ -11,39 +11,38 @@
     min-height: 500px;
 }
 
+.page-events #block-system-main,
+.page-festival #block-system-main{
+    float: right;
+    position: relative;
+}
+
 /*------------------------------Table with events---------------------------*/
 .panels-flexible-region-new-center{
     float: none;
     width: 100%;
 }
 
-.page-events #block-system-main .view-content,
-.page-festival #block-system-main .view-content{
-   /* margin-left: 80px;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-bottom: 30px;*/
-   
-   /*
-   float: right;
-   position: relative;
-   */
-
-   /*top: 40px;*/
+.page-events #block-system-main .view-content/*,
+.page-festival #block-system-main .view-content*/{
    width: 420px;
    /*height: 480px;*/
    padding: 0;
    float: right;
    display: block;
-   margin-top: 50px;
+   margin-top: 10px;
    margin-right: 20px;
-   /*position: absolute;
-   top: 50px;
-   right: 20px;*/
-   
-    /*left: 80px;*/
 }
-
+/*-----------------------------for a festivale page---------------------------*/
+.page-festival #block-system-main .view-content{
+   width: 420px;
+   padding: 0;
+   float: right;
+   display: block;
+   margin-top: 10px;
+   margin-right: 20px;
+}
+/*-----------------------------------------------------------------------------*/
 .page-node #block-system-main .view-content /*.view-events*/ tr:hover td,
 .page-node #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
 .page-node #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
@@ -75,14 +74,6 @@
 .page-events #block-system-main .views-view-grid,
 .page-festival #block-system-main .views-view-grid{
    width: 430px;
-   /*height: 480px;*/
-    /*margin: 10px auto;*/
-    /*width: 430px;
-    height: 480px;
-    padding: 0;
-    position: relative;
-    top: 50px;
-    left: 80px;*/
 }
 
 .page-events #block-system-main .views-view-grid tr
@@ -106,7 +97,7 @@
     height: 165px;
     margin: 0 5px 0 0;
 }
-
+/*---------------------------Image in table-----------------------------------*/
 .page-events #block-system-main .views-view-grid .views-field-field-event-image,
 .page-festival #block-system-main .views-view-grid .views-field-field-event-image{
     float: left;
@@ -120,6 +111,7 @@
 
 /*.page-events .views-field-title,
 .page-events .views-field-body{*/
+/*---------------------------text on image-----------------------------------*/
 .page-events .events-body,
 .page-festival .events-body{
     background: #231f20;
@@ -175,17 +167,31 @@
 
 /*--------------------------forms with search---------------------------------*/
 .page-events .views-exposed-form,
-.page-festival .views-exposed-form,
+/*.page-festival .views-exposed-form,*/
 .page-news .views-exposed-form{
-    /*float: right;*/
-    position: absolute;
+    /*position: absolute;
     right: 95px;
-    /*top: 25px;*/
-    /*top: 45px;*/
-    top: 40px;
+    top: 40px;*/
+    float: right;
+    margin-right: 95px;
+    margin-top: 20px;
+    position: relative;
+    
+ /*   position: absolute;
+    right: 95px;
+    top: 40px;*/
+    
     z-index: 10;
 }
-
+/*------------------------------position for a festivale page-----------------*/
+.page-festival .views-exposed-form{
+    float: right;
+    margin-right: 95px;
+    margin-top: 0px;
+    position: relative;    
+    z-index: 10;
+}
+/*----------------------------------------------------------------------------*/
 .page-events .views-exposed-widgets,
 .page-festival .views-exposed-widgets{
     border-width: 0px;
@@ -194,6 +200,7 @@
     height: 13px;
     overflow: hidden;
 }
+
 .page-news .views-exposed-widgets{
     border-width: 0px;
     border-style: none;
@@ -275,7 +282,7 @@
     /*position: relative;*/
 }
 
-/*-------------------------выпадающий спискок---------------------------------*/
+/*-------------------------Select lest---------------------------------*/
 .page-news .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select#edit-date-filter-value-year{
     margin: 0;
     padding: 0;
@@ -338,23 +345,38 @@
     margin: 0;
 }
 
-/*date search*/
+/*------------------------------date search filter----------------------------*/
 .block-menu-festival-link-date-filter{
     /*display: none;*/
     /*width: 85px;*/
+    float: left;
+    display: block;
     width: 95px;
-    position: absolute;
-    top: 70px;
-    left: 10px;
+    /*position: absolute;*/
+    /*top: 20px;*/
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    /*left: 10px;*/
     /*float: left;*/
     z-index: 10;
 }
 
-/*изначально свернуто*/
+.block-menu-festival-link-date-filter{
+    float: left;
+    display: block;
+    width: 95px;
+    margin-top: 25px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+/*--------------------------------inVisible-------------------------*/
 .closed-ul-filter{
     display: none;
 }
-
+/*----------------------------------------------------------------------------*/
 .type-filter-events-all,
 .date-filter-events-all,
 .tax-filter-events-all{
@@ -467,7 +489,18 @@
     right: 250px;
     top: 40px;
     z-index: 10;
+    float: left;
 }
+
+/*-------------------------for a festivale page-------------------------------*/
+.page-festival .block-menu-festival-link-tiny-cart{
+    position: absolute;
+    right: 250px;
+    top: 45px;
+    z-index: 10;
+    float: left;
+}
+/*-----------------------------------------------------------------------------*/
 
 .block-menu-festival-link-tiny-cart .tiny-cart-block img{
     margin: 0;

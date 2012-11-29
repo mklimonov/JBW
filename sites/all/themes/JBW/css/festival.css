@@ -15,11 +15,23 @@
 }*/
 
 .node-type-festival h1#page-title{
-    display: none;
+    /*display: none;*/
+}    
+/*----------------------margin content block----------------------------------*/
+.page-node #region-content .view-content{
+    margin-top: 45px;
 }
+
+/*----------------------margin Wntt content block----------------------------------*/
+.page-node #region-content  #wntt .view-content{
+    margin-top: 0px;
+}
+
+/*---------------------------title position-----------------------------------*/
 .page-node h1#page-title,
 .page-news h1#page-title,
-.page-events h1#page-title{
+.page-events h1#page-title,
+.page-festival h1#page-title{
     float: left;
     margin-top: 20px;
     margin-left: 15px;

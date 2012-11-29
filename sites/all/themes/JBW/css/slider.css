@@ -12,6 +12,14 @@
     background: white;
 }
 */
+.static-header{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    height: 242px;
+    width: 930px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .view-slider .views-row{
     width: 960px;

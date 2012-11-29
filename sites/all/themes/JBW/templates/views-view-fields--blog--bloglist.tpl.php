@@ -25,16 +25,16 @@
  */
 ?>
 <?php $use_img = 0; ?>
-<div id="festival-content">
+<div id="blog-content">
     <?php foreach ($fields as $id => $field): ?>
 <?php //print $field->class; ?>
     
     <?php if($field->class == 'created'): ?>
-        <div class="left_part">
+        <div class="blog_left_part">
     <?php endif; ?>
-
+         
     <?php if($field->class == 'title'): ?>
-      <div class = "right_part">
+      <div class = "blog_right_part">
     <?php endif; ?>
           
     <?php if($field->class == 'field-video'): ?>
@@ -71,3 +71,4 @@
       <?php endif; ?>
     <?php endforeach; ?>
 </div>
+  <!--  <div class="blog_central_part"></div>-->

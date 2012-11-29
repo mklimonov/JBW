@@ -60,9 +60,17 @@
 #block-system-main #pager-up{
     position: absolute;
     right: 20px;
-    top: 40px;
+    /*top: 40px;*/
+    margin-top: 20px;
     width: 65px;
-    /*float: right;*/
+}
+
+.page-festival #block-system-main #pager-up{
+    position: absolute;
+    right: 20px;
+    /*top: 40px;*/
+    margin-top: 0px;
+    width: 65px;
 }
 
 #block-system-main #pager-down{

@@ -14,6 +14,7 @@ stylesheets[all][] = css/festival.css
 stylesheets[all][] = css/events.css
 stylesheets[all][] = css/pager.css
 stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/blog.css
 
 ; REQUIRED CORE REGIONS
 
