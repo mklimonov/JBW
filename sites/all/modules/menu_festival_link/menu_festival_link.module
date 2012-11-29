@@ -176,7 +176,7 @@ function menu_festival_link_block_contents($delta) {
                 }
             }
             $all .= '<li><a href="'. $href_fest. '">festival</a>'. $addition['href_fest']. '</li>';
-            $all .= '<li><a href="'. $href_nonfest. '">regular</a>'. $addition['href_nonfest']. '</li>';
+            $all .= '<li><a href="'. $href_nonfest. '">non-festival</a>'. $addition['href_nonfest']. '</li>';
             $all .= '</ul></div></div>';
             
             //DATE
@@ -275,3 +275,19 @@ function menu_festival_link_block_contents($delta) {
             break;
     }
 }
+
+function menu_festival_link_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'webform-client-form-523') {// ____!!!
+    $form['email'] = array(
+      '#type' => 'hidden',
+    //'#name' => 'email',
+      '#value' => 'asd@gmail.com',
+    );
+  }
+  
+  if ($form_id == 'commerce_checkout_form_checkout') {
+  //dpm($form);
+    $form['customer_profile_billing']['#title'] = 'Contact Information';
+    
+  }
+}//customer_profile_billing[commerce_customer_address][und][0][country]

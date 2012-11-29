@@ -18,10 +18,6 @@ function jbw3_headersettings_default_fe_block_settings() {
       'delta' => 'custom_pager_filter',
       'module' => 'menu_festival_link',
     ),
-    'views-slider-block' => array(
-      'delta' => 'slider-block',
-      'module' => 'views',
-    ),
     'views-slider-block_1' => array(
       'delta' => 'slider-block_1',
       'module' => 'views',
@@ -73,6 +69,10 @@ function jbw3_headersettings_default_fe_block_settings() {
         'page' => TRUE,
       ),
     ),
+    'views-slider-slider' => array(
+      'delta' => 'slider-slider',
+      'module' => 'views',
+    ),
   );
 
   // bartik
@@ -90,20 +90,6 @@ function jbw3_headersettings_default_fe_block_settings() {
     'pages' => '',
     'title' => '<none>',
     'cache' => '1',
-  );
-
-  $theme['views-slider-block'] = array(
-    'module' => 'views',
-    'delta' => 'slider-block',
-    'theme' => 'bartik',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '1',
-    'pages' => '<front>',
-    'title' => '<none>',
-    'cache' => -1,
   );
 
   $theme['views-slider-block_1'] = array(
@@ -237,6 +223,20 @@ news',
     'cache' => -1,
   );
 
+  $theme['views-slider-slider'] = array(
+    'module' => 'views',
+    'delta' => 'slider-slider',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $export['theme']['bartik'] = $theme;
 
   // JBW
@@ -254,21 +254,6 @@ news',
     'pages' => '',
     'title' => '<none>',
     'cache' => '1',
-  );
-
-  $theme['views-slider-block'] = array(
-    'module' => 'views',
-    'delta' => 'slider-block',
-    'theme' => 'JBW',
-    'status' => '1',
-    'weight' => '-24',
-    'region' => 'header',
-    'custom' => '0',
-    'visibility' => '1',
-    'pages' => '<front>
-home',
-    'title' => '<none>',
-    'cache' => -1,
   );
 
   $theme['views-slider-block_1'] = array(
@@ -402,6 +387,21 @@ news',
     'cache' => -1,
   );
 
+  $theme['views-slider-slider'] = array(
+    'module' => 'views',
+    'delta' => 'slider-slider',
+    'theme' => 'JBW',
+    'status' => '1',
+    'weight' => '-24',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '<front>
+home',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $export['theme']['JBW'] = $theme;
 
   // seven
@@ -419,21 +419,6 @@ news',
     'pages' => '',
     'title' => '<none>',
     'cache' => '1',
-  );
-
-  $theme['views-slider-block'] = array(
-    'module' => 'views',
-    'delta' => 'slider-block',
-    'theme' => 'seven',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'visibility' => '1',
-    'pages' => '<front>
-home',
-    'title' => '<none>',
-    'cache' => -1,
   );
 
   $theme['views-slider-block_1'] = array(
@@ -564,6 +549,21 @@ news',
     'visibility' => '0',
     'pages' => '',
     'title' => '',
+    'cache' => -1,
+  );
+
+  $theme['views-slider-slider'] = array(
+    'module' => 'views',
+    'delta' => 'slider-slider',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => '<front>
+home',
+    'title' => '<none>',
     'cache' => -1,
   );
 
