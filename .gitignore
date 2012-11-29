@@ -7,3 +7,5 @@ sites/*/private
 /.htaccess
 default
 /a.txt
+sites/all/themes/JBW/nbproject/*
+sites/all/themes/JBW/nbproject/
