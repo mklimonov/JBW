@@ -22,6 +22,13 @@ function jbw3_headersettings_default_fe_block_settings() {
       'delta' => 'slider-block_1',
       'module' => 'views',
     ),
+    'views-slider-block_10' => array(
+      'delta' => 'slider-block_10',
+      'module' => 'views',
+      'node_type' => array(
+        'webform' => TRUE,
+      ),
+    ),
     'views-slider-block_2' => array(
       'delta' => 'slider-block_2',
       'module' => 'views',
@@ -104,6 +111,20 @@ function jbw3_headersettings_default_fe_block_settings() {
     'pages' => 'blog
 blog/*',
     'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['views-slider-block_10'] = array(
+    'module' => 'views',
+    'delta' => 'slider-block_10',
+    'theme' => 'bartik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'node/*',
+    'title' => '',
     'cache' => -1,
   );
 
@@ -271,6 +292,20 @@ blog/*',
     'cache' => -1,
   );
 
+  $theme['views-slider-block_10'] = array(
+    'module' => 'views',
+    'delta' => 'slider-block_10',
+    'theme' => 'JBW',
+    'status' => '1',
+    'weight' => '0',
+    'region' => 'header',
+    'custom' => '0',
+    'visibility' => '1',
+    'pages' => 'node/*',
+    'title' => '<none>',
+    'cache' => -1,
+  );
+
   $theme['views-slider-block_2'] = array(
     'module' => 'views',
     'delta' => 'slider-block_2',
@@ -433,6 +468,20 @@ home',
     'pages' => 'blog
 blog/*',
     'title' => '<none>',
+    'cache' => -1,
+  );
+
+  $theme['views-slider-block_10'] = array(
+    'module' => 'views',
+    'delta' => 'slider-block_10',
+    'theme' => 'seven',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'visibility' => '0',
+    'pages' => 'node/*',
+    'title' => '',
     'cache' => -1,
   );
 

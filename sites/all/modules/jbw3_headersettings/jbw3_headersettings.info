@@ -10,6 +10,7 @@ dependencies[] = taxonomy
 dependencies[] = views
 features[fe_block_settings][] = menu_festival_link-custom_pager_filter
 features[fe_block_settings][] = views-slider-block_1
+features[fe_block_settings][] = views-slider-block_10
 features[fe_block_settings][] = views-slider-block_2
 features[fe_block_settings][] = views-slider-block_3
 features[fe_block_settings][] = views-slider-block_4

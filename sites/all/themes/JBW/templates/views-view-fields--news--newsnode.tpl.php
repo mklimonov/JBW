@@ -71,4 +71,4 @@
                 </div>             
 	<?php endif; ?>		
 <?php endforeach; ?>
-</divs>
+</div>
