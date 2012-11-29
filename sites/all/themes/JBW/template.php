@@ -149,7 +149,7 @@ function JBW_pager($variables) {
       if ($i > 1) {
         $items[] = array(
           'class' => array('pager-ellipsis'), 
-          'data' => '�',
+          'data' => '',
         );
       }
       // Now generate the actual pager piece.
@@ -176,7 +176,7 @@ function JBW_pager($variables) {
       if ($i < $pager_max) {
         $items[] = array(
           'class' => array('pager-ellipsis'), 
-          'data' => '�',
+          'data' => '',
         );
       }
     }
@@ -290,10 +290,10 @@ function JBW_pager_link($variables) {
     static $titles = NULL;
     if (!isset($titles)) {
       $titles = array(
-        t('� first') => t('Go to first page'), 
-        t('� previous') => t('Go to previous page'), 
-        t('next �') => t('Go to next page'), 
-        t('last �') => t('Go to last page'),
+        t('first') => t('Go to first page'), 
+        t('previous') => t('Go to previous page'), 
+        t('next') => t('Go to next page'), 
+        t('last') => t('Go to last page'),
       );
     }
     if (isset($titles[$text])) {

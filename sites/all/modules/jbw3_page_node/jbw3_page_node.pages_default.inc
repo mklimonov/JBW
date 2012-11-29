@@ -142,7 +142,7 @@ function jbw3_page_node_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'Events';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -217,7 +217,7 @@ function jbw3_page_node_default_page_manager_handlers() {
     $pane->locks = array();
     $display->content['new-3'] = $pane;
     $display->panels['center'][1] = 'new-3';
-  $display->hide_title = PANELS_TITLE_PANE;
+  $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_2'] = $handler;
@@ -266,7 +266,7 @@ function jbw3_page_node_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = 'News';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -305,7 +305,7 @@ function jbw3_page_node_default_page_manager_handlers() {
     $pane->locks = array();
     $display->content['new-4'] = $pane;
     $display->panels['center'][0] = 'new-4';
-  $display->hide_title = PANELS_TITLE_PANE;
+  $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $export['node_view_panel_context_3'] = $handler;

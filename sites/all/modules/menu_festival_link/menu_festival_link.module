@@ -13,7 +13,8 @@ function menu_festival_link_views_post_render(&$view, &$output, &$cache) {
         $custom_filter = substr($output, strpos($output, '<div class="view-filters">'));
         $custom_filter = substr($custom_filter, 0, strpos($custom_filter, '</form>    </div>') + 17);
         global $custom_pager_filter_block_content;
-        $custom_pager_filter_block_content = $custom_filter. $custom_pager;
+        $headerTitle = '<h1 class="title" id="page-title">Blog</h1>';
+        $custom_pager_filter_block_content = $headerTitle. $custom_filter. $custom_pager;
     }
 }
 
@@ -210,21 +211,27 @@ function menu_festival_link_block_contents($delta) {
             }
             $eventsWeNeed = $query->execute();
             if(isset($eventsWeNeed['node'])){
-                foreach($eventsWeNeed['node'] as $nid => $useless){
-
+              $times = array();
+              
+              foreach($eventsWeNeed['node'] as $nid => $useless){
                     $eventNode = node_load($nid);
                     //make event time
                     $fieldPrepare = $eventNode->field_event_date;
                     $allDate = $fieldPrepare['und'][0]['value'];
                     $dateArray = explode(' ', $allDate);
                     $timer = $dateArray[0];
+                   
                     //make event time in <a> tag
                     $particularDate = explode('-', $timer);
                     $dateLink = date('D jS F', mktime('0', '0', '0', $particularDate[1], $particularDate[2], $particularDate[0]));
-                    //
                     $var_array['field_event_date_value']['value']['date'] = $timer;
                     $href_date = url('', array('query' => $var_array));
-                    $all .= '<li><a href="'. $href_date. '">'. $dateLink. '</a>';
+                    $times[$timer] = array('href' => $href_date, 'link' => $dateLink);
+                }
+                
+                foreach($times as $timer => $certainTime){
+
+                    $all .= '<li><a href="'. $certainTime['href']. '">'. $certainTime['link']. '</a>';
                     if(isset($_GET['field_event_date_value']['value']['date'])){
                         if($_GET['field_event_date_value']['value']['date'] == $timer){
                             $all .= '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';

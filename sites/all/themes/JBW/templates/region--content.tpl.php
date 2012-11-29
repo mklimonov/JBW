@@ -21,7 +21,7 @@
     <?php print $content; ?>
     <?php if ($feed_icons): ?><div class="feed-icon clearfix"><?php print $feed_icons; ?></div><?php endif; ?>
 	
-  <?php if(arg(0) != 'home' && arg(0) != ''): ?>
+  <?php if(arg(0) != 'home' && arg(0) != '' && arg(0) != 'blog'): ?>
 	</div>
   <?php endif; ?>
   

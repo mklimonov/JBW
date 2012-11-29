@@ -111,6 +111,8 @@ function jbw3_view_events_views_default_views() {
     'image_style' => 'festival_node',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_event_image_2']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_image_2']['separator'] = '<br />';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
