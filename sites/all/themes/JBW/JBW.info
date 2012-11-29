@@ -15,6 +15,7 @@ stylesheets[all][] = css/events.css
 stylesheets[all][] = css/pager.css
 stylesheets[all][] = css/fonts.css
 stylesheets[all][] = css/blog.css
+stylesheets[all][] = css/commerce.css
 
 ; REQUIRED CORE REGIONS
 

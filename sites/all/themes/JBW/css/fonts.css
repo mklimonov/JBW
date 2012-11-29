@@ -31,7 +31,8 @@
 .page-events #region-content h1#page-title,
 .page-news #region-content h1#page-title,
 .page-node #region-content h1#page-title,
-.page-festival #region-content h1#page-title{
+.page-festival #region-content h1#page-title,
+.page-checkout #region-content h1#page-title{
     color: #333333;
     font-size: 17px;
     font-weight: normal;
@@ -112,4 +113,11 @@
 .page-node .views-field-title{
     font-size: 14px;
     margin-bottom: 3px;
+}
+
+
+/*-------------------------------Check out------------------------------------*/
+.page-checkout #edit-customer-profile-billing{
+    font-size: 12px;
+    font-weight: normal;
 }
