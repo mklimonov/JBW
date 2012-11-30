@@ -1,6 +1,7 @@
 name = jbw3_view_commerce
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = commerce_cart
 dependencies[] = commerce_line_item
 dependencies[] = commerce_order_ui
