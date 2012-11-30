@@ -187,7 +187,7 @@ function jbw3_view_news_views_default_views() {
   $handler->display->display_options['fields']['field_news_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_news_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_news_image']['settings'] = array(
-    'image_style' => 'event_image_list',
+    'image_style' => 'news_feed_icon',
     'image_link' => 'content',
   );
   /* Field: Content: Title */

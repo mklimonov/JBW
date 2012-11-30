@@ -8,5 +8,6 @@ features[image][] = event_image_list
 features[image][] = festival_homepage
 features[image][] = festival_node
 features[image][] = litkicks_sidebar
+features[image][] = news_feed_icon
 features[image][] = slider_image
 features[image][] = static_header
