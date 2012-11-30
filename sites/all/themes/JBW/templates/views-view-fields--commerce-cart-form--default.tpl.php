@@ -24,6 +24,7 @@
  * @ingroup views_templates
  */
 ?>
+<div id="cart-content">
 <?php foreach ($fields as $id => $field): ?>
 <?php //print $field->class; ?>
 
@@ -48,3 +49,4 @@
   <?php endif; ?>
       
 <?php endforeach; ?>
+</div>

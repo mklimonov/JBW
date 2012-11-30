@@ -54,7 +54,7 @@
 .page-festival #block-system-main .view-content tr.even:hover td.active,
 .page-festival #block-system-main .view-content tr.odd:hover td.active
 {
-  background: none;
+    background: none;
 }
 
 .page-node #block-system-main .view-content table,
@@ -256,9 +256,9 @@
 .page-events .views-exposed-form #edit-keys-wrapper input:focus,
 .page-events .views-exposed-form #edit-keys-wrapper input:active,
 .page-festival .views-exposed-form #edit-keys-wrapper input:focus,
-.page-festival .views-exposed-form #edit-keys-wrapper input:active/*,
+.page-festival .views-exposed-form #edit-keys-wrapper input:active,
 .page-news .views-exposed-form #edit-keys-wrapper input:focus,
-.page-news .views-exposed-form #edit-keys-wrapper input:active*/{
+.page-news .views-exposed-form #edit-keys-wrapper input:active{
     box-shadow: none;
 }
 
@@ -516,6 +516,14 @@
     font-style: italic;
     font-size: 8px;
     font-family: sans-serif;
+}
+
+/*----------------------------If nothing found--------------------------------*/
+.page-events #block-system-main .view-empty,
+.page-festival #block-system-main .view-empty{
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
 /*----------------------------------breadcrumbs-------------------------------*/

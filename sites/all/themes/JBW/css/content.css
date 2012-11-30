@@ -10,7 +10,8 @@ ul.primary{
 .page-news .breadcrumb,
 .page-node .breadcrumb,
 .page-events .breadcrumb,
-.page-festival .breadcrumb{
+.page-festival .breadcrumb,
+.page-cart .breadcrumb{
     float: right;
     text-align: right;
     width: 350px;

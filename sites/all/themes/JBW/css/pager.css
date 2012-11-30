@@ -62,7 +62,7 @@
     right: 20px;
     /*top: 40px;*/
     margin-top: 20px;
-    width: 65px;
+    width: 60px;
 }
 
 .page-festival #block-system-main #pager-up{
@@ -70,14 +70,14 @@
     right: 20px;
     /*top: 40px;*/
     margin-top: 0px;
-    width: 65px;
+    width: 60px;
 }
 
 #block-system-main #pager-down{
     position: absolute;
     right: 20px;
     bottom: 6px;
-    width: 65px;
+    width: 60px;
     float: right;
 }
 
@@ -152,6 +152,7 @@
     width: 12px;
     height: 12px;
     float: right;
+    margin-right: 0px;
     /*margin-left: 5px;*/
 }
 

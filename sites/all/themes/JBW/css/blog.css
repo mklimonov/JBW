@@ -16,6 +16,20 @@
 .page-blog .breadcrumb{
     padding: 0;
 }
+/*---------------------------Blog title in content---------------------------*/
+.page-blog #region-content h1#page-title{
+    display: none;
+}
+/*-----------------------------Header-----------------------------------------*/
+.page-blog #block-menu-festival-link-custom-pager-filter{
+    height: 60px;
+}
+.page-blog #region-header .block-inner{
+    padding: 10px;
+}
+.page-blog #region-header h1#page-title{
+    margin-bottom: 0px;
+}
 /*отключил лишнее*/
 .page-blog .block-views-festivals-block{
     display: none;
@@ -111,10 +125,10 @@
 .page-blog .views-exposed-form{
     /*float: right;*/
     position: absolute;
-    right: 15px;
+    right: 95px;
     /*top: 25px;*/
     /*top: 45px;*/
-    top: 20px;
+    top: 10px;
     z-index: 10;
 }
 
@@ -246,4 +260,123 @@
 
 .page-blog #region-content .view-blog h2.element-invisible{
     display: none;
+}
+
+
+/*-------------------------------Pager for a blog-----------------------------*/
+
+.page-blog .ajax-progress-throbber{
+    display: none;
+}
+
+.page-blog #region-header #pager-up h2{
+    display: none;
+}
+
+.page-blog #region-header .pager{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none;
+    border-color: transparent;
+    border-image: none;
+    border-radius: 0;
+    border-style: none;
+    border-width: 0px;
+}
+
+.page-blog #region-header .pager li.pager-first a,
+.page-blog #region-header .pager li.pager-previous a,
+.page-blog #region-header .pager li.pager-next a,
+.page-blog #region-header li.pager-last a{
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    float:left;
+}
+
+.page-blog #region-header .pager li.pager-first img,
+.page-blog #region-header .pager li.pager-last img{
+    margin: 0;
+    padding: 0;
+}
+
+.page-blog #region-header .pager li.pager-last,
+.page-blog #region-header .pager li.pager-last a,
+.page-blog #region-header .pager li.pager-last a:hover{
+    border-radius: 0;
+}
+
+.page-blog #region-header ul.pager{
+    border: 0;
+}
+
+.page-blog #region-header #pager-blog{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 60px;
+}
+
+.page-blog #region-header .pager .pager-item{
+    margin: 0;
+    padding: 0;
+}
+
+.page-blog #region-header ul.pager li{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.page-blog #region-header ul.pager li a{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: gray;
+    margin-right: 5px;
+    background: none;
+}
+
+.page-blog #region-header ul.pager .pager-current{
+    font-weight: bold;
+    color: black;
+    background: none;
+}
+
+.page-blog #region-header ul.pager a:link,
+.page-blog #region-header ul.pager a:visited {
+    padding: 0;
+    color: gray;
+    text-decoration:none;
+    display:block;
+    float:left;
+    background: none;
+}
+
+.page-blog #region-header ul.pager a:hover{
+    color: black;
+    background: none;
+}
+
+.page-blog #region-header ul.pager .pager-first{
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: left;
+}
+
+.page-blog #region-header ul.pager .pager-last{
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin-right: 0;
 }

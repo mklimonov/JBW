@@ -32,7 +32,8 @@
 .page-news h1#page-title,
 .page-events h1#page-title,
 .page-festival h1#page-title,
-.page-checkout h1#page-title{
+.page-checkout h1#page-title,
+.page-cart h1#page-title{
     float: left;
     margin-top: 20px;
     margin-left: 15px;
@@ -77,6 +78,9 @@
     margin-top: 10px;
 }
 
+.page-node #region-content .node_left_part .views-field-field-event-image-2 img{
+    margin-bottom: 10px;
+}
 /*----------------------------NEWS--------------------------------------------*/
 .page-news #region-content .block-inner{
     padding-top: 5px;
@@ -86,7 +90,7 @@
 }
 
 .page-news #region-content .view-content{
-    margin-top: 55px;
+    margin-top: 10px;/*55px*/
 }
 
 .page-news #region-content .views-row{

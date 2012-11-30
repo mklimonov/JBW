@@ -1,0 +1,120 @@
+/*скрыл лишнее*/
+.page-checkout .breadcrumb{
+    display: none;
+}
+
+.page-cart #region-content .views-row .left_part,
+.page-cart #region-content .views-row .right_part{
+    margin-bottom: -10000px; 
+    padding-bottom: 10000px; 
+}
+
+/*---------------------------Shopping cart/Cheak out page---------------------*/
+.page-cart #region-content .block-inner,
+.page-checkout  #region-content .block-inner{
+    padding: 10px;
+}
+
+/*.page-cart #region-content .views-row{
+    display: block;
+    /*clear: both;/
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}*/
+
+.page-cart #region-content .view-content{
+    margin-top: 45px;
+}
+
+/*---------------------------remove focus-------------------------------------*/
+.page-checkout input:focus{
+    box-shadow: none;
+}
+/*
+.page-cart #region-content .view-content .views-field-field-event-image{
+    display: block;
+    margin-right: 15px;
+    float: left;
+}
+
+.page-cart #region-content .view-content .views-field-edit-quantity span{
+    /*float: left;/
+}
+
+.page-cart #region-content .view-content .views-field-edit-quantity input{
+    float: right;
+    width: auto;
+    height: 13px;
+    font-size: 10px;
+    box-shadow: none;
+}
+
+.page-cart #region-content .view-content .form-item{
+    margin: 0;
+    padding: 0;
+}
+
+.page-cart #region-content .view-content .views-field-edit-delete{
+    position: relative;
+    right: 15px;
+    border-bottom: 3px;
+}*/
+
+/*-----------------------------left/rigth parts-------------------------------*/
+.page-cart #region-content .views-row .left_part{
+    float: left;
+    width: 135px;
+}
+
+.page-cart #region-content .views-row .right_part{
+    float: right;
+    width: 405px;
+}
+
+.page-cart #region-content .views-row #cart-content{
+    width: 550px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+/*---------------------Shoping cart content-----------------------------------*/
+
+.page-checkout #commerce-checkout-form-checkout{
+    margin-top: 40px;
+}
+
+.page-checkout #commerce-checkout-form-checkout fieldset{
+    margin-bottom: 20px;
+}
+
+.page-checkout #edit-cart-contents legend{
+    display: none;
+}
+
+/*----------------------------------Table-------------------------------------*/
+.page-cart #block-system-main .view-content table,
+.page-checkout #edit-cart-contents .view-content table{
+    width: 100%;
+    border: none;
+}
+
+.panels-flexible-region-new-center{
+    float: none;
+    width: 100%;
+}
+
+.page-cart #block-system-main .view-content tr:hover td,
+.page-cart #block-system-main .view-content tr.even:hover td.active,
+.page-cart #block-system-main .view-content tr.odd:hover td.active{
+    background: none;
+}
+
+.page-cart #block-system-main .view-content tr.even, 
+.page-cart #block-system-main .view-content tr.odd,
+.page-cart #block-system-main .view-content tr.odd td{
+    background:none;
+}
+
+/*-----------------------------Contact infomation------------------------------*/
