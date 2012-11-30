@@ -14,6 +14,7 @@ function menu_festival_link_views_post_render(&$view, &$output, &$cache) {
         $custom_filter = substr($custom_filter, 0, strpos($custom_filter, '</form>    </div>') + 17);
         global $custom_pager_filter_block_content;
         $headerTitle = '<h1 class="title" id="page-title">Blog</h1>';
+        $custom_pager = "<div id='pager-blog'>". $custom_pager. "</div>";
         $custom_pager_filter_block_content = $headerTitle. $custom_filter. $custom_pager;
     }
 }
