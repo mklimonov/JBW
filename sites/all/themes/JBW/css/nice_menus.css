@@ -25,9 +25,7 @@ ul.nice-menu li {
   border: none;
   border-top: 0;
   float: left; /* LTR */
-  background-color: white;
-/*  background-image: -moz-linear-gradient(#fff, #d4e8ec);
-  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4e8ec),color-stop(1, #fff));*/
+  /*background-color: white;*/
 }
 
 ul.nice-menu a {
@@ -46,7 +44,7 @@ ul.nice-menu ul {
   top: 30px;
   left:-1px;
   border: 0;
-  /*border-top: 1px solid #ccc;*/  /*граница между родитель�?ким и дочерними*/
+  /*border-top: 1px solid #ccc;*/  /*граница между родитель�?ким и дочерними*/
   margin-right: 0; /* LTR */
 }
 

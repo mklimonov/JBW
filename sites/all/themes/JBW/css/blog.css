@@ -110,9 +110,6 @@
     margin-bottom: 5px;
 }
 
-
-
-
 /*------------------------------view-filters----------------------------------*/
 .page-blog #region-content .view-filters{
     display: none;
@@ -123,11 +120,8 @@
     padding: 0;
 }
 .page-blog .views-exposed-form{
-    /*float: right;*/
     position: absolute;
     right: 95px;
-    /*top: 25px;*/
-    /*top: 45px;*/
     top: 10px;
     z-index: 10;
 }
@@ -144,7 +138,6 @@
 .page-blog .views-exposed-form .views-submit-button{
     margin: 0;
     padding: 0;
-    /*float: right;*/
 }
 
 /*-------------------------------search text field-----------------------------*/
@@ -192,7 +185,7 @@
 }
 
 /*-------------------------выпадающий спискок---------------------------------*/
-.page-blog .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select#edit-date-filter-value-year{
+.page-blog .views-exposed-form #edit-date-filter-wrapper select#edit-date-filter-value-year{
     margin: 0;
     padding: 0;
     background: transparent;
@@ -253,6 +246,7 @@
     color: white;
     margin: 0;
 }
+
 /*----------------------invisible pager down----------------------------------*/
 .page-blog #region-content .view-blog .item-list{
     display: none;

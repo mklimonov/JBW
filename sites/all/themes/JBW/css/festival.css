@@ -1,22 +1,5 @@
-/*.node-type-festival #block-system-main .pane-festivals #festival-content{
-    width: 550px;
-    /*height: 450px;/
-    position: relative; 
-    /*background: url(../images/festival_bg.png) no-repeat center 0;/
-    background: white;
-}*/
-
-/*.node-type-festival #block-system-main .pane-festivals #festival-content{*/
-
 /*------------------------просмотр события/фестиваля------------------------------------*/
-/*-----------------------------------Заголовки--------------------------------*/
-/*.pane-festivals h2#page-title{
-  display: none;
-}*/
-
-.node-type-festival h1#page-title{
-    /*display: none;*/
-}    
+    
 /*----------------------margin content block----------------------------------*/
 .page-node #region-content .view-content{
     margin-top: 45px;
@@ -81,6 +64,7 @@
 .page-node #region-content .node_left_part .views-field-field-event-image-2 img{
     margin-bottom: 10px;
 }
+
 /*----------------------------NEWS--------------------------------------------*/
 .page-news #region-content .block-inner{
     padding-top: 5px;
@@ -138,70 +122,6 @@
     width: 100%;
 }
 
-
-/*
-.page-node #region-content .node_left_part,
-.page-news #region-content .node_left_part{
-    width: 150px;
-    float: left;
-}
-
-.page-node #region-content .node_right_part,
-.page-news #region-content .node_right_part{
-    width: 400px;
-    float: right;
-}*/
-
-/*-----------------------festivale/news image---------------------------------*/
-/*.page-node .node_left_part /*#festival-content/ .views-field-field-festival-image,*/
-/*.page-news .node_left_part .views-field-field-news-image{
-    float: left;
-    display: block;
-}
-
-.page-node #region-content .node_left_part .views-field-field-festival-image img,
-.page-node #region-content .node_left_part .views-field-field-event-image img,
-.page-node #region-content .node_left_part .views-field-field-news-image img
-.page-news #region-content .node_left_part .views-field-field-news-image img{
-    margin: 45px 0 10px 15px;
-    
-}
-
-.page-node .node_left_part .views-field-field-event-image-2 img{
-    margin: 10px 0 10px 15px;
-}*/
-
-/*--------------------------festivale text------------------------------------*/
-/*.page-node #region-content .node_right_part .views-field-body,
-.page-news #region-content .node_right_part .views-field-body{
-    float: right;
-    margin: 20px 20px 15px 15px;
-    text-align: left;
-}*/
-
-/*---------------------------news title---------------------------------------*/
-/*.page-news #region-content .node_right_part .views-field-title a,
-.page-node #region-content .node_right_part .views-field-title a{
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}*/
-
-/*--------------------------festivale title------------------------------------*/
-/*.page-node #region-content .views-field-title,
-.page-news #region-content .views-field-title{
-    margin: 45px 20px 5px 15px;
-}*/
-
-/*.page-node .buy-link-cart{
-    margin: 0 20px 5px 15px;
-}*/
-
-
-/*.page-node #region-content .node_left_part a{
-    margin-left: 15px;
-}*/
-
 .page-node .node_right_part .views-field-sharethis{
     /*position: absolute;*/
     float: right;
@@ -213,6 +133,7 @@
     bottom: 250px;*/
 }
 /*------------------------------------*/
+
 /*------------------------why not try field-----------------------------------*/
 
 .page-node .pane-events-all #wntt,
@@ -226,17 +147,6 @@
 }
 
 .page-node .pane-events-all #wntt .events-body{
-    /*margin: 105px 0 0 15px;*/
-    /*margin: -50px 0 0;+++++++++*/
-    
-   /* background: #231f20;
-    width: 135px;
-    height: 50px;
-    position: absolute; 
-    text-align: left;
-    font: normal 'trebuchet MS', tahoma, arial, helvetica;
-    overflow: hidden;*/
-   
     background: #231f20;
     width: 135px;
     height: 50px;
@@ -274,34 +184,6 @@
     color: #fff;*/
     margin-bottom: 3px;
 }
-
-/*----------------------------------border news-------------------------------*/
-/*.page-news #region-content #news-content{
-    clear: both;
-    /*position: relative;/
-    display: block;
-    width: 550px;
-    /*border-bottom: 1px solid gray;/
-}*/
-
-/*.page-news #region-content .node_right_part{
-    border-bottom: 1px solid gray;
-}*/
-
-/*
-.page-news .news-border-line{
-    width: 550px;
-}
-
-.page-news .news-border-line hr{
-    width: 500px; 
-    text-align: left;
-    size: 1;
-    color: gray;
-    background-color: gray;
-    border: none;
-}*/
-
 
 /*---------------------------margin on basic page----------------------------*/
 .page-node article{

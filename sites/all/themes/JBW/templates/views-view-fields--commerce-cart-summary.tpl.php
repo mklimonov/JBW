@@ -25,10 +25,6 @@
  */
 ?>
 <?php foreach ($fields as $id => $field): ?>
-    <?php if($field->class == 'commerce-unit-price'): ?>
-        /
-    <?php endif; ?>
-        
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
@@ -37,10 +33,12 @@
     <?php print $field->label_html; ?>
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
+
     <?php if($field->class == 'quantity'): ?>
-        tickets
+        <div class="backup">tickets &nbsp / </div>
+    <?php endif; ?>     
+    <?php if($field->class == 'commerce-unit-price'):/*commerce-unit-price*/ ?>
+       <div class="backup">each</div>
     <?php endif; ?>
-    <?php if($field->class == 'commerce-unit-price'): ?>
-        each
-    <?php endif; ?>
+
 <?php endforeach; ?>

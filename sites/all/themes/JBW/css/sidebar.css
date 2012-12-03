@@ -1,16 +1,13 @@
 #region-sidebar #scrollbarY .block-litkicks-block-1,
 #region-sidebar #scrollbarY section{ /*.overview .block*/
     width: 370px;
-    /*margin-top: 10px;*/
     position: relative;
-    /*background: url(../images/content/region-sidebar.png) no-repeat 0 0;*/
     background: white;
     margin-bottom: 10px;
 }
 
 #region-sidebar #scrollbarY  iframe{
      width: 370px;
-    /*margin-top: 10px;*/
     position: relative;
     background: white; /*#FFFFFF*/
     margin-bottom: 10px;
@@ -98,12 +95,6 @@
 #region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-event-image-2 img{
     margin: 10px 0 10px 15px;
 }
-
-/*for news page*/
-/*.page-news #scrollbarY #news-content{
-    clear: none;
-    width: 350px;
-}*/
 
 .page-news #region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-festival-image img,
 .page-node #region-sidebar #scrollbarY .views-row .node_left_part .views-field-field-festival-image img{

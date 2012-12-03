@@ -1,7 +1,7 @@
 /*скрыл лишнее*/
-.page-checkout .breadcrumb{
+/*.page-checkout .breadcrumb{
     display: none;
-}
+}*/
 
 .page-cart #region-content .views-row .left_part,
 .page-cart #region-content .views-row .right_part{
@@ -15,13 +15,6 @@
     padding: 10px;
 }
 
-/*.page-cart #region-content .views-row{
-    display: block;
-    /*clear: both;/
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-}*/
-
 .page-cart #region-content .view-content{
     margin-top: 45px;
 }
@@ -34,36 +27,6 @@
     box-shadow: none;
 }
 
-/*
-.page-cart #region-content .view-content .views-field-field-event-image{
-    display: block;
-    margin-right: 15px;
-    float: left;
-}
-
-.page-cart #region-content .view-content .views-field-edit-quantity span{
-    /*float: left;/
-}
-
-.page-cart #region-content .view-content .views-field-edit-quantity input{
-    float: right;
-    width: auto;
-    height: 13px;
-    font-size: 10px;
-    box-shadow: none;
-}
-
-.page-cart #region-content .view-content .form-item{
-    margin: 0;
-    padding: 0;
-}
-
-.page-cart #region-content .view-content .views-field-edit-delete{
-    position: relative;
-    right: 15px;
-    border-bottom: 3px;
-}*/
-
 /*-----------------------------left/rigth parts-------------------------------*/
 .page-cart #region-content .views-row .left_part{
     float: left;
@@ -72,16 +35,17 @@
 
 .page-cart #region-content .views-row .right_part{
     float: right;
-    width: 405px;
+    width: 390px;/*405*/
 }
 
 .page-cart #region-content .views-row #cart-content{
-    width: 550px;
+    width: 530px;
     height: auto;
     position: relative;
     overflow: hidden;
     margin-bottom: 15px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
 }
 /*---------------------Shoping cart content in check out-----------------------*/
 
@@ -113,8 +77,12 @@
     border-bottom: none;
 }
 
-.page-checkout .field-name-commerce-order-total{
+.page-checkout #region-content .field-name-commerce-order-total{
     border-bottom: 1px solid #CCCCCC;
+}
+
+.page-checkout #region-content #edit-checkout-review .field-name-commerce-order-total{
+    border-bottom: none;
 }
 
 .page-checkout .view-footer table{
@@ -134,7 +102,10 @@
 .page-checkout #block-system-main .view-content tr.odd:hover td.active,
 .page-checkout #block-system-main .commerce-price-formatted-components tr:hover td,
 .page-checkout #block-system-main .commerce-price-formatted-components tr.even:hover td.active,
-.page-checkout #block-system-main .commerce-price-formatted-components tr.odd:hover td.active{
+.page-checkout #block-system-main .commerce-price-formatted-components tr.odd:hover td.active,
+.page-checkout #block-system-main #commerce-checkout-form-review tr:hover td,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.even:hover td.active,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.odd:hover td.active{
     background: none;
 }
 
@@ -146,9 +117,20 @@
 .page-checkout #block-system-main .view-content tr.odd td,
 .page-checkout #block-system-main .commerce-price-formatted-components tr.even, 
 .page-checkout #block-system-main .commerce-price-formatted-components tr.odd,
-.page-checkout #block-system-main .commerce-price-formatted-components tr.odd td{
+.page-checkout #block-system-main .commerce-price-formatted-components tr.odd td,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.even, 
+.page-checkout #block-system-main #commerce-checkout-form-review tr.odd,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.odd td,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.even td{
     background:none;
 }
+
+/*------------------------Blue td in table------------------------------------*/
+.page-checkout #block-system-main #commerce-checkout-form-review tr.even td,
+.page-checkout #block-system-main #commerce-checkout-form-review tr.even td:hover{
+    background: none repeat scroll 0 0 #F1F5FA
+}
+
 
 /*----------------------Contact infomation in check out-----------------------*/
 .page-checkout .name-block,
@@ -182,3 +164,93 @@
 .page-checkout #edit-buttons{
     float: right;
 }
+
+
+/*----------------------------------Cart info---------------------------------*/
+.page-checkout #region-content .views-row{
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 5px;
+}
+
+
+/**/
+.page-cart .views-field-commerce-unit-price,
+.page-cart .views-field-commerce-total,
+.page-cart .views-field-edit-quantity,
+.page-checkout .views-field-commerce-total{
+    display: block;
+}
+
+.page-cart .views-field-commerce-unit-price span,
+.page-cart .views-field-commerce-total span,
+.page-checkout .views-field-commerce-total span,
+.page-checkout .views-field-quantity span,
+.page-checkout .backup,
+.page-checkout .views-field-commerce-unit-price div{
+    float: left;
+    margin-right: 5px;
+}
+
+.page-cart .views-field-edit-quantity span.views-label-edit-quantity{
+    float: left;
+    margin-right: 5px;
+}
+
+.page-cart .views-field-edit-quantity input{
+    width: auto;
+    height: 12px;
+    font-size: 10px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.page-cart .views-field-edit-quantity .form-item,
+.page-cart .views-field-edit-quantity .form-actions{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*-----------------"remove button in shopping cart-----------------------------*/
+.page-cart .views-field-edit-delete{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/*---------------*/
+.page-checkout .views-field-commerce-total{
+    margin-left: auto;
+    width: 15%;
+    text-align: center;
+}
+
+/*-------------------Button in check out--------------------------------------*/
+.page-checkout .checkout-buttons .checkout-continue{
+    background: url(../images/content/paypalbutton.png)no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    padding: 4px 6px;
+    width: auto;
+    height: 43px;
+    border-radius: 0;
+    
+}
+
+/*------------------------Confirmation----------------------------------------*/
+.page-checkout #block-system-main .content{
+    margin-top: 45px;
+}
+
+/*-------------------------------------Review---------------------------------*/
+.page-checkout #block-system-main #edit-checkout-review tr.even td{
+    padding: 0px 0px;
+}
+
+.page-checkout #block-system-main #edit-checkout-review .view-commerce-cart-summary,
+.page-checkout #block-system-main #edit-checkout-review .form-item,
+.page-checkout #block-system-main #edit-checkout-review .field-name-commerce-customer-address{
+    padding: 4px 8px;
+    width: 510px;
+}
+
+
+

@@ -1,4 +1,4 @@
-.ajax-progress-throbber{ /*ajax-progress ajax-progress-throbber*/
+.ajax-progress-throbber{ 
     display: none;
 }
 
@@ -155,8 +155,3 @@
     margin-right: 0px;
     /*margin-left: 5px;*/
 }
-
-/*#block-system-main .pager li.pager-last, 
-#block-system-main .pager li.pager-next .last{
-    /*position: static;/
-}*/

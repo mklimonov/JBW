@@ -136,7 +136,9 @@
 .page-cart .views-field-commerce-unit-price,
 .page-cart .views-field-edit-quantity,
 .page-cart .views-field-commerce-total,
-.page-cart .views-field-edit-delete{
+.page-cart .views-field-edit-delete,
+.page-checkout .views-field-commerce-unit-price,
+.page-checkout .views-field-quantity{
     margin-left: 5px;
     margin-bottom: 3px;
     font-family: georgia;
@@ -144,7 +146,42 @@
     font-size: 10px;
 }
 
+.page-checkout .views-field-line-item-title{
+    margin-left: 5px;
+    margin-bottom: 3px;
+    font-family: georgia;
+    font-style: italic;
+    font-size: 12px;    
+}
+
+.page-checkout .views-field-commerce-total{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 10px;
+}
+
+.page-cart .line-item-summary{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.page-checkout .backup{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 10px;
+}
+
 /*---------------------------------Check out label-----------------------------*/
 .page-checkout label{
+    font-weight: normal;
+}
+
+.page-checkout .view-footer .component-title,
+.page-checkout .view-footer .component-total{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 12px;
     font-weight: normal;
 }

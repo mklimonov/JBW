@@ -20,22 +20,16 @@
     overflow: hidden; /* Clear floats */
 }
 
-/*.form-text, .form-submit{
-    float: right;
-}*/
-
-/*.form-item-search-block-form .form-text{*/
 #search-block-form .form-item-search-block-form input{
     margin: 0;
     padding: 0;
    /* height: 13px;*/
-   padding-bottom: 5px;
+    padding-bottom: 5px;
     width: 138px;
     border: none;
     font: normal 10px 'trebuchet MS', arial, helvetica;
     background: url(../images/header/searchbox.png) no-repeat center 0;
     text-indent: 5px;
-   /* line-height: 11px; */
 
     -moz-border-radius: 0;
      border-radius: 0;
@@ -44,7 +38,6 @@
      position: relative;
 }
 
-/*#edit-actions .form-submit{*/
 #search-block-form .form-actions input{
     background: url(../images/header/searchbutton.png) no-repeat center 0;
     
@@ -69,89 +62,3 @@
     padding: 0;
     border: 0;  /* Small centering fix for Firefox */
 }
-/*
-#search-block-form .form-item-search-block-form input::-webkit-input-placeholder,
-#search-block-form .form-item-search-block-form input:-moz-placeholder,
-#search-block-form .form-item-search-block-form input:-ms-input-placeholder
-{
-   /*color: #999;/
-   font-weight: normal;
-   font-style: italic;
-}*/
-
-
-
-/*------------------пробел между кнопкои и полем--------------*/
-/*Search block*/
-/*
-#block-search-form{
-    margin: 0;
-    padding: 0;
-    float: right;
-    position: absolute;
-    right: 15px;
-    top: 12px;
-    z-index: 10;
-}
-
-.form-item-search-block-form{
-    margin-right: 0;
-    padding-right: 0;
-}
-
-#search-block-form .form-text{
-    -moz-box-sizing: 13px;
-    border: 0 none;
-    border-width: 0;
-    width: 137px;
-    height: 13px;
-    font-size: 12px;
-    background: url(../images/header/searchbox.png) no-repeat 0 0;
-    text-indent: 5px;
-}
-
-#search-block-form .form-submit{
-    width: 12px;
-    height: 13px;
-    border-radius: 0;
-    border-width: 0;
-    background: url(../images/header/searchbutton.png) no-repeat 0 0;
-}
-*/
-
-/*---------------------изначально накатал глючит кнопка в хроме----------------------*/
-/*Search block*/
-/*
-#block-search-form{
-    margin: 0;
-    float: right;
-    position: absolute;
-    right: 15px;
-    top: 12px;
-    z-index: 10;
-}
-
-/*input text field/
-#search-block-form .form-text{
-    width: 138px;
-    height: 13px;
-    border: none;
-    background: url(../images/header/searchbox.png) no-repeat bottom;
-    text-indent: 5px;
-    font-size: 10px;
-}
-
-/*input button(submits)/
-#search-block-form .form-submit{
-    background: url(../images/header/searchbutton.png) no-repeat 0 0;
-    overflow: hidden;
-    width: 17px;
-    height: 16px;
-    cursor: pointer;
-    position: relative;
-    float: right;
-    border: 0;
-    padding: 0;
-    top: 5px;
-    border-radius: 0;
-}*/

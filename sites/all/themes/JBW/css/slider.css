@@ -1,17 +1,3 @@
-/*#zone-header{
-    margin: 0;
-    padding: 0;
-    width: 960px;
-    height: 262px;
-}
-
-#region-header{
-    margin: 0;
-    width: 960px;
-    height: 262px;
-    background: white;
-}
-*/
 .static-header{
     padding-top: 11px;
     padding-bottom: 11px;
@@ -50,29 +36,5 @@
 
 /*slider image*/
 .views-field-field-slider-image img{
-    /*position: absolute;*/
-    /*padding: 15px 3px 15px 15px; */
-    /*margin: 15px 3px 15px 15px;*/
     z-index: 1;
 }
-
-/*title of text on slider*/
-/*#block-views-slider-block .view-slider .slider-left-part .views-field-title{
-    display: none;
-}*/
-
-/*text slider*/
-#block-views-slider-block .view-slider .slider-left-part .views-field-body{/*p*/
-   /* text-align: left;
-    width: 296px;
-    height: 210px;
-    position: absolute;
-    margin: 15px 3px 15px 15px;
-    padding: 10px;
-    z-index: 10;*/
-}
-
-
-/*.slider-left-part .views-field-body p{
-    margin-bottom: 0;
-}*/

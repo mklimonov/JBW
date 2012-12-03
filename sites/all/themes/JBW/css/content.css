@@ -1,11 +1,12 @@
-/*view/edit panel in node*/
+/*-------------admin view/edit panel in node------------------------*/
 ul.primary{
     margin-top: 0;
-    /*margin-bottom: 10px;*/
 }
+s
 .page-home h1#page-title{
     display: none;
 }
+
 /*----------------------------------breadcrumbs-------------------------------*/
 .page-news .breadcrumb,
 .page-node .breadcrumb,
@@ -41,14 +42,13 @@ ul.primary{
     padding: 0;
 }
 
-/*left part of content*/
+/*--------------------left part of content----------------------------------*/
 .page-home .fest_row_homepage{
     width: 550px;
     height: 310px;
     position: relative;
-   /* background: url(../images/content/region-content.png) no-repeat 0 0;*/
-   background: white;
-   margin-bottom: 10px;
+    background: white;
+    margin-bottom: 10px;
 }
 
 /*-----------------------content image---------------------------------------*/
@@ -75,17 +75,7 @@ ul.primary{
     z-index: 1;
 }
 
-/*title of text on slider*/
-/*.page-home .festival-left-part .views-field-title{
-    display: none;
-}*/
-
-#region-content h1#page-title{
-    /*display: none;*/
-    /*margin: 0;*/
-}
-
-/*text slider*/
+/*-------------------------left part of content block-------------------------*/
 .page-home .festival-left-part{
     float: left;
     line-height: 1.2em;
@@ -103,9 +93,7 @@ ul.primary{
     z-index: 10;
 }
 
-.page-home .fest_row_homepage .sharethis-wrapper
-/*.page-node .views-field-sharethis*/
-{
+.page-home .fest_row_homepage .sharethis-wrapper{
     position: absolute;
     float: right;
     /*width: 110px;*/
@@ -127,28 +115,3 @@ ul.primary{
 .page-home .festival-color3 .festival-left-part{
     background: url(../images/content/purple.png) no-repeat top left;
 }
-
-/*
-.page-home .festival-color1 .views-field-field-description-homepage-fest,
-.page-home .festival-color1 .views-field-field-description-homepage-blog,
-.page-home .festival-color1 .views-field-field-description-homepage-event{ 
-    background: url(../images/content/green.png) no-repeat top right;
-    /*background: url(../images/content/green.png) no-repeat 0 0;/
-}
-
-.page-home .festival-color2 .views-field-field-description-homepage-fest,
-.page-home .festival-color2 .views-field-field-description-homepage-blog,
-.page-home .festival-color2 .views-field-field-description-homepage-event{ 
-    background: url(../images/content/orange.png) no-repeat top left;
-}
-
-.page-home .festival-color3 .views-field-field-description-homepage-fest,
-.page-home .festival-color3 .views-field-field-description-homepage-blog,
-.page-home .festival-color3 .views-field-field-description-homepage-event{ 
-   background: url(../images/content/purple.png) no-repeat top left;
-}*/
-
-/*.page-home .fest_row_homepage .festival-left-part .field-content p{
-    color: black;
-    z-index: 12;
-}*/

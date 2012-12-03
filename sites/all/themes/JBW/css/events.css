@@ -1,6 +1,6 @@
 .page-events .region-content-inner,
 .node-type-event .region-content-inner,
-.page-festival .region-content-inner{ /*#block-system-main .view-content/*.view-events{*/
+.page-festival .region-content-inner{
     background: #FFFFFF;
 }
 
@@ -24,8 +24,7 @@
     width: 100%;
 }
 
-.page-events #block-system-main .view-content/*,
-.page-festival #block-system-main .view-content*/{
+.page-events #block-system-main .view-content{
    width: 420px;
    /*height: 480px;*/
    padding: 0;
@@ -44,16 +43,15 @@
    margin-right: 20px;
 }
 /*-----------------------------------------------------------------------------*/
-.page-node #block-system-main .view-content /*.view-events*/ tr:hover td,
-.page-node #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
-.page-node #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
-.page-events #block-system-main .view-content /*.view-events*/ tr:hover td,
-.page-events #block-system-main .view-content /*.view-events*/ tr.even:hover td.active,
-.page-events #block-system-main .view-content /*.view-events*/ tr.odd:hover td.active,
+.page-node #block-system-main .view-content tr:hover td,
+.page-node #block-system-main .view-content tr.even:hover td.active,
+.page-node #block-system-main .view-content  tr.odd:hover td.active,
+.page-events #block-system-main .view-content  tr:hover td,
+.page-events #block-system-main .view-content tr.even:hover td.active,
+.page-events #block-system-main .view-content  tr.odd:hover td.active,
 .page-festival #block-system-main .view-content tr:hover td,
 .page-festival #block-system-main .view-content tr.even:hover td.active,
-.page-festival #block-system-main .view-content tr.odd:hover td.active
-{
+.page-festival #block-system-main .view-content tr.odd:hover td.active{
     background: none;
 }
 
@@ -62,15 +60,6 @@
 .page-festival #block-system-main .view-content table{
     border: 0 none;
 }
-
-/*.page-events .views-exposed-form-events-page input{
-    margin-left: 10px;
-}
-
-.page-events .views-exposed-form-events-page{
-    border-width: 0px;
-    border-style: none;
-}*/
 
 .page-events #block-system-main .views-view-grid,
 .page-festival #block-system-main .views-view-grid{
@@ -110,8 +99,6 @@
     /*margin: 5px 0px 0px 15px;*/
 }
 
-/*.page-events .views-field-title,
-.page-events .views-field-body{*/
 /*---------------------------text on image-----------------------------------*/
 .page-events .events-body,
 .page-festival .events-body{
@@ -125,13 +112,6 @@
     overflow: hidden;
 }
 
-/*.page-events .events-body p,
-.page-events .events-body a,
-.page-festival .events-body p,
-.page-festival .events-body a{
-    margin-bottom: 3px;
-    color: white;
-}*/
 
 .page-events .events-body p,
 .page-festival .events-body p{
@@ -149,7 +129,6 @@
 .page-events .events-body .views-field-title a,
 .page-festival .events-body .views-field-title a{
     text-decoration: none;
-    /*color: #fff;*/
 }
 
 .page-events .events-body .views-field-title a:hover,
@@ -168,7 +147,6 @@
 
 /*--------------------------forms with search---------------------------------*/
 .page-events .views-exposed-form,
-/*.page-festival .views-exposed-form,*/
 .page-news .views-exposed-form{
     /*position: absolute;
     right: 95px;
@@ -226,7 +204,7 @@
 .page-festival .views-exposed-form .views-submit-button,
 .page-news .views-exposed-form #edit-keys-wrapper,
 .page-news .views-exposed-form .views-submit-button,
-.page-news #edit-date-filter-wrapper /*edit-field-publication-date-value-wrapper*/{
+.page-news #edit-date-filter-wrapper{
     margin: 0;
     padding: 0;
     /*float: right;*/
@@ -284,7 +262,7 @@
 }
 
 /*-------------------------Select lest---------------------------------*/
-.page-news .views-exposed-form #edit-date-filter-wrapper /*#edit-field-publication-date-value-wrapper*/ /*.form-type-select*/ select#edit-date-filter-value-year{
+.page-news .views-exposed-form #edit-date-filter-wrapper select#edit-date-filter-value-year{
     margin: 0;
     padding: 0;
     background: transparent;
@@ -348,8 +326,6 @@
 
 /*------------------------------date search filter----------------------------*/
 .block-menu-festival-link-date-filter{
-    /*display: none;*/
-    /*width: 85px;*/
     float: left;
     display: block;
     width: 95px;
@@ -373,7 +349,7 @@
     z-index: 10;
 }
 
-/*--------------------------------inVisible-------------------------*/
+/*--------------------------------inVisible data filter-------------------------*/
 .closed-ul-filter{
     display: none;
 }
@@ -525,27 +501,3 @@
     margin-top: 50px;
     margin-left: 10px;
 }
-
-/*----------------------------------breadcrumbs-------------------------------*/
-/*#region-content #breadcrumb{
-    width: 350px;
-    float: right;
-    text-align: right;
-    margin-right: 15px;
-    font-size: 10px;
-    font-style: italic;
-    text-decoration: none;
-    color: black;
-    z-index: 20;
-}
-
-#region-content #breadcrumb a{
-    text-decoration: none;
-    color: black;
-    z-index: 20;
-}
-
-#region-content #breadcrumb a:hover{
-    text-decoration: underline;
-    z-index: 20;
-}*/
