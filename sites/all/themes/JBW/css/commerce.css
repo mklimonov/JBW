@@ -27,9 +27,13 @@
 }
 
 /*---------------------------remove focus-------------------------------------*/
-.page-checkout input:focus{
+.page-checkout input:focus,
+.page-checkout input:active,
+.page-checkout select:focus,
+.page-checkout select:active{
     box-shadow: none;
 }
+
 /*
 .page-cart #region-content .view-content .views-field-field-event-image{
     display: block;
@@ -79,7 +83,7 @@
     margin-bottom: 15px;
     border-bottom: 1px solid black;
 }
-/*---------------------Shoping cart content-----------------------------------*/
+/*---------------------Shoping cart content in check out-----------------------*/
 
 .page-checkout #commerce-checkout-form-checkout{
     margin-top: 40px;
@@ -100,6 +104,23 @@
     border: none;
 }
 
+.page-checkout .commerce-price-formatted-components{
+    border: none;
+}
+
+.page-checkout .commerce-price-formatted-components tr.even,
+.page-checkout .commerce-price-formatted-components tr.odd{
+    border-bottom: none;
+}
+
+.page-checkout .field-name-commerce-order-total{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.page-checkout .view-footer table{
+    margin-bottom: 0px;
+}
+
 .panels-flexible-region-new-center{
     float: none;
     width: 100%;
@@ -107,14 +128,57 @@
 
 .page-cart #block-system-main .view-content tr:hover td,
 .page-cart #block-system-main .view-content tr.even:hover td.active,
-.page-cart #block-system-main .view-content tr.odd:hover td.active{
+.page-cart #block-system-main .view-content tr.odd:hover td.active,
+.page-checkout #block-system-main .view-content tr:hover td,
+.page-checkout #block-system-main .view-content tr.even:hover td.active,
+.page-checkout #block-system-main .view-content tr.odd:hover td.active,
+.page-checkout #block-system-main .commerce-price-formatted-components tr:hover td,
+.page-checkout #block-system-main .commerce-price-formatted-components tr.even:hover td.active,
+.page-checkout #block-system-main .commerce-price-formatted-components tr.odd:hover td.active{
     background: none;
 }
 
 .page-cart #block-system-main .view-content tr.even, 
 .page-cart #block-system-main .view-content tr.odd,
-.page-cart #block-system-main .view-content tr.odd td{
+.page-cart #block-system-main .view-content tr.odd td,
+.page-checkout #block-system-main .view-content tr.even, 
+.page-checkout #block-system-main .view-content tr.odd,
+.page-checkout #block-system-main .view-content tr.odd td,
+.page-checkout #block-system-main .commerce-price-formatted-components tr.even, 
+.page-checkout #block-system-main .commerce-price-formatted-components tr.odd,
+.page-checkout #block-system-main .commerce-price-formatted-components tr.odd td{
     background:none;
 }
 
-/*-----------------------------Contact infomation------------------------------*/
+/*----------------------Contact infomation in check out-----------------------*/
+.page-checkout .name-block,
+.page-checkout .thoroughfare,
+.page-checkout .premise{
+    width: 530px;
+    height: 20px;
+}
+
+.page-checkout .form-item,
+.page-checkout .form-actions{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.page-checkout .locality,
+.page-checkout .country{
+    width: 250px;
+    height: 20px;
+}
+
+.page-checkout .country{
+    font-size: 12px;
+    padding: 0;
+}
+.page-checkout .postal-code,
+.page-checkout .state{
+    height: 20px;
+}
+
+.page-checkout #edit-buttons{
+    float: right;
+}

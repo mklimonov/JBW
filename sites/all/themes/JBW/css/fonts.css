@@ -143,3 +143,8 @@
     font-style: italic;
     font-size: 10px;
 }
+
+/*---------------------------------Check out label-----------------------------*/
+.page-checkout label{
+    font-weight: normal;
+}
