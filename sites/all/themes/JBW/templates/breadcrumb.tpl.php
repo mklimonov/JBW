@@ -18,10 +18,10 @@
     $currentCrumb[arg(1)] = ' current';
   ?>
   <div class='additional_breadcrumb'>
-    <div class='breadcrumb_item<?php print $currentCrumb[372];?>'>Personal Details</div>
-    <div class='breadcrumb_item<?php print $currentCrumb[373];?>'>Banking Details</div>
-    <div class='breadcrumb_item<?php print $currentCrumb[374];?>'>Confirmation</div>
-    <div class='breadcrumb_item<?php print $currentCrumb[375];?>'>Donation Complete</div>
+    <div class='breadcrumb_item<?php print $currentCrumb[372];?>'> Personal Details</div>
+    <div class='breadcrumb_item<?php print $currentCrumb[373];?>'> <span>></span>Banking Details</div>
+    <div class='breadcrumb_item<?php print $currentCrumb[374];?>'> <span>></span>Confirmation</div>
+    <div class='breadcrumb_item<?php print $currentCrumb[375];?>'> <span>></span>Donation Complete</div>
   </div>
 <?php endif; ?>
 </div>

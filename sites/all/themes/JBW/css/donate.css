@@ -7,6 +7,15 @@
     box-shadow: none;
 }
 
+/*---------------------------------Title*------------------------------------*/
+.page-node-372 h1#page-title{
+    margin-top: 30px;
+}
+
+.page-node-372 article{
+    margin-top: 55px;
+}
+
 /*------------------------------Amount------------------------------------------*/
 
 .page-node  #region-content #webform-component-amount .form-radios{
@@ -21,6 +30,11 @@
     float: left;
     margin-right: 10px;
 }
+
+.page-node  #region-content #webform-client-form-372 #webform-component-amount label{
+    margin-top: 15px;
+}
+
 
 
 /*.page-node  #region-content #block-system-main #webform-client-form-372 label,*/

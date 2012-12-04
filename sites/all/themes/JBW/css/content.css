@@ -15,7 +15,7 @@ ul.primary{
 .page-cart .breadcrumb{
     float: right;
     text-align: right;
-    width: 350px;
+    width: 370px;
     font-size: 10px;
     font-style: italic;
     margin-right: 10px;
@@ -30,6 +30,16 @@ ul.primary{
   color: #58595b;
   text-decoration: none;
 }
+.additional_breadcrumb .breadcrumb_item{
+    float: left;
+    margin-left: 8px;
+    text-align: right;
+}
+
+.additional_breadcrumb .breadcrumb_item span{
+    margin-right: 5px;
+}
+
 
 .page-news .breadcrumb a:hover,
 .page-node .breadcrumb a:hover,
