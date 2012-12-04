@@ -381,3 +381,7 @@
     display: none;
 }
 
+.page-node #region-content #block-system-main article .field-type-image{
+    float: left;
+    margin-right: 10px;
+}
