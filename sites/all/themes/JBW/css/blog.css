@@ -375,3 +375,9 @@
     float: right;
     margin-right: 0;
 }
+
+.page-node article .submitted,
+.page-node article .node-links{
+    display: none;
+}
+
