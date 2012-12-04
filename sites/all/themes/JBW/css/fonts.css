@@ -230,3 +230,21 @@
 .view-id-events_all input#edit-submit{
     font-size:0;
 }
+
+/*---------------------------page search title--------------------------------*/
+.page-search #region-content #block-system-main h2,
+.page-search #region-content #block-system-main h3,
+.page-search #region-content #block-system-main h3 a{
+    color: #333333;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1em;
+    padding-top: 0;
+}
+
+.page-search #region-content #block-system-main .search-snippet{
+    font-family: georgia;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+}

@@ -81,6 +81,24 @@
     float: right;
 }
 
+/*--------------------------------Pager search--------------------------------*/
+.page-search #block-system-main #search-pager-up{
+    /*position: absolute;
+    right: 20px;*/
+    /*margin-top: 10px;
+    margin-left: auto;
+    width: 60px;*/
+    margin-top: 15px;
+    float: right;
+}
+.page-search #block-system-main #search-pager-down{
+   /* position: absolute;
+    right: 20px;
+    bottom: 6px;
+    width: 60px;*/
+    float: right;
+}
+
 #block-system-main .pager .pager-item{
     margin: 0;
     padding: 0;

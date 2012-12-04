@@ -23,11 +23,15 @@
 ?>
 <?php if ($search_results): ?>
   <h2><?php print t('Search Results for '. arg(2));?></h2>
-  <?php print $pager; ?>
+  <div id="search-pager-up">
+    <?php print $pager; ?>
+  </div>
   <ol class="search-results <?php print $module; ?>-results">
     <?php print $search_results; ?>
   </ol>
-  <?php print $pager; ?>
+  <div id="search-pager-down">
+    <?php print $pager; ?>
+  </div>
 <?php else : ?>
   <h2><?php print t('Your search yielded no results');?></h2>
   <?php print search_help('search#noresults', drupal_help_arg()); ?>

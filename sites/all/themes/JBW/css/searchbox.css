@@ -64,3 +64,49 @@
     padding: 0;
     border: 0;  /* Small centering fix for Firefox */
 }
+
+/*--------------------------------Result search-------------------------------*/
+.page-search #block-system-main .block-inner{
+    padding: 5px 10px 10px 15px;
+}
+
+/*-------------------------Hide search form-----------------------------------*/
+.page-search #block-system-main #search-form{
+    display: none;
+}
+
+.page-search h1#page-title{
+    display: none;
+}
+
+.page-search #region-content h2{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.page-search #region-content h3{
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.page-search h3 a,
+.page-search h3 a:link,
+.page-search h3 a:visited{
+    text-decoration: none;
+}
+
+.page-search h3 a:hover{
+    text-decoration: underline;
+}
+
+.page-search #region-content .search-results{
+    clear: both;
+    /*margin-top: 30px;*/
+}
+
+.page-search .search-results li{
+    border-bottom: 1px solid #CCCCCC;
+}
