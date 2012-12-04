@@ -173,6 +173,12 @@
     font-size: 10px;
 }
 
+.page-checkout #edit-customer-profile-billing label{
+    font-family: georgia;
+    font-style: normal;
+    font-size: 10px;
+}
+
 /*---------------------------------Check out label-----------------------------*/
 .page-checkout label{
     font-weight: normal;
@@ -257,4 +263,15 @@
     font-style: italic;
     font-size: 15px;
     font-weight: normal;
+}
+
+/*-------------------------------Subscribe------------------------------------*/
+.page-node-390 #region-content article label{
+    font-family: georgia;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: normal;
+}
+.page-node-390 #region-content article label span{
+    color: black;
 }

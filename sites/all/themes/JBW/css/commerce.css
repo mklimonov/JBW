@@ -34,10 +34,11 @@
 .page-cart #region-content .views-row .left_part{
     float: left;
     width: 135px;
+    margin-right: 10px;
 }
 
-.page-cart #region-content .views-row .right_part{
-    float: right;
+.page-cart #region-content .view-id-commerce_cart_form .views-row .right_part{
+    /*float: right;*/
     width: 390px;/*405*/
 }
 
