@@ -15,9 +15,12 @@
     padding: 10px;
 }
 
-.page-cart #region-content .view-content{
+.page-cart #region-content .view-content,
+.page-cart #region-content .cart-empty-page{
     margin-top: 45px;
 }
+
+
 
 /*---------------------------remove focus-------------------------------------*/
 .page-checkout input:focus,
