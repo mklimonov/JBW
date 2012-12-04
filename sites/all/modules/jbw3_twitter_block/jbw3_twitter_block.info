@@ -1,0 +1,7 @@
+name = jbw3_twitter_block
+core = 7.x
+package = Features
+dependencies[] = fe_block
+features[fe_block_boxes][] = twitter2
+features[fe_block_settings][] = block-twitter2
+features[features_api][] = api:1
