@@ -7,6 +7,27 @@ ul.primary{
     display: none;
 }
 
+.page-news input,
+.page-node input,
+.page-events input,
+.page-festival input,
+.page-cart input,
+.page-checkout input,
+.page-news input:focus,
+.page-node input:focus,
+.page-events input:focus,
+.page-festival input:focus,
+.page-cart input:focus,
+.page-checkout input:focus,
+.page-news input:active,
+.page-node input:active,
+.page-events input:active,
+.page-festival input:active,
+.page-cart input:active,
+.page-checkout input:active{
+    box-shadow: none;
+}
+
 /*----------------------------------breadcrumbs-------------------------------*/
 .page-news .breadcrumb,
 .page-node .breadcrumb,
