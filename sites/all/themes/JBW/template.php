@@ -9,6 +9,9 @@ function JBW_preprocess_page(&$variables) {
   if(arg(0) == 'node' && (arg(1) == '372' || arg(1) == '373' || arg(1) == '374')){
     $variables['title'] = 'Donate Form';
   }
+  if(arg(0) == 'search'){
+    $variables['title'] = '';
+  }
 }
 
 function JBW_preprocess_breadcrumb(&$variables) {
