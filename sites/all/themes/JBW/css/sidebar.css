@@ -157,6 +157,12 @@
 }
 
 
+/*------------------------------------Video-----------------------------------*/
+
+#region-sidebar #scrollbarY .jwplayer-video{
+    float: left;
+    margin-right: 10px;
+}
 
 #scrollbarY { width: 395px;/* margin: 20px 0 10px;*/}
 #scrollbarY .viewport { width: 380px; /*min-*/height: 1200px; overflow: hidden; position: relative;}
