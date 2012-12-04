@@ -4,6 +4,8 @@
     
     if(arg(0) == 'cart'){
       print l('Continue shopping', url('events'));
+    }else if(arg(0) == 'search'){
+      //
     }else if(arg(0) == 'node' && (arg(1) == '372' || arg(1) == '373' || arg(1) == '374')){
       $breadcrumb[1] = 'Donate';
       print implode(' > ', $breadcrumb);
