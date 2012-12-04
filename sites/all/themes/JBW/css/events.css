@@ -258,6 +258,7 @@
     padding: 0;
     cursor: pointer;
     float: right;
+    box-shadow: none;
     /*position: relative;*/
 }
 

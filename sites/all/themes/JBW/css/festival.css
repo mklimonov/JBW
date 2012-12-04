@@ -57,6 +57,10 @@
     margin-left: 5px;
 }
 
+.page-node #region-content .node_right_part .views-field-body .views-field-body{
+    margin-left: 0;
+}
+
 .page-node #region-content .node_left_part .views-field-field-event-image-2{
     margin-top: 10px;
 }

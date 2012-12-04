@@ -58,7 +58,7 @@
 .page-news .views-field-field-author,
 .page-news .views-field-field-publication-date{
     /*margin: 0 20px 5px 15px;*/
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     margin-bottom: 3px;
     font-family: georgia;
     font-style: italic;
@@ -184,4 +184,35 @@
     font-style: italic;
     font-size: 12px;
     font-weight: normal;
+}
+
+/*-------------------------------donate label---------------------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 label,
+.page-node  #region-content #block-system-main #webform-client-form-372 legend{
+    font-family: georgia;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 label span{
+    color: black;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #edit-submitted-checkbox label{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #edit-actions{
+    float: right;
+}
+
+
+/*----------------------------------text button----s----------------------------*/
+.view-news #edit-submit-news,
+#views-exposed-form-blog-bloglist #edit-submit-blog{
+ font-size: 0;
 }

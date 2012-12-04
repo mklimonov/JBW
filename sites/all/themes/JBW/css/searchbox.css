@@ -36,6 +36,7 @@
      
      float: left;
      position: relative;
+     box-shadow: none;
 }
 
 #search-block-form .form-actions input{
@@ -54,6 +55,7 @@
     cursor: pointer;
     float: right;
     position: relative;
+    box-shadow: none;
 }
 
 #edit-actions .form-submit::-moz-focus-inner

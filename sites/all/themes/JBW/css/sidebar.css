@@ -101,6 +101,17 @@
     margin: 0;  
 }
 
+/*------------------------------twitter-----------------------------------------*/
+#scrollbarY #block-block-4 .hc-details{
+ position: relative;
+ top: 0px;
+ box-shadow: none;
+}
+
+#scrollbarY #block-block-4 .hc-details .s-action{
+ position: relative;
+}
+
 
 #scrollbarY { width: 395px;/* margin: 20px 0 10px;*/}
 #scrollbarY .viewport { width: 380px; /*min-*/height: 1200px; overflow: hidden; position: relative;}

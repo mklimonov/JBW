@@ -1,0 +1,126 @@
+.page-node  #region-content input,
+.page-node  #region-content input:focus,
+.page-node  #region-content input:active,
+.page-node  #region-content select,
+.page-node  #region-content select:focus,
+.page-node  #region-content select:active{
+    box-shadow: none;
+}
+
+/*------------------------------Amount------------------------------------------*/
+
+.page-node  #region-content #webform-component-amount .form-radios{
+    display: inline-block;
+}
+
+.page-node  #region-content #webform-client-form-372 #webform-component-amount #edit-submitted-amount .form-type-radio label.option{
+    float: none;
+}
+
+.page-node  #region-content #webform-component-amount #edit-submitted-amount .form-type-radio{
+    float: left;
+    margin-right: 10px;
+}
+
+
+/*.page-node  #region-content #block-system-main #webform-client-form-372 label,*/
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-amount label,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-title label{
+    float: left;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 .form-item{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/*-------------------------------Mr/Mrs---------------------------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 .form-item #edit-submitted-title{
+    height: 15px;
+    font-size: 10px;
+    padding: 0;
+}
+
+/*-----------------------------------------Name-------------------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name #webform-component-name--first input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name #webform-component-name--last input{
+    width: 165px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name .fieldset-wrapper{
+    display: inline;
+    
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 /*#webform-component-name*/ legend{
+    float: left;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 80px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name #webform-component-name--first,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-name #webform-component-name--last{
+    float: left;
+    margin-right: 10px;
+}
+
+/*-----------------------------------Adress-----------------------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address input{
+    width: 340px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address .form-item{
+    margin-left: 100px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--postal-zipcode input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--country select{
+    width: 165px;
+}
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--country select option{
+    width: 165px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--postal-zipcode,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--country{
+    float: left;
+    margin-right: 10px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-address #webform-component-address--country{
+    margin-left: 0px;
+}
+
+/*--------------------------Other block---------------------------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-tel-home label,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-tel-work label,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-mobile label,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-email label{
+    float: left;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-tel-home input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-tel-work input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-mobile input,
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-email input{
+    width: 410px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #webform-component-checkbox{
+    padding: 4px;
+}
+
+.page-node  #region-content #block-system-main #webform-client-form-372 #edit-submitted-checkbox input{
+    margin-right: 5px;
+}
