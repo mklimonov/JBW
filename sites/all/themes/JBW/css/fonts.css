@@ -188,31 +188,38 @@
 
 /*-------------------------------donate label---------------------------------*/
 .page-node  #region-content #block-system-main #webform-client-form-372 label,
-.page-node  #region-content #block-system-main #webform-client-form-372 legend{
+.page-node  #region-content #block-system-main #webform-client-form-372 legend,
+.page-node  #region-content #block-system-main #webform-client-form-373 label,
+.page-node  #region-content #block-system-main #webform-client-form-373 legend{
     font-family: georgia;
     font-style: normal;
     font-size: 10px;
     font-weight: normal;
 }
 
-.page-node  #region-content #block-system-main #webform-client-form-372 label span{
+/*------------------------Star around label(required item)--------------------*/
+.page-node  #region-content #block-system-main #webform-client-form-372 label span,
+.page-node  #region-content #block-system-main #webform-client-form-373 label span{
     color: black;
 }
 
-.page-node  #region-content #block-system-main #webform-client-form-372 #edit-submitted-checkbox label{
+.page-node  #region-content #block-system-main #webform-client-form-372 #edit-submitted-checkbox label,
+.page-node  #region-content #block-system-main #webform-client-form-373 #edit-submitted-checkbox label{
     font-family: georgia;
     font-style: italic;
     font-size: 10px;
     font-weight: normal;
 }
 
-.page-node  #region-content #block-system-main #webform-client-form-372 #edit-actions{
-    float: right;
+.page-node-373 .field-name-body{
+    font-family: georgia;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal
 }
-
 
 /*----------------------------------text button----s----------------------------*/
 .view-news #edit-submit-news,
 #views-exposed-form-blog-bloglist #edit-submit-blog{
- font-size: 0;
+    font-size: 0;
 }

@@ -40,6 +40,10 @@ ul.primary{
     margin-right: 5px;
 }
 
+.additional_breadcrumb .current{
+    color: #77C24E;
+}
+
 
 .page-news .breadcrumb a:hover,
 .page-node .breadcrumb a:hover,
