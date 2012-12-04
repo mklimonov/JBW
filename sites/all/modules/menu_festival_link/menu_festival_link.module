@@ -1,4 +1,5 @@
 <?php
+
 /*
  * implementation of hook_menu()
  */
@@ -38,6 +39,10 @@ function menu_festival_link_menu(){
     
     return $items;
 }
+
+/*function menu_festival_link_donate_confirmation_form_submit($form, &$form_state) {
+  drupal_set_message(t('Thanks for filling out the form'));
+}*/
 
 function getLastFestivalId(){
     $query = new EntityFieldQuery();
@@ -285,17 +290,156 @@ function menu_festival_link_block_contents($delta) {
 }
 
 function menu_festival_link_form_alter(&$form, &$form_state, $form_id) {
+  if(isset($_GET['sid'])){
+
+  if ($form_id == 'webform_client_form_374'){
+    $submission = webform_get_submission(373, $_GET['sid']);
+    //dpm($submission);
+    //dpm($form);
+    $prevData = $submission->data;
+    $form['submitted']['amount']['#default_value'] = $prevData[1]['value'][0];
+    $form['submitted']['amount']['#disabled'] = TRUE;
+    $form['submitted']['name']['first']['#default_value'] = $prevData[3]['value'][0];
+    $form['submitted']['name']['first']['#disabled'] = TRUE;
+    $form['submitted']['name']['last']['#default_value'] = $prevData[4]['value'][0];
+    $form['submitted']['name']['last']['#disabled'] = TRUE;
+    $form['submitted']['address_all']['address1']['#default_value'] = $prevData[6]['value'][0];
+    $form['submitted']['address_all']['address1']['#disabled'] = TRUE;
+    $form['submitted']['address_all']['address2']['#default_value'] = $prevData[7]['value'][0];
+    $form['submitted']['address_all']['address2']['#disabled'] = TRUE;
+    $form['submitted']['address_all']['city']['#default_value'] = $prevData[8]['value'][0];
+    $form['submitted']['address_all']['city']['#disabled'] = TRUE;
+    $form['submitted']['address_all']['country']['#default_value'] = $prevData[10]['value'][0];
+    $form['submitted']['address_all']['country']['#disabled'] = TRUE;
+    $form['submitted']['address_all']['zip']['#default_value'] = $prevData[9]['value'][0];
+    $form['submitted']['address_all']['zip']['#disabled'] = TRUE;
+    $form['submitted']['night_phone_a']['#default_value'] = $prevData[11]['value'][0];
+    $form['submitted']['night_phone_a']['#disabled'] = TRUE;
+    $form['first_name'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[3]['value'][0],
+    );
+    $form['amount'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[1]['value'][0],
+    );
+    $form['last_name'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[4]['value'][0],
+    );
+    $form['address1'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[6]['value'][0],
+    );
+    $form['address2'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[7]['value'][0],
+    );
+    $form['city'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[8]['value'][0],
+    );
+    $form['zip'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[9]['value'][0],
+    );
+    $form['country'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[10]['value'][0],
+    );
+    $form['night_phone_a'] = array(
+      '#type' => 'hidden',
+      '#value' => $prevData[11]['value'][0],
+    );
+    $form['#action'] = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
+    $form['business'] = array(
+      '#type' => 'hidden',
+      '#value' => 'shelko_1353991440_biz@gmail.com',
+    );
+    $form['cmd'] = array(
+      '#type' => 'hidden',
+      '#value' => '_donations',
+    );
+    $form['cancel_return'] = array(
+      '#type' => 'hidden',
+      '#value' => url(variable_get('site_frontpage', 'node')),
+    );
+    $form['item_name'] = array(
+      '#type' => 'hidden',
+      '#value' => 'Donation for Jewish Book Week',
+    );
+    $form['currency_code'] = array(
+      '#type' => 'hidden',
+      '#value' => 'GBP',
+    );
+    $form['submit'] = array(
+      '#type' => 'image_button',
+      '#src' => 'https://www.sandbox.paypal.com/en_US/i/btn/btn_donate_SM.gif',
+    );
+  }  
+  }
+  
   if ($form_id == 'webform-client-form-523') {// ____!!!
     $form['email'] = array(
       '#type' => 'hidden',
     //'#name' => 'email',
       '#value' => 'asd@gmail.com',
     );
-  }
-  
-  if ($form_id == 'commerce_checkout_form_checkout') {
-  //dpm($form);
-    $form['customer_profile_billing']['#title'] = 'Contact Information';
     
   }
+  
+  if ($form_id == 'webform_client_form_373') {
+    if(isset($_GET['sid'])){
+      $submission = webform_get_submission(372, $_GET['sid']);
+      //dpm($submission);
+      //dpm($form);
+      $prevData = $submission->data;
+      $form['submitted']['amount']['#default_value'] = $prevData[1]['value'][0];
+      $form['submitted']['name']['first']['#default_value'] = $prevData[4]['value'][0];
+      $form['submitted']['name']['last']['#default_value'] = $prevData[5]['value'][0];
+      $form['submitted']['address_all']['address_1']['#default_value'] = $prevData[7]['value'][0];
+      $form['submitted']['address_all']['address_2']['#default_value'] = $prevData[8]['value'][0];
+      $form['submitted']['address_all']['city']['#default_value'] = $prevData[9]['value'][0];
+      $form['submitted']['address_all']['country']['#default_value'] = $prevData[11]['value'][0];
+      $form['submitted']['address_all']['postal_zipcode']['#default_value'] = $prevData[10]['value'][0];
+      $form['submitted']['phone_number']['#default_value'] = $prevData[14]['value'][0];
+    }
+  }
+/*
+    $form['text'] = array(
+      '#type' => 'markup',
+      '#markup' => 'asd',
+    );
+    $form['#action'] = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
+    $form['business'] = array(
+      '#type' => 'hidden',
+      '#value' => 'shelko_1353991440_biz@gmail.com',
+    );
+    $form['cmd'] = array(
+      '#type' => 'hidden',
+      '#value' => '_donations',
+    );
+    $form['cancel_return'] = array(
+      '#type' => 'hidden',
+      '#value' => url(variable_get('site_frontpage', 'node')),
+    );
+    $form['item_name'] = array(
+      '#type' => 'hidden',
+      '#value' => 'Donation for Jewish Book Week',
+    );
+    $form['amount'] = array(
+      '#type' => 'hidden',
+      '#value' => '20.00',
+    );
+    $form['currency_code'] = array(
+      '#type' => 'hidden',
+      '#value' => 'GBP',
+    );
+    //<input type="hidden" name="business" value="donations@your-web-domain.com">
+
+    $form['submit'] = array(
+      '#type' => 'image_button',
+      '#src' => 'https://www.sandbox.paypal.com/en_US/i/btn/btn_donate_SM.gif',
+    );
+    */
 }//customer_profile_billing[commerce_customer_address][und][0][country]
