@@ -3,7 +3,7 @@
         jQuery("#demo-twitter").hovercard({
             showTwitterCard: true,
             twitterScreenName: "JewishBookWeek",
-            width: 358
+            width: 350
         });
     });
 })(jQuery)

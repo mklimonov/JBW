@@ -186,6 +186,9 @@
     font-weight: normal;
 }
 
+.page-checkout #commerce-checkout-form-checkout fieldset label span{
+    color: black;
+}
 /*-------------------------------donate label---------------------------------*/
 .page-node  #region-content #block-system-main #webform-client-form-372 label,
 .page-node  #region-content #block-system-main #webform-client-form-372 legend,
@@ -222,4 +225,8 @@
 .view-news #edit-submit-news,
 #views-exposed-form-blog-bloglist #edit-submit-blog{
     font-size: 0;
+}
+
+.view-id-events_all input#edit-submit{
+    font-size:0;
 }

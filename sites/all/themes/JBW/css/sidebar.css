@@ -102,14 +102,55 @@
 }
 
 /*------------------------------twitter-----------------------------------------*/
+#region-sidebar #scrollbarY .block-block-4{
+    width: 370px;
+    /*margin-bottom: 20px;*/
+}
+
+#region-sidebar #scrollbarY .block-block-4 .block-inner{
+    padding: 10px;
+}
+
 #scrollbarY #block-block-4 .hc-details{
- position: relative;
- top: 0px;
- box-shadow: none;
+    position: relative;
+    top: 0px;
+    box-shadow: none;
 }
 
 #scrollbarY #block-block-4 .hc-details .s-action{
- position: relative;
+    position: relative;
+    bottom: 10px;
+}
+
+/*
+#scrollbarY #block-block-4 .hc-details .s-action iframe{
+    width: 80px !important;  
+    height: 30px !important;
+}
+
+#scrollbarY #block-block-4 .hc-details .s-action iframe #widget .btn{
+    width: 80px;  
+    height: 30px;
+}
+
+#scrollbarY #block-block-4 .hc-details .s-action iframe #widget span{
+    padding-top: 6px;
+}
+*/
+
+#region-sidebar #scrollbarY .block-block-4 .hc-preview label{
+    display: none;
+}
+
+#scrollbarY #block-block-4 .hc-details{
+    margin: 0;
+    padding: 10px 10px 10px;
+    border: none;
+    border-radius: 0;
+}
+
+#scrollbarY #block-block-4 .hc-details .s-card a{
+    text-decoration: none;
 }
 
 
