@@ -223,7 +223,7 @@
     font-weight: normal
 }
 
-/*----------------------------------text button----s----------------------------*/
+/*----------------------------------text button--------------------------------*/
 .view-news #edit-submit-news,
 #views-exposed-form-blog-bloglist #edit-submit-blog{
     font-size: 0;
@@ -248,5 +248,13 @@
     font-family: georgia;
     font-style: normal;
     font-size: 12px;
+    font-weight: normal;
+}
+
+/*Sing up in side bar*/
+#region-sidebar #block-views-litkicks-block-1 .views-field-title{
+    font-family: georgia;
+    font-style: italic;
+    font-size: 15px;
     font-weight: normal;
 }

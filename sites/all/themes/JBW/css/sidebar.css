@@ -152,6 +152,11 @@
     text-decoration: none;
 }
 
+#region-sidebar #scrollbarY #block-views-litkicks-block-1 .block-inner{
+    padding: 10px;    
+}
+
+
 
 #scrollbarY { width: 395px;/* margin: 20px 0 10px;*/}
 #scrollbarY .viewport { width: 380px; /*min-*/height: 1200px; overflow: hidden; position: relative;}
