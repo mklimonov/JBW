@@ -373,7 +373,7 @@ function menu_festival_link_form_alter(&$form, &$form_state, $form_id) {
       '#value' => 'GBP',
     );
     $form['submit'] = array(
-      '#prefix' => '<div id="edit-actions">',
+      '#prefix' => '<div id="edit-actions-donate">',
       '#sufix' => '</div>',
       '#type' => 'image_button',
       '#src' => 'https://www.sandbox.paypal.com/en_US/i/btn/btn_donate_SM.gif',
