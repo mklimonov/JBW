@@ -3,4 +3,7 @@ description = Makes menu link to last festival
 package = JBW
 core = 7.x
 files[] = menu_festival_link.module
+files[] = menu_festival_link.install
 scripts[] = date_calendar.js
+scripts[] = hovercard.js
+scripts[] = twitter.js

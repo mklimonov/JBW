@@ -24,7 +24,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="basicpage-header">
+<div class="static-header">
 <?php foreach ($fields as $id => $field): ?>
     
   <?php if (!empty($field->separator)): ?>
