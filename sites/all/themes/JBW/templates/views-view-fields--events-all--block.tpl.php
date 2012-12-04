@@ -26,17 +26,11 @@
 ?>
 <?php foreach ($fields as $id => $field): ?>
 
-    <?php if($field->class == 'title-1'): ?>
+    <?php if($field->class == 'title'): ?>
     <div class = "events-body">
-        <?php if(strip_tags($field->content) == ''): ?>
-            <p>Non-festival event</p>
-        <?php endif; ?>
-        <?php if(strip_tags($field->content) != ''): ?>
-            <p><?php print strip_tags($field->content); ?></p>
-        <?php endif; ?>
     <?php endif; ?>
                     
-  <?php if($field->class != 'title-1' && $field->class != 'field-ticket-buy-link'): ?>   
+  <?php if($field->class != 'field-ticket-buy-link'): ?>   
 
     <?php if (!empty($field->separator)): ?>
       <?php print $field->separator; ?>

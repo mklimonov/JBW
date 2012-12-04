@@ -109,7 +109,7 @@
 /*------------------------------twitter-----------------------------------------*/
 #region-sidebar #scrollbarY .block-block-4{
     width: 370px;
-    height: 286px;
+    height: 256px;
     /*margin-bottom: 20px;*/
 }
 
@@ -146,16 +146,39 @@
 #region-sidebar #scrollbarY .block-block-4 .hc-preview label{
     display: none;
 }
-
+#region-sidebar #scrollbarY .block-block-4 .s-name{
+    display: block !important;
+}
+#region-sidebar #scrollbarY .block-block-4 .hc-details .s-card-pad{
+    border: 0 none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+#region-sidebar #scrollbarY .block-block-4 .s-stats{
+    width: 350px;
+    border-top: solid 1px #EEE;
+    margin-bottom: 15px;
+}
+#region-sidebar #scrollbarY .block-block-4 .hc-details .s-count {
+    color: #666 !important;
+    font-size: 14px;
+}
 #scrollbarY #block-block-4 .hc-details{
     margin: 0;
-    padding: 10px 10px 10px;
+    padding: 10px 0 10px;
     border: none;
     border-radius: 0;
+    width: 370px !important;
+}
+#region-sidebar #scrollbarY .block-block-4 .s-action{
+    padding: 0 10px;
 }
 
 #scrollbarY #block-block-4 .hc-details .s-card a{
     text-decoration: none;
+    color: #0083b8;
 }
 
 #region-sidebar #scrollbarY #block-views-litkicks-block-1 .block-inner{

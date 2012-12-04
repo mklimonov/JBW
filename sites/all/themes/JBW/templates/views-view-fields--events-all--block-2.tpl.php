@@ -71,14 +71,11 @@
           <?php if(strip_tags($field->content) != ''): ?>
             <?php print '<a href = "'. strip_tags($field->content). '">Book here</a><br /><i>You will now be taken to the King Place<br/>website to continue your booking</i><br /><br />'; ?>  
           <?php endif; ?>
-                Free Events<br />
-            <i>All free events are ticketed and must be reserved via the Kings Place Box Office in advance.
-            Free tickets are limited to 2 tickets per person.</i><br /><br />
-
-                Multi-Event Ticket Offer<br />
-            <i>Book tickets for multiple Jewish Book Week events and save up to 30%.
-            This offer is NOT available online.
-            To take advantage of this offer call the Kings Place Box Office on 020 7520 1490.</i></div>
+            <em>Free Events</em><br />
+            <i>All free events are ticketed and must be reserved via the<br/>Kings Place Box Office in advance.<br/>Free tickets are limited to 2 tickets per person.</i><br /><br />
+            <em>Multi-Event Ticket Offer</em><br />
+            <i>Book tickets for multiple Jewish Book Week events and<br/>save up to 30%.<br/>This offer is NOT available online.<br/><br/>To take advantage of this offer call the Kings Place Box<br/>Office on 020 7520 1490.</i>
+          </div>
     <?php endif; ?>
           
   <?php if($field->class != 'field-is-sold-out-' &&  $field->class != 'field-saver-price' && $field->class != 'field-price-saver' && $field->class != 'field-price-on-another-site' && $field->class != 'field-event-date' && $field->class != 'commerce-price' && $field->class != 'field-ticket-buy-link'): ?>  

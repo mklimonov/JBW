@@ -3,7 +3,7 @@
     <?php
     
     if(arg(0) == 'cart'){
-      print l('Continue shopping', url('events'));
+      print '<a href="/events">Continue shopping</a>';
     }else if(arg(0) == 'search'){
       //
     }else if(arg(0) == 'node' && (arg(1) == '372' || arg(1) == '373' || arg(1) == '374')){

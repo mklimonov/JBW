@@ -3,7 +3,12 @@
 .page-festival .region-content-inner{
     background: #FFFFFF;
 }
-
+.node-type-event #region-content .view-content{
+    margin-top: 0 !important;
+}
+.node-event-date{
+    margin-left: 5px;
+}
 .page-events #region-content,
 .page-festival #region-content,
 .page-node #region-content{
@@ -129,6 +134,9 @@
 .page-events .events-body .views-field-title a,
 .page-festival .events-body .views-field-title a{
     text-decoration: none;
+    line-height: 1.2em;
+    display: block;
+    margin-top: 3px;
 }
 
 .page-events .events-body .views-field-title a:hover,
@@ -248,10 +256,9 @@
     
     -moz-border-radius: 0;
     border-radius: 0;
-
     border-width: 0;
     border-style: none;
-
+    text-indent: -9999px;
     width: 12px;
     height: 13px;
     margin: 0;
@@ -458,7 +465,7 @@
     z-index: 2;
 }
 
-/*---------------------------количество товара--------------------------------*/
+/*---------------------------количе�?тво товара--------------------------------*/
 .block-menu-festival-link-tiny-cart{
     /*float: left;*/
     /*width: 15px;
