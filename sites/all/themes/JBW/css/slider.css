@@ -33,7 +33,24 @@
 .views-field-field-slider-image{
     z-index: 1;
 }
-
+.views-slideshow-controls-bottom{
+    float: right;
+    margin-top: -12px;
+    margin-right: 12px;
+}
+.views-slideshow-controls-bottom .views-content-title{
+    display: none;
+}
+.views-slideshow-controls-bottom .views-slideshow-pager-field-item{
+    float: left;
+    margin-right: 3px;
+    width: 7px;
+    height: 7px;
+    background: url(../images/slider/slider_btn.png) no-repeat top left;
+}
+.views-slideshow-controls-bottom .active{
+    background: url(../images/slider/slider_active.png) no-repeat top left !important;
+}
 /*slider image*/
 .views-field-field-slider-image img{
     z-index: 1;

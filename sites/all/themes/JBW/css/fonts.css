@@ -25,7 +25,16 @@
     text-decoration: none;
     color: #58595b;
 }
-
+.region-content a,
+.region-content a:link,
+.region-content a:visited{
+    color: #77c24e;
+}
+.region-content .breadcrumb a,
+.region-content .breadcrumb a:link,
+.region-content .breadcrumb a:visited{
+    color: #58595b;
+}
 /*------------------------------Header titles---------------------------------*/
 .page-home #region-content h1#page-title,
 .page-events #region-content h1#page-title,

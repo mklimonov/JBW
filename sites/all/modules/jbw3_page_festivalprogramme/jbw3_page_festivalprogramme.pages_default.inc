@@ -13,9 +13,9 @@ function jbw3_page_festivalprogramme_default_page_manager_pages() {
   $page->api_version = 1;
   $page->name = 'festival_programme';
   $page->task = 'page';
-  $page->admin_title = 'Festival programme';
+  $page->admin_title = 'Festival schedule';
   $page->admin_description = '';
-  $page->path = 'festival/%node/programme';
+  $page->path = 'festival/%node/schedule';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array(
@@ -39,7 +39,7 @@ function jbw3_page_festivalprogramme_default_page_manager_pages() {
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
-    'title' => 'Festival programme',
+    'title' => 'Festival schedule',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',

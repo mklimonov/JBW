@@ -69,7 +69,7 @@ function jbw3_imagestyles_image_default_styles() {
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => '135',
-          'height' => '165',
+          'height' => '100',
         ),
         'weight' => '1',
       ),

@@ -36,7 +36,6 @@ ul.primary{
 .page-cart .breadcrumb{
     float: right;
     text-align: right;
-    width: 370px;
     font-size: 10px;
     font-style: italic;
     margin-right: 10px;
@@ -149,4 +148,15 @@ ul.primary{
 
 .page-home .festival-color3 .festival-left-part{
     background: url(../images/content/purple.png) no-repeat top left;
+}
+.page-home .festival-left-part .date-display-single,
+.page-home .festival-left-part p{
+    margin-bottom: 10px;
+    display: block;
+}
+.page-home .festival-left-part a{
+    color:#ffffff !important;
+    display: block;
+    font-style: italic;
+    text-align: right;
 }

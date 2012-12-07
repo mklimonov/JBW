@@ -38,13 +38,20 @@ function JBW_preprocess_breadcrumb(&$variables) {
             $variables['breadcrumb'][] = $menu_item['title'];
         }
         if($node->type == 'page'){
-            $variables['breadcrumb'][] = drupal_get_title();
+            $menuParents = menu_get_active_trail();
+            foreach ($menuParents as $key => $menuParent){
+                if ($key != 0){
+                    $variables['breadcrumb'][] = '<a href="/'.drupal_lookup_path('alias',$menuParent['link_path']).'">'.$menuParent['title'].'</a>';
+                }
+            }
         }
         if($node->type == 'webform'){
             $variables['breadcrumb'][] = drupal_get_title();
         }
         
-        
+    }else if(arg(0) == 'events'){ 
+        $variables['breadcrumb'][0] = l('Home', variable_get('site_frontpage', 'node'));
+        $variables['breadcrumb'][] = drupal_get_title();  
     }else if(arg(0) != 'blog'){
         $i = 0;
         while(isset($variables[$i])){

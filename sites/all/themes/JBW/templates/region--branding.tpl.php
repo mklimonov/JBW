@@ -8,7 +8,7 @@
       </div>
       <?php endif; ?>
       <div id="pattern">
-        <img src="<?php print drupal_get_path('theme', 'JBW') . '/images/header/pattern.png';?>" alt="">
+        <img src="/<?php print drupal_get_path('theme', 'JBW') . '/images/header/pattern.png';?>" alt="">
       </div>
       <?php if ($site_slogan): ?>
       <?php $class = $site_name_hidden && $site_slogan_hidden ? ' element-invisible' : ''; ?>

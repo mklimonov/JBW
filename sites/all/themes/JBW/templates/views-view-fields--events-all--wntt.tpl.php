@@ -29,12 +29,6 @@
 
     <?php if($field->class == 'title'): ?>
         <div class = "events-body">
-        <?php if(strip_tags($field->content) == ''): ?>
-            <p>Regular event</p>
-        <?php endif; ?>
-        <?php if(strip_tags($field->content) != ''): ?>
-            <p>Festival event</p>
-        <?php endif; ?>
     <?php endif; ?>
    
             

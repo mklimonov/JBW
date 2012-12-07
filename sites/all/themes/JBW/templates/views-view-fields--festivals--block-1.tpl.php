@@ -43,8 +43,8 @@
       <?php print $field->wrapper_suffix; ?>
 
       <?php if($field->class == 'field-festival-image'): ?>
-          <?php $href = url('festival/'. arg(1). '/programme', array('query' => array('tid' => ''))); ?>
-            <a href="<?php print $href; ?>">Festival programme</a>
+          <?php $href = url('festival/'. arg(1). '/schedule', array('query' => array('tid' => ''))); ?>
+            <a href="<?php print $href; ?>">Festival schedule</a>
             </div>
       <?php endif; ?>
       <?php if($field->class == 'sharethis'): ?>
