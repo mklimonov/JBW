@@ -140,11 +140,11 @@ section {
 }
 
 #region-sidebar{
-    margin: 0;
-    margin-left: 15px;
-    padding: 0;
+    margin: -5px 0 0;
+    padding: 5px 2px 5px 5px;
     width: 395px;
     float: right;
+    background: url(../images/sidebar-bg.png) repeat;
 }
 
 #region-footer{

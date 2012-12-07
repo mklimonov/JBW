@@ -33,9 +33,28 @@
 
   <?php print $field->wrapper_prefix; ?>
     <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
+    <?php if (count($row->field_field_page_image) < 1){
+        $menuParents = menu_get_active_trail();
+        $menuParents = array_reverse($menuParents);
+        array_shift($menuParents);
+        foreach( $menuParents as $mp){
+            $nodeLink = explode ('/',$mp['href']);
+            if (count($nodeLink)<2) break;
+            $pnode = node_load($nodeLink[1]);
+            if ( count($pnode->field_page_image) > 0){
+                //echo '<pre>',  print_r( $pnode->field_page_image,true), '</pre>';
+                //print theme('static_header', $pnode->field_page_image['und'][0]['uri'] );
+                echo '<img src="',image_style_url('static_header', $pnode->field_page_image['und'][0]['uri']),'">';
+                break;
+            }
+        }
+    } else {
+        print $field->content;
+    }
+    ?>
   <?php print $field->wrapper_suffix; ?>
 
 
 <?php endforeach; ?>
+    
 </div>

@@ -182,8 +182,8 @@ function menu_festival_link_block_contents($delta) {
                     $addition['href_nonfest'] = '<img src="'. base_path() . path_to_theme() . '/images/filters/currentfilter-small.png" />';
                 }
             }
-            $all .= '<li><a href="'. $href_fest. '">festival</a>'. $addition['href_fest']. '</li>';
-            $all .= '<li><a href="'. $href_nonfest. '">non-festival</a>'. $addition['href_nonfest']. '</li>';
+            $all .= '<li><a href="'. $href_fest. '">Festival</a>'. $addition['href_fest']. '</li>';
+            $all .= '<li><a href="'. $href_nonfest. '">Non-festival</a>'. $addition['href_nonfest']. '</li>';
             $all .= '</ul></div></div>';
             
             //DATE

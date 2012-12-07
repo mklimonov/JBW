@@ -129,11 +129,11 @@
    /* font-size: 10px;
     margin-bottom: 3px;*/
 }
-
+.page-node .pane-events-all #wntt .events-body a,
 .page-events .events-body .views-field-title a,
 .page-festival .events-body .views-field-title a{
     text-decoration: none;
-    line-height: 1.2em;
+    line-height: 1.2em !important;
     display: block;
     margin-top: 3px;
 }
